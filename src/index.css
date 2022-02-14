@@ -1,13 +1,793 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-bg: #eeeeee;
+  --second-BG: #ffffffa2;
+  --text1: #ffa600;
+  --text2:  #d38900;
+  --seconday-color: #e6a800;
+  --box-shadow-color:rgb(255, 255, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+header,
+footer,
+#skills,
+#about,
+#projects {
+  text-align: center;
+}
+
+
+/*============================
+
+-Nav Header BG
+
+=========================*/
+
+.nav-headerBG {
+ position: relative;
+}
+
+/*======================
+
+Navbar
+
+=====================*/
+
+nav {
+  background: linear-gradient(0deg, rgba(0,0,0,0) 14%, rgba(0,0,0,1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.2rem;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  border-style: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  width: max-content;
+  position: absolute;
+  right: 2px;
+  top: 1.5rem;
+  background-color: var(--second-BG);
+  animation: appear .5s both;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
+
+nav ul li {
+  padding: 1em;
+  border-bottom: 1px solid rgba(82, 82, 82, 0.6);
+  text-transform: uppercase;
+}
+
+.home-btn,
+.fa-chevron-circle-down {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  color: black;
+}
+
+nav ul li i {
+  font-size: 1em;
+  color: var(--text1);
+}
+
+.show {
+  display: block;
+}
+
+
+/*======================
+
+---Header
+
+=======================*/
+
+header {
+  padding-bottom: 8.5rem;
+  padding-top: 6.5rem;
+}
+
+
+.page-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.header-content p span {
+  color: var(--text1);
+  text-shadow: 2px 5px 15px var(--text1);
+}
+
+.name {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.header-content h1 {
+  color: var(--text1);
+  letter-spacing: 4px;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.438);
+  animation: load 3s ease forwards;
+}
+
+@keyframes load {
+  0% {
+    transform: translate(0px, -90px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*================
+
+---Projects
+
+===============*/
+
+main {
+  box-shadow: 0px -2px 30px var(--box-shadow-color);
+}
+
+#projects {
+  padding: 2rem 0;
+  background: var(--main-bg);
+  box-shadow: 0px 4px 10px var(--box-shadow-color);
+}
+
+.projects-header {
+  font-size: 2.34rem;
+  font-weight: bolder;
+  color: var(--text1);
+  text-shadow: 2px 5px 10px rgb(204, 204, 204);
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.projects-subtitle {
+  padding: 2rem 0; 
+}
+
+.project-area {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-area p {
+  text-align: left;
+}
+
+.project-item {
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.project-img-container {
+  position: relative;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 1em solid var(--seconday-color);
+}
+
+
+.project-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 7px 1px 7px rgb(165, 165, 165);
+}
+
+
+.link-to {
+  opacity: 0;
+  position:absolute;
+  width: 100%;
+  height: 97%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.507);
+  transition: opacity .5s ease-in-out;
+}
+
+.link-to:hover {
+  opacity: 1;
+}
+
+.icon-link {  
+  color:white;
+  font-size: 2.5rem;
+  transition: color .2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: var(--seconday-color);
+}
+
+.project-text {
+  background: white;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-shadow: 3px 10px 7px rgb(165, 165, 165);
+}
+
+.project-text h3 {
+  color: var(--text1);
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 10px rgba(90, 90, 90, 0.397);
+}
+
+.project-description {
+  color: var(--text2);
+}
+
+.project-skills i {
+ font-size: 1.4rem;
+ padding: 10px 10px 0;
+}
+
+.project-skills > i:first-of-type {
+  padding-left: 0;
+}
+
+.cardLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardLinks a {
+  color: black;
+}
+
+
+/*=======================
+
+Skills
+
+======================*/
+
+
+#skills {
+  background-color: var(--second-BG);
+  box-shadow: 0px -2px 30px var(--box-shadow-color);
+}
+
+.skills-header {
+  font-size: 2.34rem;
+  font-weight: bolder;
+  color: var(--text1);
+  text-shadow: 3px 5px 23px rgb(165, 165, 165);
+  padding-top: 4rem;
+}
+
+.skills-subheader,
+.tool-subheader {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.skill {
+  background-color: var(--seconday-color);
+  box-shadow: 0px -10px 23px var(--box-shadow-color);
+  color: white;
+  padding: 15px 0px;
+  margin: 1rem 0;
+}
+
+.tools-wrap {
+  padding-bottom: 80px;
+}
+
+.tool {
+  background-color: var(--seconday-color);
+  box-shadow: 0px -10px 23px var(--box-shadow-color);
+  color: white;
+  padding: 15px 0px;
+  margin: 20px 0;
+}
+
+
+/*======================
+
+About
+
+=====================*/
+
+#about {
+  background-color: var(--main-bg);
+  box-shadow: 0px -4px 14px var(--box-shadow-color);
+  padding: 3rem 0;
+}
+
+.about-header {
+  font-size: 2.34rem;
+  font-weight: bolder;
+  color: var(--text1);
+  text-shadow: 3px 5px 23px rgb(165, 165, 165);
+  padding: 3rem;
+}
+
+.about-wrapper img {
+  display: none;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-description h2 {
+  font-size: 1.75rem;
+  padding-bottom: 40px;
+}
+
+.about-description h3 {
+  text-align: left;
+  font-size: 1.4rem;
+  color: var(--text2);
+  padding-bottom: 1rem;
+}
+
+.about-description p {
+  text-align: left;
+  line-height: 1.6rem;
+  padding-bottom: 80px;
+}
+
+
+/*=======================
+
+Footer
+
+======================*/
+
+
+#contact {
+  padding-top: 2rem;
+}
+
+.footer-header {
+  font-size: 2.34rem;
+  font-weight: bolder;
+  color: var(--text1);
+  text-shadow: 3px 5px 23px rgb(165, 165, 165);
+  padding: 4rem 0;
+}
+
+#contact h3 {
+  padding-bottom: 30px;
+}
+
+.hire-me,
+.social,
+.location,
+.copyright {
+  padding-bottom: 50px;
+}
+
+footer h3 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: var(--text2);
+  text-shadow: 4px 5px 12px rgb(165, 165, 165)
+}
+
+
+.social-icons {
+  padding: 0 1.23rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons i {
+  color: black;
+  transition: color .2s ease-in-out;
+  font-size: 2.4rem;
+}
+
+
+
+/*===========================
+
+Media Quries
+
+===========================*/
+
+/*==========================
+
+Tablet
+
+==========================*/
+
+
+@media only screen and (min-width: 768px) {
+/*        General       */
+
+  .content-wrapper {
+    max-width: 730px;
+  }
+
+
+  /*==================
+
+  Tablet: Nav Heaver BG
+
+  ================*/
+
+  .nav-headerBG {
+    border-right: 0.5rem solid var(--text1);
+    border-left: 0.5rem solid var(--text1);
+  }
+  
+  /*===================
+  
+  Tablet: Navbar
+  
+  ===================*/
+
+  .nav-item {
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 3rem;
+    transition: all .25s ease-in-out;
+  }
+
+  .nav-item:hover {
+    background-color: rgb(230, 230, 230);
+    color: var(--text1);
+  }
+  
+  .home-btn {
+    display: block;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .25s ease-in-out;
+  }
+  
+  .home-btn:hover {
+    color: var(--seconday-color);
+    background-color: white;
+  }
+  
+  .fa-chevron-circle-down {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: unset;
+  }
+  
+  .dropdown-content ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    border: unset;
+  }
+  
+
+  /*====================
+
+  Tablet: Header
+
+  ===================*/
+
+  header {
+    padding-top: 9rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+  
+  .greeting {
+    font-size: 1.9rem;
+  }
+  
+  /*=====================
+  
+  Tablet: Projects
+  
+  ==================*/
+
+  .projects-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .project-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .projects-header {
+    font-size: 3.23em;
+  }
+
+  .project-text h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  
+  .project-link {
+    color: white;
+    transition: all .35s ease-in-out;
+  }
+  
+  .project-link:hover {
+    color: var(--text1); 
+  }
+  
+  
+  /*=====================
+  
+  Tablet: Skills
+  
+  ==================*/
+
+  .skills-header {
+    font-size: 3em
+  }
+  
+  .skills-subheader,
+  .tool-subheader {
+    font-size: 1.4rem;
+  }
+  
+  .skill, 
+  .tool {
+    font-weight: bolder;
+    width: 45%;
+    text-transform: uppercase;
+  }
+  
+  .skills-wrap,
+  .tools-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+
+
+  /*=======================
+  
+  Tablet: About
+  
+  ====================*/
+
+
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  #about > h2{
+    margin: 10rem 0;
+  }
+
+  /*====================
+  
+  Tablet: Footer
+  
+  ==================*/
+
+
+  .footer-header {
+    margin-bottom: 2rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .copyright {
+    display: flex;
+    flex-flow: row wrap
+  }
+  
+  .social,
+  .hire-me,
+  .location {
+    width: 33%;
+  }
+  
+  .social-icons i {
+    padding: 0 10px;
+  }
+  
+  .social-icons i:hover {
+    color: var(--seconday-color)
+  }
+  
+}
+
+/*====================
+
+Desktop
+
+===================*/
+  
+@media only screen and (min-width: 1024px) { 
+  
+  /*====================
+  
+  Desktop: Gerenal
+  
+  ==================*/
+
+  .content-wrapper {
+    max-width: 1450px;
+  }
+
+  /*======================
+  
+  Desktop: Navbar
+  
+  ====================*/
+   
+  .home-btn {
+    font-size: 1.6rem;
+  }
+
+  nav ul li {
+    font-size: 1.1rem;
+  }
+  
+  /*======================
+ 
+  Desktop: Header
+ 
+  ====================*/
+
+  header {
+    padding: 13rem 0;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .name {
+    padding-top: .4em ;
+    font-size: 2rem;
+  }
+  
+  .header-content > h1 {
+    padding: 1rem 0;
+  }
+
+  .greeting {
+    font-size: 2em;
+  }
+  
+  
+  /*====================
+  
+  Desktop: Projects
+  
+  =================*/
+
+  .project-text h3 {
+    font-size: 1.5em;
+  }
+
+  
+  /*======== No Skills Edit ==========*/
+
+
+  /*===================
+  
+  Desktop: About
+  
+  =================*/
+
+  .about-header {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about-description {
+    width: 50%;
+  }
+  
+  .about-wrapper img {
+    display: block;
+    border-radius: 0.8rem;
+    width: 35%;
+  }
+
+
+  /*======================
+  
+  Desktop: Footer
+  
+  ====================*/
+
+  .footer-header {
+    font-size: 2.7rem;
+  }
 }
