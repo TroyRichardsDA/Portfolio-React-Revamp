@@ -3,6 +3,7 @@ import { Header } from './Components/Header';
 import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
 import { About } from './Components/About';
+import { Contact } from './Components/Contact';
 
 
 
@@ -26,8 +27,9 @@ function App() {
         </p>
         <div className="project-area">
           <Projects />
-          <About />
         </div>
+          <About />
+          <Contact />
       </section>
     </div>
   );

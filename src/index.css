@@ -411,35 +411,23 @@ About
 
 /*=======================
 
-Footer
+Contact
 
 ======================*/
 
 
-#contact {
-  padding-top: 2rem;
-}
-
-.footer-header {
-  font-size: 2.34rem;
-  font-weight: bolder;
-  color: var(--text1);
-  text-shadow: 3px 5px 23px rgb(165, 165, 165);
-  padding: 4rem 0;
+.contact-header {
+  margin: 4rem 0;
+  color: var(--BrighterText);
+  text-shadow: var(--headerTextShadow);
 }
 
 #contact h3 {
   padding-bottom: 30px;
 }
 
-.hire-me,
-.social,
-.location,
-.copyright {
-  padding-bottom: 50px;
-}
 
-footer h3 {
+contact h3 {
   font-weight: 300;
   font-size: 1.8rem;
   color: var(--text2);
@@ -454,7 +442,6 @@ footer h3 {
 }
 
 .social-icons i {
-  color: black;
   transition: color .2s ease-in-out;
   font-size: 2.4rem;
 }
