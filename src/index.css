@@ -1,7 +1,7 @@
 :root {
   --main-bg: #eeeeee;
   --second-BG: #ffffffa2;
-  --text1: #ffa600;
+  --text1: #b36500;
   --text2:  #d38900;
   --seconday-color: #e6a800;
   --box-shadow-color:rgb(255, 255, 255);
@@ -22,6 +22,7 @@ body {
   color: rgb(0, 0, 0);
   line-height: 1.5em;
   overflow-x: hidden;
+  background-color: var(--second-BG);
 }
 
 ul {
@@ -42,16 +43,6 @@ footer,
 }
 
 
-/*============================
-
--Nav Header BG
-
-=========================*/
-
-.nav-headerBG {
- position: relative;
-}
-
 /*======================
 
 Navbar
@@ -59,11 +50,11 @@ Navbar
 =====================*/
 
 nav {
-  background: linear-gradient(0deg, rgba(0,0,0,0) 14%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%);
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1.2rem;
+  padding: 1.5rem;
   z-index: 1;
   width: 100%;
 }
@@ -74,45 +65,37 @@ nav {
   align-items: center;
 }
 
-.dropdown {
-  position: relative;
-}
-
 .dropbtn {
   border-style: none;
   cursor: pointer;
+  color: white;
+  font-size: 2rem;
 }
 
 .dropdown-content {
-  display: none;
-  width: max-content;
-  position: absolute;
-  right: 2px;
-  top: 1.5rem;
-  background-color: var(--second-BG);
-  animation: appear .5s both;
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  background-color: black;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transition: width 1s ease-in-out;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-}
-
-nav ul li {
-  padding: 1em;
-  border-bottom: 1px solid rgba(82, 82, 82, 0.6);
-  text-transform: uppercase;
-}
-
-.home-btn,
-.fa-chevron-circle-down {
-  color: white;
-  font-size: 1.5rem;
+.open {
+  width: 250px;
 }
 
 .nav-item {
-  color: black;
+  padding: 1.4em;
+  font-size: 1.2rem;
+}
+
+.close-button {
+  color: white;
+  text-align: right;
+  padding-bottom: 3rem;
 }
 
 nav ul li i {
@@ -495,11 +478,6 @@ Tablet
     border-radius: 3rem;
     transition: all .25s ease-in-out;
   }
-
-  .nav-item:hover {
-    background-color: rgb(230, 230, 230);
-    color: var(--text1);
-  }
   
   .home-btn {
     display: block;
@@ -507,15 +485,6 @@ Tablet
     border-radius: 50%;
     padding: 5px;
     transition: all .25s ease-in-out;
-  }
-  
-  .home-btn:hover {
-    color: var(--seconday-color);
-    background-color: white;
-  }
-  
-  .fa-chevron-circle-down {
-    display: none;
   }
   
   .dropdown-content {
