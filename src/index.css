@@ -102,7 +102,7 @@ nav {
 
 /*======================
 
----Header
+---Hero
 
 =======================*/
 
@@ -128,7 +128,7 @@ header {
 }
 
 
-.header-content h1 {
+.hero-header {
   font-size: 2rem;
   margin-top: .5rem;
   animation: load 3s ease forwards;
@@ -564,25 +564,33 @@ Tablet
 
   /*====================
 
-  Tablet: Header
+  Tablet: Hero
 
   ===================*/
 
   header {
-    padding-top: 9rem;
-  }
-  
-  .page-title {
-    font-size: 2rem;
-  }
-
-  .name {
-    font-size: 1.7rem;
+    margin-top: 4rem;
   }
   
   .greeting {
-    font-size: 1.9rem;
+    font-size: 1rem;
   }
+  
+  .name {
+    font-size: 3rem;
+  }
+
+  .hero-header {
+    font-size: 2.5rem;
+  }
+
+  .hero-desc {
+    max-width: 540px;
+    margin-top: 3rem;
+  }
+
+
+
   
   /*=====================
   
