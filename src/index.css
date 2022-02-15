@@ -69,9 +69,8 @@ nav {
 }
 
 .dropbtn {
-  border-style: none;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .dropdown-content {
@@ -498,11 +497,14 @@ footer {
   color: var(--highlightColor);
 }
 
-/*===========================
+
+
+/*===============================================
 
 Media Quries
 
-===========================*/
+=================================================*/
+
 
 /*==========================
 
@@ -514,20 +516,8 @@ Tablet
 @media only screen and (min-width: 768px) {
 /*        General       */
 
-  .content-wrapper {
-    max-width: 730px;
-  }
-
-
-  /*==================
-
-  Tablet: Nav Heaver BG
-
-  ================*/
-
-  .nav-headerBG {
-    border-right: 0.5rem solid var(--text1);
-    border-left: 0.5rem solid var(--text1);
+  .App {
+    max-width: 640px;
   }
   
   /*===================
@@ -536,38 +526,41 @@ Tablet
   
   ===================*/
 
-  .nav-item {
-    color: white;
-    font-size: 0.9rem;
-    border-radius: 3rem;
-    transition: all .25s ease-in-out;
+  nav {
+    padding: 20px 40px;
   }
   
-  .home-btn {
-    display: block;
-    font-size: 1.3rem;
-    border-radius: 50%;
-    padding: 5px;
-    transition: all .25s ease-in-out;
+  .dropbtn {
+    display: none;
+  }
+
+  .close-button {
+    display: none;
   }
   
   .dropdown-content {
     display: block;
-    position: relative;
-    top: 0;
-    right: 0;
+    position: static;
     background-color: unset;
+    height: unset;
+    width: unset;
   }
   
   .dropdown-content ul {
     display: flex;
-    justify-content: space-between;
   }
 
-  nav ul li {
-    border: unset;
+  .nav-item {
+    padding: 1rem;
+    font-size: unset;
   }
-  
+
+  .resume-nav {
+    border: 1px solid var(--highlightColor);
+    color: var(--highlightColor);
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+  }
 
   /*====================
 

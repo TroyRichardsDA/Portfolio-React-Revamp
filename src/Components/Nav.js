@@ -47,7 +47,7 @@ function Nav() {
                             <li className="nav-item"><a href="#projects"> Projects</a></li>
                             <li className="nav-item"><a href="#about"> About</a></li>
                             <li className="nav-item"><a href="#contact"> Contact</a></li>
-                            <li className="nav-item"><a href=""> Resume</a></li>
+                            <li className="nav-item resume-nav"><a href="#"> Resume</a></li>
                         </ul>
                     </div>
                 </div>
