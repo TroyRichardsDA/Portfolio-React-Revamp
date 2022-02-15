@@ -1,5 +1,5 @@
 :root {
-  --main-BG: #000118;
+  --main-BG: #030020;
   --mainTextColor: #adadade1;
   --highlightColor: rgb(0, 255, 221);
   --dimHighlightColor: rgba(0, 247, 214, 0.582);
@@ -466,6 +466,37 @@ Contact
 }
 
 
+
+/*===========================
+
+Footer
+
+===========================*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem 0 2rem;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons i {
+  font-size: 1.9rem;
+  color: var(--BrighterText);
+  transition: all .5s ease-in-out;
+}
+
+.social-icons i:hover {
+  color: var(--highlightColor);
+}
 
 /*===========================
 

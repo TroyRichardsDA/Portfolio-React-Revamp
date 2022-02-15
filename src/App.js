@@ -4,6 +4,7 @@ import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
 import { About } from './Components/About';
 import { Contact } from './Components/Contact';
+import { Footer } from './Components/Footer';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       </section>
           <About />
           <Contact />
+          <Footer />
     </div>
   );
 }
