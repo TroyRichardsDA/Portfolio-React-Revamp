@@ -1,10 +1,9 @@
 :root {
-  --main-bg: #eeeeee;
-  --second-BG: #ffffffa2;
-  --text1: #b36500;
-  --text2:  #d38900;
-  --seconday-color: #e6a800;
+  --main-BG: #000118;
+  --highlightColor: rgb(0, 255, 221);
+  --BrighterText: #f3f3f3;
   --box-shadow-color:rgb(255, 255, 255);
+  --fnt-tech: 'Share Tech Mono', monospace;
 }
 
 *,
@@ -19,10 +18,9 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: rgb(0, 0, 0);
-  line-height: 1.5em;
+  color: #adadade1;
   overflow-x: hidden;
-  background-color: var(--second-BG);
+  background-color: var(--main-BG);
 }
 
 ul {
@@ -34,14 +32,10 @@ a {
   text-decoration: none;
 }
 
-header,
-footer,
-#skills,
-#about,
-#projects {
-  text-align: center;
+.App {
+  width: 85%;
+  margin: 0 auto;
 }
-
 
 /*======================
 
@@ -54,7 +48,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1.5rem;
+  padding: 1.7rem;
   z-index: 1;
   width: 100%;
 }
@@ -65,11 +59,15 @@ nav {
   align-items: center;
 }
 
+.homeBtn {
+  font-size: 1.5rem;
+  color: var(--highlightColor);
+}
+
 .dropbtn {
   border-style: none;
   cursor: pointer;
-  color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .dropdown-content {
@@ -93,19 +91,10 @@ nav {
 }
 
 .close-button {
-  color: white;
   text-align: right;
   padding-bottom: 3rem;
 }
 
-nav ul li i {
-  font-size: 1em;
-  color: var(--text1);
-}
-
-.show {
-  display: block;
-}
 
 
 /*======================
@@ -115,40 +104,41 @@ nav ul li i {
 =======================*/
 
 header {
-  padding-bottom: 8.5rem;
-  padding-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 10vh;
 }
 
-
-.page-title {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  padding: 1rem 0;
-}
-
-.header-content p span {
-  color: var(--text1);
-  text-shadow: 2px 5px 15px var(--text1);
+.greeting {
+  color: var(--highlightColor);
+  font-family: var(--fnt-tech);
+  font-size: 0.9rem;
 }
 
 .name {
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 400;
+  margin-top: 20px;
+  text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
+  font-size: 2rem;
+  color: var(--BrighterText);
 }
 
+
 .header-content h1 {
-  color: var(--text1);
-  letter-spacing: 4px;
   font-size: 2rem;
-  font-weight: 300;
-  margin: 1rem 0;
-  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.438);
+  margin-top: .5rem;
   animation: load 3s ease forwards;
 }
 
-@keyframes load {
+.hero-desc {
+/*   opacity: 0; */
+  animation: load 3s ease forwards 1s;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* @keyframes load {
   0% {
     transform: translate(0px, -90px);
     opacity: 0;
@@ -156,6 +146,13 @@ header {
   100%{
     opacity: 1;
   }
+} */
+
+
+.header-resume {
+  border: 1px solid var(--highlightColor);
+  color: var(--highlightColor);
+  padding: 1rem 2rem;
 }
 
 /*================

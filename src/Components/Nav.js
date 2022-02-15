@@ -25,7 +25,7 @@ function Nav() {
     return (
         <nav>
             <div className="navbar">
-                <a href="#header">Home</a>
+                <a href="#header" className='homeBtn'>Home</a>
                 <div className='dropdown'>
                 <i onClick={showHide} className="dropbtn fas fa-soild fa-bars"></i>
                     <div id='dd-content' className='dropdown-content'>
