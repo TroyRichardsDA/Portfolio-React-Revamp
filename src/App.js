@@ -28,9 +28,9 @@ function App() {
         <div className="project-area">
           <Projects />
         </div>
+      </section>
           <About />
           <Contact />
-      </section>
     </div>
   );
 }

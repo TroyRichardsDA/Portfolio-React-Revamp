@@ -415,35 +415,54 @@ Contact
 
 ======================*/
 
+#contact {
+  text-align: center;
+}
+
 
 .contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 4rem 0;
+  letter-spacing: 2px;
   color: var(--BrighterText);
   text-shadow: var(--headerTextShadow);
 }
 
-#contact h3 {
-  padding-bottom: 30px;
+.contact-header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-left: 10px;
+  background-color: var(--mainTextColor);
+  box-shadow: 3px 3px 2px var(--highlightColor);
 }
 
+.contact-header::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-right: 10px;
+  background-color: var(--mainTextColor);
+  box-shadow: 3px 3px 2px var(--highlightColor);
+}
 
-contact h3 {
-  font-weight: 300;
+.contact-subheader {
+  margin-bottom: 2rem;
   font-size: 1.8rem;
-  color: var(--text2);
-  text-shadow: 4px 5px 12px rgb(165, 165, 165)
+  color: var(--highlightColor);
 }
 
-
-.social-icons {
-  padding: 0 1.23rem;
-  display: flex;
-  justify-content: space-around;
+.contact-text {
+  margin: 3rem 0;
 }
 
-.social-icons i {
-  transition: color .2s ease-in-out;
-  font-size: 2.4rem;
+.email-link {
+  border: 1px solid var(--highlightColor);
+  color: var(--highlightColor);
+  padding: 1rem 2rem;
+  border-radius: 5px;
 }
 
 

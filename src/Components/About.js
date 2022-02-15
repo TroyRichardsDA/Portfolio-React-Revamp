@@ -7,8 +7,6 @@ export function About() {
             <h2 className="about-header">
                 <i className="fas fa-user"></i>  About
             </h2>
-                <img src="./img/troy-richards.png" alt="Troy Richards" />
-
             <h2 className='about-subheader'>
                 Hello, <br/> 
                 <small>(...again?)</small>

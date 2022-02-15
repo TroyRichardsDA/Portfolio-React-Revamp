@@ -1,13 +1,13 @@
 export function Contact() {
     
     return (
-        <footer id="contact">
-            <div class="footer-content">
-                <h1 class="footer-header">
-                Contact
-                </h1>
-                <div class="hire-me">
-                    <h3> 
+        <section id="contact">
+            <div className="contact-content">
+                <h2 className="contact-header">
+                    Contact
+                </h2>
+                <div className="contact-text">
+                    <h3 className="contact-subheader"> 
                         Get it touch
                     </h3>
                     <p>
@@ -18,23 +18,9 @@ export function Contact() {
                         possible. Thank You!
                     </p>
                 </div> 
-  
-                <div class="social"> 
-                    <div class="social-icons">
-                    <p>
-                        <a href="https://www.linkedin.com/in/troyrichardstonebeats/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/AyeTone" target="_blank"><i class="fab fa-github"></i></a>
-                    </p>
-                    </div> 
-                </div> 
-                <div class="copyright">
-                    <p> 
-                    Copyright 2022 | Troy Richards
-                    </p>
-                </div> 
-        </div> 
-    </footer>
+
+                <a className="email-link" href='mailto:troyrichards28@gmail.com'> Contact Me</a>
+            </div> 
+        </section>
     )
 }
