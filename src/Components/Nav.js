@@ -1,5 +1,7 @@
 function Nav() {
 
+    let prevScroll = window.pageYOffset
+
     function showHide() {
         document.getElementById('dd-content').classList.toggle('open')
     }
@@ -21,9 +23,19 @@ function Nav() {
         }
     }
 
+    window.onscroll = function() {
+        let currentPos = window.pageYOffset
+        if (prevScroll > currentPos) {
+            document.getElementById('nava').style.top = '0'
+        } else {
+            document.getElementById('nava').style.top = '-80px'
+        }
+        prevScroll = currentPos
+    }
+
 
     return (
-        <nav>
+        <nav id="nava">
             <div className="navbar">
                 <a href="#header" className='homeBtn'>Home</a>
                 <div className='dropdown'>
@@ -31,10 +43,10 @@ function Nav() {
                     <div id='dd-content' className='dropdown-content'>
                         <ul>
                             <li className="nav-item close-button"> <a onClick={closeBtn} href="#">Close</a></li>
-                            <li className="nav-item"><a href=""> Skills</a></li>
-                            <li className="nav-item"><a href=""> Projects</a></li>
-                            <li className="nav-item"><a href=""> About</a></li>
-                            <li className="nav-item"><a href=""> Contact</a></li>
+                            <li className="nav-item"><a href="#skills"> Skills</a></li>
+                            <li className="nav-item"><a href="#projects"> Projects</a></li>
+                            <li className="nav-item"><a href="#about"> About</a></li>
+                            <li className="nav-item"><a href="#contact"> Contact</a></li>
                             <li className="nav-item"><a href=""> Resume</a></li>
                         </ul>
                     </div>

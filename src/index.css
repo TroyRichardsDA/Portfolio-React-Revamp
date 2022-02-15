@@ -1,6 +1,8 @@
 :root {
   --main-BG: #000118;
+  --mainTextColor: #adadade1;
   --highlightColor: rgb(0, 255, 221);
+  --dimHighlightColor: rgba(0, 247, 214, 0.582);
   --BrighterText: #f3f3f3;
   --box-shadow-color:rgb(255, 255, 255);
   --fnt-tech: 'Share Tech Mono', monospace;
@@ -51,6 +53,7 @@ nav {
   padding: 1.7rem;
   z-index: 1;
   width: 100%;
+  transition: top .7s;
 }
 
 .navbar {
@@ -289,44 +292,53 @@ Skills
 
 ======================*/
 
-
-#skills {
-  background-color: var(--second-BG);
-  box-shadow: 0px -2px 30px var(--box-shadow-color);
+.skills-header {
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--BrighterText);
+  text-shadow: 3px 5px 23px rgb(165, 165, 165);
 }
 
-.skills-header {
-  font-size: 2.34rem;
-  font-weight: bolder;
-  color: var(--text1);
-  text-shadow: 3px 5px 23px rgb(165, 165, 165);
-  padding-top: 4rem;
+.skills-header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-left: 10px;
+  background-color: var(--mainTextColor);
+  box-shadow: 3px 3px 2px var(--highlightColor);
 }
 
 .skills-subheader,
 .tool-subheader {
   padding: 2rem 0;
   font-size: 1.2rem;
+  color: var(--BrighterText);
 }
 
-.skill {
-  background-color: var(--seconday-color);
-  box-shadow: 0px -10px 23px var(--box-shadow-color);
-  color: white;
-  padding: 15px 0px;
-  margin: 1rem 0;
-}
-
+.skills-wrap,
 .tools-wrap {
-  padding-bottom: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
 }
 
+.skill,
 .tool {
-  background-color: var(--seconday-color);
-  box-shadow: 0px -10px 23px var(--box-shadow-color);
-  color: white;
-  padding: 15px 0px;
-  margin: 20px 0;
+  letter-spacing: 1px;
+  border: 1px solid var(--highlightColor);
+  color: var(--dimHighlightColor);
+  text-align: center;
+  padding: 15px 20px;
+  white-space: nowrap;
+  transition: all .7s ease-in-out;
+}
+
+.skill:hover,
+.tool:hover {
+  color: var(--highlightColor);
+  border: 1px solid var(--dimHighlightColor);
 }
 
 
