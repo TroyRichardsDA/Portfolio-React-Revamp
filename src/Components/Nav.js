@@ -28,7 +28,7 @@ function Nav() {
         if (prevScroll > currentPos) {
             document.getElementById('nava').style.top = '0'
         } else {
-            document.getElementById('nava').style.top = '-80px'
+            document.getElementById('nava').style.top = '-200px'
         }
         prevScroll = currentPos
     }

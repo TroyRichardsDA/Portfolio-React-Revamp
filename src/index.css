@@ -6,6 +6,7 @@
   --BrighterText: #f3f3f3;
   --box-shadow-color:rgb(255, 255, 255);
   --fnt-tech: 'Share Tech Mono', monospace;
+  --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
 }
 
 *,
@@ -156,133 +157,7 @@ header {
   border: 1px solid var(--highlightColor);
   color: var(--highlightColor);
   padding: 1rem 2rem;
-}
-
-/*================
-
----Projects
-
-===============*/
-
-main {
-  box-shadow: 0px -2px 30px var(--box-shadow-color);
-}
-
-#projects {
-  padding: 2rem 0;
-  background: var(--main-bg);
-  box-shadow: 0px 4px 10px var(--box-shadow-color);
-}
-
-.projects-header {
-  font-size: 2.34rem;
-  font-weight: bolder;
-  color: var(--text1);
-  text-shadow: 2px 5px 10px rgb(204, 204, 204);
-  margin-top: 2rem;
-  margin-bottom: 1.2rem;
-}
-
-.projects-subtitle {
-  padding: 2rem 0; 
-}
-
-.project-area {
-  display: grid;
-  gap: 2rem;
-}
-
-.project-area p {
-  text-align: left;
-}
-
-.project-item {
-  color: black;
-  border-radius: 0.5rem;
-}
-
-.project-img-container {
-  position: relative;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  border-bottom: 1em solid var(--seconday-color);
-}
-
-
-.project-img {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  width: 100%;
-  box-shadow: 7px 1px 7px rgb(165, 165, 165);
-}
-
-
-.link-to {
-  opacity: 0;
-  position:absolute;
-  width: 100%;
-  height: 97%;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.507);
-  transition: opacity .5s ease-in-out;
-}
-
-.link-to:hover {
-  opacity: 1;
-}
-
-.icon-link {  
-  color:white;
-  font-size: 2.5rem;
-  transition: color .2s ease-in-out;
-}
-
-.icon-link:hover {
-  color: var(--seconday-color);
-}
-
-.project-text {
-  background: white;
-  display: grid;
-  gap: 1.5rem;
-  padding: 2rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  box-shadow: 3px 10px 7px rgb(165, 165, 165);
-}
-
-.project-text h3 {
-  color: var(--text1);
-  font-size: 1.2rem;
-  letter-spacing: 5px;
-  text-shadow: 4px 4px 10px rgba(90, 90, 90, 0.397);
-}
-
-.project-description {
-  color: var(--text2);
-}
-
-.project-skills i {
- font-size: 1.4rem;
- padding: 10px 10px 0;
-}
-
-.project-skills > i:first-of-type {
-  padding-left: 0;
-}
-
-.cardLinks {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cardLinks a {
-  color: black;
+  border-radius: 5px;
 }
 
 
@@ -298,7 +173,7 @@ Skills
   justify-content: space-around;
   align-items: center;
   color: var(--BrighterText);
-  text-shadow: 3px 5px 23px rgb(165, 165, 165);
+  text-shadow: var(--headerTextShadow);
 }
 
 .skills-header::after {
@@ -312,7 +187,8 @@ Skills
 
 .skills-subheader,
 .tool-subheader {
-  padding: 2rem 0;
+  text-align: center;
+  margin: 4rem 0;
   font-size: 1.2rem;
   color: var(--BrighterText);
 }
@@ -320,6 +196,7 @@ Skills
 .skills-wrap,
 .tools-wrap {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
   gap: 20px;
 }
@@ -331,7 +208,6 @@ Skills
   color: var(--dimHighlightColor);
   text-align: center;
   padding: 15px 20px;
-  white-space: nowrap;
   transition: all .7s ease-in-out;
 }
 
@@ -339,6 +215,140 @@ Skills
 .tool:hover {
   color: var(--highlightColor);
   border: 1px solid var(--dimHighlightColor);
+  border-radius: 15px;
+}
+
+
+/*================
+
+---Projects
+
+===============*/
+
+#projects {
+  margin: 10rem 0;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  color: var(--BrighterText);
+  text-shadow: var(--headerTextShadow);
+}
+
+.projects-header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  margin-left: 10px;
+  background-color: var(--mainTextColor);
+  box-shadow: 3px 3px 2px var(--highlightColor);
+}
+
+.projects-subtitle {
+  padding: 2rem 0; 
+  font-family: var(--fnt-tech);
+}
+
+.projects-subtitle > small {
+  font-size: 10px;
+  margin-left: 30px;
+  transition: all .5s;
+}
+
+.projects-subtitle > small:hover {
+  font-size: 1em;
+  color: var(--dimHighlightColor);
+}
+
+.project-area {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-title {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 1.3rem;
+  color: var(--highlightColor);
+  text-decoration: underline var(--mainTextColor);
+  text-underline-offset: 3px;
+}
+
+.project-img-container {
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  opacity: .9;
+  border-radius: 5px;
+}
+
+.link-to {
+  opacity: 0;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.507);
+  transition: opacity .5s ease-in-out;
+}
+
+.link-to:hover {
+  opacity: 1;
+}
+
+.icon-link {  
+  color:white;
+  font-size: 2rem;
+  transition: color .2s ease-in-out;
+}
+
+.icon-link:hover {
+  color: var(--highlightColor);
+}
+
+.project-text {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project-desc {
+  line-height: 1.3rem;
+}
+
+.project-skills span {
+  color: var(--highlightColor);
+}
+
+.project-skills i {
+ font-size: 1.4rem;
+ padding: 10px 5px 0;
+ color: var(--dimHighlightColor);
+}
+
+.project-skills > i:first-of-type {
+  padding-left: 0;
+}
+
+.cardLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link {
+  color: var(--BrighterText);
+  transition: all 1s ease-in-out;
+}
+
+.project-link:hover {
+  color: var(--highlightColor);
 }
 
 
@@ -554,20 +564,6 @@ Tablet
   .projects-header {
     font-size: 3.23em;
   }
-
-  .project-text h3 {
-    font-size: 1rem;
-    font-weight: bolder;
-  }
-  
-  .project-link {
-    color: white;
-    transition: all .35s ease-in-out;
-  }
-  
-  .project-link:hover {
-    color: var(--text1); 
-  }
   
   
   /*=====================
@@ -723,10 +719,6 @@ Desktop
   Desktop: Projects
   
   =================*/
-
-  .project-text h3 {
-    font-size: 1.5em;
-  }
 
   
   /*======== No Skills Edit ==========*/
