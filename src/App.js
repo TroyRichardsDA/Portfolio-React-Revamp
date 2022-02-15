@@ -2,6 +2,7 @@ import Nav from './Components/Nav';
 import { Header } from './Components/Header';
 import { Skills } from './Components/Skills';
 import { Projects } from './Components/Projects';
+import { About } from './Components/About';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         </p>
         <div className="project-area">
           <Projects />
+          <About />
         </div>
       </section>
     </div>

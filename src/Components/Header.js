@@ -2,11 +2,11 @@ export function Header() {
     
     return (
         <header>
-            <div id='header' class="header-content">
-                <p class="greeting">
+            <div id='header' className="header-content">
+                <p className="greeting">
                     <span>Hello, my name is </span>
                 </p>
-                <h2 class="name">
+                <h2 className="name">
                     <span>T</span>roy <span>R</span>ichards
                 </h2>
                 <h1> I type on keyboards and make web things look good.</h1>
