@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portfolio-react-revamp/static/css/main.9917d360.css",
+    "main.js": "/portfolio-react-revamp/static/js/main.46669073.js",
+    "index.html": "/portfolio-react-revamp/index.html",
+    "main.9917d360.css.map": "/portfolio-react-revamp/static/css/main.9917d360.css.map",
+    "main.46669073.js.map": "/portfolio-react-revamp/static/js/main.46669073.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9917d360.css",
+    "static/js/main.46669073.js"
+  ]
+}
