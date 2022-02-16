@@ -37,7 +37,7 @@ function Nav({logo}) {
     return (
         <nav id="nava">
             <div className="navbar">
-                <a href="#header" className='homeBtn'>
+                <a href="/" className='homeBtn'>
                     <img id='logo' src={logo} />
                 </a>
                 <div className='dropdown'>

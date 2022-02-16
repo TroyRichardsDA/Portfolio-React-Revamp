@@ -10,10 +10,9 @@ export function Skills() {
           <p className="skill"><i className="fab fa-css3"></i> CSS <i className="fab fa-css3"></i></p>
           <p className="skill"><i class="fab fa-js"></i> JavaScript <i className="fab fa-js"></i></p>
           <p className="skill"><i className="fab fa-react"></i> React <i className="fab fa-react"></i> </p>
-          <p className="skill"><i className="fas fa-mobile-alt"></i> Responsive Web Development <i className="fas fa-laptop"></i></p>
         </div>
       </div>
-      <div className="tool-container">
+      <div className="tools-container">
         <h3 className="tool-subheader">Tools & Platforms</h3>
         <div className="tools-wrap">
           <p className="tool"><i className="fab fa-git-alt"></i> Git | GitHub <i className="fab fa-github-square"></i></p>
