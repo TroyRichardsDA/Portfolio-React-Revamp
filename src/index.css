@@ -363,7 +363,6 @@ About
 
 .about-header {
   display: flex;
-  justify-content: center;
   align-items: center;
   letter-spacing: 2px;
   color: var(--BrighterText);
@@ -590,10 +589,6 @@ Tablet
   }
 
 
-
-  
-  
-  
   /*=====================
   
   Tablet: Skills
@@ -707,8 +702,8 @@ Desktop
   
   ==================*/
 
-  .content-wrapper {
-    max-width: 1450px;
+  .App {
+    max-width: 1050px;
   }
 
   /*======================
@@ -716,10 +711,6 @@ Desktop
   Desktop: Navbar
   
   ====================*/
-   
-  .home-btn {
-    font-size: 1.6rem;
-  }
 
   nav ul li {
     font-size: 1.1rem;
@@ -731,27 +722,53 @@ Desktop
  
   ====================*/
 
-  header {
-    padding: 13rem 0;
-  }
-
-  .page-title {
-    font-size: 2.5rem;
+  .greeting {
+    font-size: 1.3rem;
   }
 
   .name {
     padding-top: .4em ;
-    font-size: 2rem;
-  }
-  
-  .header-content > h1 {
-    padding: 1rem 0;
+    font-size: 3.5rem;
   }
 
-  .greeting {
-    font-size: 2em;
+  .hero-header {
+    font-size: 3rem;
+  }
+
+  .hero-desc {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  .header-resume {
+    font-size: 1.3rem;
   }
   
+  
+  
+  
+  /*====================
+  
+  Desktop: Skills
+  
+  =================*/
+  
+  .skills-content {
+    display: flex;
+    margin: 4rem 0;
+  }
+  
+  .skills-header::after {
+    width: 500px;
+  }
+  
+  .skill,
+  .tool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   
   /*====================
   
@@ -759,9 +776,14 @@ Desktop
   
   =================*/
 
-  
-  /*======== No Skills Edit ==========*/
+  .projects-header::after {
+    width: 475px;
+  }
 
+  .project-area {
+    width: 90%;
+    margin: 0 auto;
+  }
 
   /*===================
   
@@ -770,33 +792,51 @@ Desktop
   =================*/
 
   .about-header {
-    font-size: 3rem;
     margin-bottom: 5rem;
   }
 
-  .about-wrapper {
-    display: flex;
-    justify-content: space-between;
+  .about-header::after {
+    width: 475px;
+  }
+
+  .about-subheader {
+    font-size: 3rem;
+    line-height: 20px;
   }
   
-  .about-description {
+  .about-name {
+    font-size: 2rem;
+    margin: 3.5rem 0;
+  }
+
+
+  .about-desc {
     width: 50%;
-  }
-  
-  .about-wrapper img {
-    display: block;
-    border-radius: 0.8rem;
-    width: 35%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
 
   /*======================
   
-  Desktop: Footer
+  Desktop: Contact
   
   ====================*/
 
-  .footer-header {
+  .contact-header {
     font-size: 2.7rem;
+  }
+
+  .contact-text {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .email-link {
+    font-size: 1.5rem;
   }
 }
