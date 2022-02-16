@@ -322,19 +322,20 @@ Skills
   line-height: 1.3rem;
 }
 
-.project-skills span {
+.project-skills {
+  display: grid;
+}
+
+.developed-with {
   color: var(--highlightColor);
 }
 
-.project-skills i {
- font-size: 1.4rem;
- padding: 10px 5px 0;
- color: var(--dimHighlightColor);
+.devWith-skills {
+  color: var(--dimHighlightColor);
+  word-spacing: .7rem;
+  font-family: var(--fnt-tech);
 }
 
-.project-skills > i:first-of-type {
-  padding-left: 0;
-}
 
 .cardLinks {
   display: flex;
