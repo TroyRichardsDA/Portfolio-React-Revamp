@@ -28,6 +28,19 @@ function App() {
         </p>
         <div className="project-area">
           <Projects 
+            title= 'Revamped Portfolio'
+            img='./img/revamp-portfolio.png'
+            liveSite='https://ayetone.github.io/Portfolio-React-Revamp/'
+            sourceCode="https://github.com/AyeTone/Portfolio-React-Revamp"
+            desc={<>A revamp of my portfolio. I rebuilt my portfolio site 
+            into a react app using the knowledge I acquired through Scrimba 
+            and Skillcrush. Although the design is not mine (inspired by <a className="important-text-link" href="https://brittanychiang.com/" target="_">Brittany Chiang's</a> website),
+            the code itself is mine. I am still updating this project to 
+            improve the current design and refactor the code to a more dry state.</>}
+            devWith = 'React, HTML, CSS'
+
+          />
+          <Projects 
             title= 'Github Repo Gallery'
             img='./img/repo-gallery.png'
             liveSite='https://ayetone.github.io/github-repo-gallery/'
@@ -67,15 +80,6 @@ function App() {
             versatile design has several sections, including a cards design
             pattern, that can be repurposed for different sites.'
             devWith='HTML, CSS, '
-          />
-          <Projects 
-            title='Nametag'
-            img='./img/nametag.png'
-            liveSite='https://czw9y.csb.app/'
-            sourceCode='https://codesandbox.io/s/czw9y'
-            desc='Greenfield project creating a Nametag web app. A UI that
-            has the ability to create and delete nametags.'
-            devWith='HTML, CSS, React, Codepen'
           />
         </div>
       </section>

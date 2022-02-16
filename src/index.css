@@ -40,6 +40,16 @@ a {
   margin: 0 auto;
 }
 
+.important-text-link {
+  color: var(--highlightColor);
+  text-decoration: underline;
+  transition: all .5s;
+}
+
+.important-text-link:hover {
+  color: var(--BrighterText);
+}
+
 /*======================
 
 ScrollBar
@@ -808,8 +818,6 @@ Desktop
     flex-grow: 1;
   }
 
-
-  
   .skill,
   .tool {
     display: flex;
