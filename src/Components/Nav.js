@@ -1,4 +1,4 @@
-function Nav() {
+function Nav({logo}) {
 
     let prevScroll = window.pageYOffset
 
@@ -37,7 +37,9 @@ function Nav() {
     return (
         <nav id="nava">
             <div className="navbar">
-                <a href="#header" className='homeBtn'>Home</a>
+                <a href="#header" className='homeBtn'>
+                    <img id='logo' src={logo} />
+                </a>
                 <div className='dropdown'>
                 <i onClick={showHide} className="dropbtn fas fa-soild fa-bars"></i>
                     <div id='dd-content' className='dropdown-content'>

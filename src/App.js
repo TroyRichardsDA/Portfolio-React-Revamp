@@ -5,7 +5,7 @@ import { Projects } from './Components/Projects';
 import { About } from './Components/About';
 import { Contact } from './Components/Contact';
 import { Footer } from './Components/Footer';
-
+import logo from "./logo.svg"
 
 
 
@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div className="App">
-      <Nav />
+      <Nav logo={logo}/>
       <Header />
       <Skills />
       <section id="projects">

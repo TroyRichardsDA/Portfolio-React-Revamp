@@ -21,6 +21,7 @@ export function Skills() {
           <p className="tool"><i className="fab fa-codepen"></i> Codepen <i className="fab fa-codepen"></i></p>
           <p className="tool"><i className="fas fa-code-branch"></i> Github Pages <i className="fas fa-code-branch"></i></p>
           <p className="tool"><i className="far fa-image"></i> Adobe Photoshop <i className="fas fa-image"></i></p>
+          <p className="tool"><i class="fa-brands fa-figma"></i> Figma <i class="fa-brands fa-figma"></i></p>
         </div>
       </div>
     </div>

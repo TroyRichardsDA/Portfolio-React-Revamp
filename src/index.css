@@ -63,9 +63,16 @@ nav {
   align-items: center;
 }
 
-.homeBtn {
-  font-size: 1.5rem;
-  color: var(--highlightColor);
+
+#logo {
+  width: 50px;
+  height: 52px;
+  opacity: .6;
+  transition: all .5s;
+}
+
+#logo:hover {
+  opacity: 1;
 }
 
 .dropbtn {
@@ -215,7 +222,7 @@ Skills
   color: var(--dimHighlightColor);
   text-align: center;
   padding: 15px 20px;
-  transition: all .7s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .skill:hover,
@@ -712,7 +719,7 @@ Desktop
   ==================*/
 
   .App {
-    max-width: 1050px;
+    max-width: 980px;
   }
 
   /*======================
@@ -720,6 +727,10 @@ Desktop
   Desktop: Navbar
   
   ====================*/
+
+  nav {
+    padding: 20px 50px 0;
+  }
 
   nav ul li {
     font-size: 1.1rem;
@@ -820,7 +831,7 @@ Desktop
 
 
   .about-desc {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.4rem;
     line-height: 2rem;
@@ -838,7 +849,7 @@ Desktop
   }
 
   .contact-text {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 5rem;
     font-size: 1.4rem;
