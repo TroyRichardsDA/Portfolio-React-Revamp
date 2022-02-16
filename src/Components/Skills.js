@@ -1,22 +1,24 @@
 export function Skills() {
   return (
   <section id="skills">
-    <h2 class="skills-header"><i class="fas fa-tasks"></i>Skills</h2>
-    <h3 class="skills-subheader">Developer Skills</h3>
-    <div class="skills-wrap">
-      <p class="skill"><i class="fab fa-html5"></i> HTML <i class="fab fa-html5"></i></p>
-      <p class="skill"><i class="fab fa-css3"></i> CSS <i class="fab fa-css3"></i></p>
-      <p class="skill"><i class="fab fa-js"></i> JavaScript <i class="fab fa-js"></i></p>
-      <p class="skill"><i class="fab fa-react"></i>  React <i class="fab fa-react"></i> </p>
-      <p class="skill"><i class="fas fa-mobile-alt"></i> Responsive Web Development <i class="fas fa-laptop"></i></p>
-    </div>
-    <h3 class="tool-subheader">Tools & Platforms</h3>  
-    <div class="tools-wrap">
-      <p class="tool"><i class="fab fa-git-alt"></i> Git | GitHub <i class="fab fa-github-square"></i></p>
-      <p class="tool"><i class="fab fa-chrome"></i> Chrome DevTools <i class="fas fa-tools"></i></p>
-      <p class="tool"><i class="fab fa-codepen"></i> Codepen <i class="fab fa-codepen"></i></p>
-      <p class="tool"><i class="fas fa-code-branch"></i> Github Pages <i class="fas fa-code-branch"></i></p>
-      <p class="tool"><i class="far fa-image"></i> Adobe Photoshop <i class="fas fa-image"></i></p>
+      <h2 className="skills-header"><i class="fas fa-tasks"></i>Skills</h2>
+    <div className="skills-content">
+      <h3 className="skills-subheader">Developer Skills</h3>
+      <div class="devskills-wrap">
+        <p className="skill"><i className="fab fa-html5"></i> HTML <i className="fab fa-html5"></i></p>
+        <p className="skill"><i className="fab fa-css3"></i> CSS <i className="fab fa-css3"></i></p>
+        <p className="skill"><i class="fab fa-js"></i> JavaScript <i className="fab fa-js"></i></p>
+        <p className="skill"><i className="fab fa-react"></i>  React <i className="fab fa-react"></i> </p>
+        <p className="skill"><i className="fas fa-mobile-alt"></i> Responsive Web Development <i className="fas fa-laptop"></i></p>
+      </div>
+      <h3 className="tool-subheader">Tools & Platforms</h3>
+      <div className="tools-wrap">
+        <p className="tool"><i className="fab fa-git-alt"></i> Git | GitHub <i className="fab fa-github-square"></i></p>
+        <p className="tool"><i className="fab fa-chrome"></i> Chrome DevTools <i className="fas fa-tools"></i></p>
+        <p className="tool"><i className="fab fa-codepen"></i> Codepen <i className="fab fa-codepen"></i></p>
+        <p className="tool"><i className="fas fa-code-branch"></i> Github Pages <i className="fas fa-code-branch"></i></p>
+        <p className="tool"><i className="far fa-image"></i> Adobe Photoshop <i className="fas fa-image"></i></p>
+      </div>
     </div>
   </section> 
   )

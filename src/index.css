@@ -179,7 +179,7 @@ Skills
   content: "";
   height: 1px;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
   background-color: var(--mainTextColor);
   box-shadow: 3px 3px 2px var(--highlightColor);
 }
@@ -192,7 +192,7 @@ Skills
   color: var(--BrighterText);
 }
 
-.skills-wrap,
+.devskills-wrap,
 .tools-wrap {
   display: flex;
   justify-content: center;
@@ -240,7 +240,7 @@ Skills
   content: "";
   height: 1px;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
   background-color: var(--mainTextColor);
   box-shadow: 3px 3px 2px var(--highlightColor);
 }
@@ -375,7 +375,7 @@ About
   content: "";
   height: 1px;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 15px;
   background-color: var(--mainTextColor);
   box-shadow: 3px 3px 2px var(--highlightColor);
 }
@@ -592,11 +592,44 @@ Tablet
 
 
   
+  
+  
+  /*=====================
+  
+  Tablet: Skills
+  
+  ==================*/
+  
+  .skills-header {
+    font-size: 1.7rem;
+    justify-content: left;
+  }
+
+  .skills-header::after {
+    width: 300px;
+  }
+  
+  .skills-subheader,
+  .tool-subheader {
+    font-size: 1.3rem;
+  }
+  
+  .skill, 
+  .tool {
+    font-weight: bolder;
+    width: 45%;
+    text-transform: uppercase;
+  }
+  
   /*=====================
   
   Tablet: Projects
   
   ==================*/
+
+  .projects-header {
+    font-size: 1.7rem;
+  }
 
   .projects-subtitle {
     font-size: 1.3rem;
@@ -607,41 +640,6 @@ Tablet
     grid-template-columns: 1fr 1fr;
   }
   
-  .projects-header {
-    font-size: 3.23em;
-  }
-  
-  
-  /*=====================
-  
-  Tablet: Skills
-  
-  ==================*/
-
-  .skills-header {
-    font-size: 3em
-  }
-  
-  .skills-subheader,
-  .tool-subheader {
-    font-size: 1.4rem;
-  }
-  
-  .skill, 
-  .tool {
-    font-weight: bolder;
-    width: 45%;
-    text-transform: uppercase;
-  }
-  
-  .skills-wrap,
-  .tools-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-  }
-
 
   /*=======================
   
@@ -651,10 +649,11 @@ Tablet
 
 
   .about-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
+    text-align: center;
+  }
+
+  .about-header {
+    font-size: 1.7rem;
   }
 
   #about > h2{
@@ -663,20 +662,13 @@ Tablet
 
   /*====================
   
-  Tablet: Footer
+  Tablet: Contact
   
   ==================*/
 
 
-  .footer-header {
-    margin-bottom: 2rem;
-  }
-
-  .footer-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+  .contact-header {
+    margin: 15rem 0 4rem;
   }
   
   .copyright {
@@ -684,20 +676,21 @@ Tablet
     flex-flow: row wrap
   }
   
-  .social,
-  .hire-me,
-  .location {
-    width: 33%;
-  }
+  /*====================
   
+  Tablet: Footer
+  
+  ==================*/
+
+  footer {
+    margin: 7rem 0 3rem;
+  }
+
   .social-icons i {
-    padding: 0 10px;
+    font-size: 2rem;
   }
-  
-  .social-icons i:hover {
-    color: var(--seconday-color)
-  }
-  
+
+
 }
 
 /*====================
