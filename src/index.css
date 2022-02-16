@@ -93,7 +93,11 @@ nav {
   font-size: 1.2rem;
 }
 
-.nav-item:hover {
+.nav-item a {
+  transition: all .5s;
+}
+
+.nav-item a:hover {
   color: var(--highlightColor);
 }
 
