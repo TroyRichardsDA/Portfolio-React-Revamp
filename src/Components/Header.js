@@ -1,10 +1,23 @@
 export function Header() {
+    let greeting = ["Hello, my name is "]
+    let textPos = 0;
+    let speed = 70;
+
+    function typewriter() {
+        document.getElementById('message').innerHTML =
+        greeting[0].substring(0, textPos) + "<span class='blicker'>|</span>";
+
+        if(textPos++ != greeting[0].length) 
+        setTimeout(typewriter, speed)  
+    }
+
+    window.addEventListener('load', typewriter)
     
     return (
         <header>
             <div id='header' className="header-content">
-                <p className="greeting">
-                    <span>Hello, my name is </span>
+                <p id='message' className="greeting">
+                    {greeting}
                 </p>
                 <h2 className="name">
                     <span>T</span>roy <span>R</span>ichards

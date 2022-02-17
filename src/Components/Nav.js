@@ -45,11 +45,11 @@ function Nav({logo}) {
                     <div id='dd-content' className='dropdown-content'>
                         <ul>
                             <li className="nav-item close-button"> <a onClick={closeBtn} href="#">Close</a></li>
-                            <li className="nav-item"><a href="#skills"> Skills</a></li>
-                            <li className="nav-item"><a href="#projects"> Projects</a></li>
-                            <li className="nav-item"><a href="#about"> About</a></li>
-                            <li className="nav-item"><a href="#contact"> Contact</a></li>
-                            <li className="nav-item resume-nav"><a href="#"> Resume</a></li>
+                            <li className="nav-item"><a href="#skills"><i class="fas fa-tasks"></i> Skills</a></li>
+                            <li className="nav-item"><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                            <li className="nav-item"><a href="#about"><i className="fas fa-user"></i>  About</a></li>
+                            <li className="nav-item"><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+                            <li className="nav-item resume-nav"><a href="#"><i class="fa-solid fa-file"></i> Resume</a></li>
                         </ul>
                     </div>
                 </div>

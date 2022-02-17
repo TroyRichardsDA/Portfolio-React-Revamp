@@ -1,7 +1,7 @@
 export function Skills() {
   return (
   <section id="skills">
-      <h2 className="skills-header"><i class="fas fa-tasks"></i>Skills</h2>
+      <h2 className="skills-header"><i class="header-icon fas fa-tasks"></i>Skills</h2>
     <div className="skills-content">
       <div className='skills-container'>
         <h3 className="skills-subheader">Developer Skills</h3>

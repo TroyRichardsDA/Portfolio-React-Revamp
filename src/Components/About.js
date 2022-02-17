@@ -5,7 +5,7 @@ export function About() {
         <div className="about-wrapper">
 
             <h2 className="about-header">
-                <i className="fas fa-user"></i>  About
+                <i className="header-icon fas fa-user"></i>  About
             </h2>
             <h2 className='about-subheader'>
                 Hello, <br/> 
