@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-Revamp/static/css/main.6a508ab9.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.ac0e01c0.js",
+    "main.css": "/Portfolio-React-Revamp/static/css/main.9d1d8cbe.css",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.4519e429.js",
+    "static/media/word-guess.png": "/Portfolio-React-Revamp/static/media/word-guess.b693791839bd8ccf95de.png",
+    "static/media/repo-gallery.png": "/Portfolio-React-Revamp/static/media/repo-gallery.ce717e8fe927a9163913.png",
+    "static/media/revamp-portfolio.png": "/Portfolio-React-Revamp/static/media/revamp-portfolio.1a8c4c49b6e42858f836.png",
+    "static/media/notes.png": "/Portfolio-React-Revamp/static/media/notes.bf054cde8d4e0687957b.png",
+    "static/media/resume-file.pdf": "/Portfolio-React-Revamp/static/media/resume-file.2cce03ead31bcf407a8c.pdf",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.a3b75007ab7f71876877a6cdfcbe9bae.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
-    "main.6a508ab9.css.map": "/Portfolio-React-Revamp/static/css/main.6a508ab9.css.map",
-    "main.ac0e01c0.js.map": "/Portfolio-React-Revamp/static/js/main.ac0e01c0.js.map"
+    "main.9d1d8cbe.css.map": "/Portfolio-React-Revamp/static/css/main.9d1d8cbe.css.map",
+    "main.4519e429.js.map": "/Portfolio-React-Revamp/static/js/main.4519e429.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a508ab9.css",
-    "static/js/main.ac0e01c0.js"
+    "static/css/main.9d1d8cbe.css",
+    "static/js/main.4519e429.js"
   ]
 }
