@@ -1,4 +1,4 @@
-
+//Text box on Right
 
 export function ProjectsRight({title, liveSite, sourceCode, desc, devWith, img}) {
 
@@ -6,7 +6,7 @@ export function ProjectsRight({title, liveSite, sourceCode, desc, devWith, img})
     return (
         <article className="project-item">
 
-        <div className="project-img-container">
+        <div className="project-img-container project-img-right">
           <a href={liveSite} target="_blank">
             <img class="project-img" src={img} alt={title}/>
           <div className="link-to">
@@ -15,7 +15,7 @@ export function ProjectsRight({title, liveSite, sourceCode, desc, devWith, img})
         </div>
 
         
-         <div className="project-text">
+         <div className="project-text project-text-right">
             <h3 className="project-title">{title}</h3>
              <p className="project-desc">
                {desc}

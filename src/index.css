@@ -42,13 +42,17 @@ a {
 }
 
 .important-text-link {
-  color: var(--highlightColor);
+  color: var(--dimHighlightColor);
   text-decoration: underline;
   transition: all .5s;
 }
 
 .important-text-link:hover {
-  color: var(--BrighterText);
+  color: var(--highlightColor);
+}
+
+.skills-used {
+  color: var(--highlightColor);
 }
 
 /* Header Icons */
@@ -737,17 +741,18 @@ Tablet
   .project-img-container {
     grid-column: 1/3;
     grid-row: 1;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     z-index: 0;
     box-shadow: 40px 20px 20px 6px rgba(48, 46, 46, 0.582);
     border: .3px solid var(--dimHighlightColor);
     transition: all .2s ease-in-out;
   }
 
-  .project-left {
-    max-width: max-content;
-    transform: translateX(-90px);
+  .project-img-left {
+    grid-column: 2 / -1;
+    grid-row: 1;
   }
+
 
   .project-img-container:hover {
     z-index: 2;
@@ -766,6 +771,12 @@ Tablet
     right: 0;
     gap: 10px;
     z-index: 1;
+  }
+
+  .project-text-left {
+    text-align: left;
+    grid-column: 1 / 3;
+    grid-row: 1;
   }
 
   .project-desc {
