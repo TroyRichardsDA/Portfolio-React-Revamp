@@ -11,23 +11,35 @@ export function About() {
                 Hello, <br/> 
                 <small>(...again?)</small>
             </h2>
-            <p className='about-name'>
-                I'm Troy Richards
-            </p>
 
-            <div className="about-desc">
-                <p>
-                I am a Frontend Developer with experience building and designing responsive websites.
-                I am currently looking for a position as a Frontend Developer.
-                </p>
-                <p> 
-                From a young age, I've always been a very heavy gamer. It was, and still somewhat is, 
-                one of my favorite pass time activities. This hobby of mine led me to be very interested in the tech
-                side of the world as I wanted to create and share my own game one day. Whenever I had free time,
-                I would try to learn skills online that would help me achieve that goal which then led me
-                to find a new passion in learning how to code various languages.
-                </p>
-            </div> 
+            <div className="about-content">
+                <div className="about-desc">
+                    <p>
+                    Hello again <small>(3<sup>rd</sup> time but who's counting...)  </small>!
+                    My name is Troy Richards, and I have recently started my journey to becoming
+                    a Frontend Developer. After Covid-19 caused me to lose my job as a server, I
+                    began my hunt for a more stable job. I landed a job at Publix. However, it did
+                    last long due to an unfortunate injury. Thus I began my hunt for at-home work and
+                    came upon Frontend Development. Although I do have a degree in Audio Production,
+                    I find more joy in frontend development. Every day that I can, I am looking for ways
+                    to expand my knowledge and become even better at Development.
+                    </p>
+                    <p>
+                    Although I have a degree in Audio Production granted by Full Sail University, I
+                    have decided to pursue a career in frontend development as I find it more enjoyable.
+                    Every day that I can, I expand my knowledge with the help of Scrimba, SkillCrush,
+                    Frontmentor, YouTube, and Google<small>(The chad of the group)</small>.
+                    </p>
+                    <p>
+                    <span className="important-text">Currently</span>, I am looking for opportunities
+                    to work remotely as a <span className="important-text">Frontend Developer </span> full-time,
+                    part-time, or as an intern.
+                    </p>
+                </div>
+                <div className="about-img">
+
+                </div>
+            </div>
         </div> 
     </section>
     )

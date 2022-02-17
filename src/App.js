@@ -27,7 +27,7 @@ function App() {
         </h2>
         <p class="projects-subtitle">
           Some things I've built. <small> <br/><br/>
-          Pssst... Hey uh: <br/> <i class="fas fa-window-restore"></i> = live site <br/> 
+          Pssst... Hey uh... hover over me: <br/> <i class="fas fa-window-restore"></i> = live site <br/> 
           <i class=" fas fa-file-code"></i> = Source Code</small>
         </p>
         <div className="project-area">
@@ -37,7 +37,7 @@ function App() {
             liveSite='https://ayetone.github.io/Portfolio-React-Revamp/'
             sourceCode="https://github.com/AyeTone/Portfolio-React-Revamp"
             desc={<>A revamp of my portfolio. I rebuilt my portfolio site 
-            into a react app using the knowledge I acquired through Scrimba 
+            into a <span className="skills-used">React</span> app using the knowledge I acquired through <a href="https://scrimba.com/dashboard?tab=overview" className="important-text-link">Scrimba</a>, 
             and <a href={skillCrush} className="important-text-link">Skillcrush</a>. 
             Although the design is not mine (inspired 
             by <a className="important-text-link" href="https://brittanychiang.com/" target="_">Brittany Chiang's</a> website),
@@ -74,7 +74,7 @@ function App() {
             desc={<>A word guessing game with a set amount of guesses allowed before it's game over. 
             The words are fetched from an <span className="skills-used">API</span> at random inside of 
             this <span className="skills-used">React</span> app. The design/bolierplate was 
-            provided by <a href={skillCrush} className="important-text-link">Skillcrush</a></>}
+            provided by <a href={skillCrush} className="important-text-link">Skillcrush</a>.</>}
             devWith = 'React, CSS'
           />
         </div>

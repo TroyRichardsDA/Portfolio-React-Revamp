@@ -1,7 +1,7 @@
 export function Header() {
     let greeting = ["Hello, my name is "]
     let textPos = 0;
-    let speed = 70;
+    let speed = 60;
 
     function typewriter() {
         document.getElementById('message').innerHTML =
@@ -27,7 +27,7 @@ export function Header() {
                     I am a Frontend Developer with experience building and designing responsive websites.
                     I am currently looking for a position as a Frontend Developer.
                 </p>
-                <a href="#" className='header-resume'>Resume</a>
+                <a href={require("../Resume/resume-file.pdf")} target="_blank" className='header-resume'>Resume</a>
             </div>
         </header>
     )

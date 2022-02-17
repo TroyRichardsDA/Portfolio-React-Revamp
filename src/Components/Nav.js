@@ -49,7 +49,7 @@ function Nav({logo}) {
                             <li className="nav-item"><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
                             <li className="nav-item"><a href="#about"><i className="fas fa-user"></i>  About</a></li>
                             <li className="nav-item"><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a></li>
-                            <li className="nav-item resume-nav"><a href="#"><i class="fa-solid fa-file"></i> Resume</a></li>
+                            <li className="nav-item resume-nav"><a href={require("../Resume/resume-file.pdf")} target="_blank"><i class="fa-solid fa-file"></i> Resume</a></li>
                         </ul>
                     </div>
                 </div>
