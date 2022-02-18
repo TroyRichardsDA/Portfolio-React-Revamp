@@ -37,11 +37,13 @@ function App() {
             liveSite='https://ayetone.github.io/Portfolio-React-Revamp/'
             sourceCode="https://github.com/AyeTone/Portfolio-React-Revamp"
             desc={<>A revamp of my portfolio. I rebuilt my portfolio site 
-            into a <span className="skills-used">React</span> app using the knowledge I acquired through <a href="https://scrimba.com/dashboard?tab=overview" className="important-text-link">Scrimba</a>, 
+            into a <span className="skills-used">React</span> app using the knowledge I acquired 
+            through <a href="https://scrimba.com/dashboard?tab=overview" className="important-text-link">Scrimba</a>, 
             and <a href={skillCrush} className="important-text-link">Skillcrush</a>. 
             Although the design is not mine (inspired 
             by <a className="important-text-link" href="https://brittanychiang.com/" target="_">Brittany Chiang's</a> website),
-            the code itself is mine.</>}
+            the code itself is mine. <a className='important-text-link' href="https://ayetone.github.io/Portfolio/">Here</a> is a link to my old portfolio
+            for reference of my improved skills.</>}
             devWith = 'React, CSS'
           />
           <ProjectsLeft 
