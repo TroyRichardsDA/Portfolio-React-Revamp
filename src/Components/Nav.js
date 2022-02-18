@@ -28,7 +28,7 @@ function Nav({logo}) {
         if (prevScroll > currentPos) {
             document.getElementById('nava').style.top = '0'
         } else {
-            document.getElementById('nava').style.top = '-200px'
+            document.getElementById('nava').style.top = '-1000px'
         }
         prevScroll = currentPos
     }
@@ -44,7 +44,7 @@ function Nav({logo}) {
                 <i onClick={showHide} className="dropbtn fas fa-soild fa-bars"></i>
                     <div id='dd-content' className='dropdown-content'>
                         <ul>
-                            <li className="nav-item close-button"> <a onClick={closeBtn} href="#">Close</a></li>
+                            <li className="nav-item close-button"> <a onClick={closeBtn} >Close</a></li>
                             <li className="nav-item"><a href="#skills"><i class="fas fa-tasks"></i> Skills</a></li>
                             <li className="nav-item"><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
                             <li className="nav-item"><a href="#about"><i className="fas fa-user"></i>  About</a></li>
