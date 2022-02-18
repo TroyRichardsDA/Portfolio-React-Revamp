@@ -20,8 +20,7 @@ export function About() {
                     a Frontend Developer. After Covid-19 caused me to lose my job as a server, I
                     began my hunt for a more stable job. I landed a job at Publix. However, it did
                     last long due to an unfortunate injury. Thus I began my hunt for at-home work and
-                    came upon Frontend Development. Although I do have a degree in Audio Production,
-                    I find more joy in frontend development. Every day that I can, I am looking for ways
+                    came upon Frontend Development. Every day that I can, I am looking for ways
                     to expand my knowledge and become even better at Development.
                     </p>
                     <p>
