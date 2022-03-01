@@ -119,23 +119,8 @@ Skills
 
 ======================*/
 
-.skills-header {
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: var(--BrighterText);
-  text-shadow: var(--headerTextShadow);
-}
 
-.skills-header::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  margin-left: 15px;
-  background-color: var(--mainTextColor);
-  box-shadow: 3px 3px 2px var(--highlightColor);
-}
+
 
 .skills-subheader,
 .tool-subheader {
@@ -509,14 +494,7 @@ Tablet
   
   ==================*/
   
-  .skills-header {
-    font-size: 1.7rem;
-    justify-content: left;
-  }
 
-  .skills-header::after {
-    width: 300px;
-  }
   
   .skills-subheader,
   .tool-subheader {
@@ -718,9 +696,6 @@ Desktop
   
   =================*/
   
-  .skills-header::after {
-    width: 500px;
-  }
 
   .skills-content {
     display: flex;
