@@ -24,15 +24,11 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #adadade1;
-  overflow-x: hidden;
   background-color: var(--main-BG);
   background-image: url(/src/topography.svg);
   background-attachment: fixed;
 }
 
-path {
-  fill-opacity: .1;
-}
 
 ul {
   list-style-type: none;
@@ -83,134 +79,24 @@ a {
   padding-right: 10px;
 }
 
-/*======================
-
-ScrollBar
-
-=====================*/
-
-
-
-/*======================
-
-Navbar
-
-=====================*/
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-#logo {
-  width: 50px;
-  height: 52px;
-  opacity: .6;
-  transition: all .5s;
-}
-
-#logo:hover {
-  opacity: 1;
-}
 
 
 
 
 
-
-.open {
-  width: 40%;
-}
-
-.nav-item {
-  padding: 1.4em;
-  font-size: 1.2rem;
-}
-
-.nav-item a {
-  white-space: nowrap;
-  word-spacing: 5px;
-  padding: 8px;
-  transition: all .5s;
-}
-
-.nav-item a:hover {
-  color: var(--highlightColor);
-}
-
-.close-button {
-  text-align: right;
-  padding-bottom: 3rem;
-  transition: all .5;
-  cursor: pointer;
-}
-
-
-
-/*======================
-
----Hero
-
-=======================*/
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding-bottom: 10vh;
-}
-
-.greeting {
-  color: var(--highlightColor);
-  font-family: var(--fnt-tech);
-  font-size: 0.9rem;
-}
 
 .blicker {
   animation: blinker 1s linear infinite;
 }
 
-/* @keyframes blinker {
+@keyframes blinker {
   50% {
     opacity: 0;
   }
-} */
-
-.name {
-  opacity: 0;
-  margin-top: 20px;
-  text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
-  font-size: 2rem;
-  color: var(--BrighterText);
-  animation: floatUp 2s forwards 1.5s;
 }
 
-@keyframes floatUp {
-  from {
-    transform: translate(0, 100px);
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-.hero-header {
-  opacity: 0;
-  font-size: 2rem;
-  margin-top: .5rem;
-  animation: load 2.5s ease forwards 2.3s;
-}
 
-.hero-desc {
-  opacity: 0;
-  animation: load 2.5s ease forwards 2.3s;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-}
 
 @keyframes load {
   0% {
@@ -223,20 +109,8 @@ header {
 }
 
 
-.header-resume {
-  opacity: 0;
-  border: 1px solid var(--highlightColor);
-  color: var(--mainTextColor);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  transition: all .5s;
-  animation: load 2.5s ease forwards 2.3s;
-}
 
-.header-resume:hover {
-  border: 1px solid var(--dimHighlightColor);
-  color: var(--highlightColor);
-}
+
 
 
 /*=======================
@@ -627,27 +501,7 @@ Tablet
 
   ===================*/
 
-  header {
-    margin-top: 4rem;
-  }
   
-  .greeting {
-    font-size: 1rem;
-  }
-  
-  .name {
-    font-size: 3rem;
-  }
-
-  .hero-header {
-    font-size: 2.5rem;
-  }
-
-  .hero-desc {
-    max-width: 540px;
-    margin-top: 3rem;
-  }
-
 
   /*=====================
   
@@ -856,28 +710,6 @@ Desktop
   Desktop: Header
  
   ====================*/
-
-  .greeting {
-    font-size: 1.3rem;
-  }
-
-  .name {
-    padding-top: .4em ;
-    font-size: 3.5rem;
-  }
-
-  .hero-header {
-    font-size: 3rem;
-  }
-
-  .hero-desc {
-    font-size: 1.3rem;
-    margin-top: 2rem;
-  }
-
-  .header-resume {
-    font-size: 1.3rem;
-  }
   
   
   /*====================

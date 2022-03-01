@@ -4,7 +4,7 @@ import { desktop, tablet } from "../../responsive";
 const Container = styled.nav`
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 50%,
     rgba(0, 0, 0, 1) 100%
   );
   width: 100%;
@@ -16,7 +16,7 @@ const Container = styled.nav`
   opacity: 0;
 
   transition: top 0.7s;
-  animation: load 2.5s ease forwards 1s;
+  animation: load 2s ease forwards 1s;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 

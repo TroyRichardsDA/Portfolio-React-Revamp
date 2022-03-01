@@ -1,4 +1,12 @@
-import { Container } from "./HeaderStyles";
+import {
+  Container,
+  Greeting,
+  HeroDesc,
+  HeroHeading,
+  HeroResume,
+  Name,
+  Wrapper,
+} from "./HeaderStyles";
 
 export default function Header() {
   let greeting = ["Hello, my name is "];
@@ -7,8 +15,7 @@ export default function Header() {
 
   function typewriter() {
     document.getElementById("message").innerHTML =
-      greeting[0].substring(0, textPos) +
-      "<span class='animate-pulse'>|</span>";
+      greeting[0].substring(0, textPos) + "<span class='blicker'>|</span>";
 
     if (textPos++ != greeting[0].length) setTimeout(typewriter, speed);
   }
@@ -17,30 +24,26 @@ export default function Header() {
 
   return (
     <Container>
-      <div id="header" className="header-content">
-        <p id="message" className="greeting">
-          {greeting}
-        </p>
-        <h2 className="name">
-          <span>T</span>roy <span>R</span>ichards
-        </h2>
-        <h1 className="hero-header">
+      <Wrapper>
+        <Greeting id="message">{greeting}</Greeting>
+        <Name>Troy Richards</Name>
+        <HeroHeading>
           {" "}
           I type on keyboards and make web things look good.
-        </h1>
-        <p className="hero-desc">
+        </HeroHeading>
+        <HeroDesc>
           I am a Frontend Developer with experience building and designing
           responsive websites. I am currently looking for a position as a
           Frontend Developer.
-        </p>
-        <a
+        </HeroDesc>
+        <HeroResume
           href={require("../../Resume/resume-file.pdf")}
           target="_blank"
           className="header-resume"
         >
           Resume
-        </a>
-      </div>
+        </HeroResume>
+      </Wrapper>
     </Container>
   );
 }
