@@ -5,7 +5,7 @@ export function Header() {
 
     function typewriter() {
         document.getElementById('message').innerHTML =
-        greeting[0].substring(0, textPos) + "<span class='blicker'>|</span>";
+        greeting[0].substring(0, textPos) + "<span class='animate-pulse'>|</span>";
 
         if(textPos++ != greeting[0].length) 
         setTimeout(typewriter, speed)  
