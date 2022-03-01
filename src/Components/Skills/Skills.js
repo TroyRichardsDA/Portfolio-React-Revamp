@@ -1,8 +1,9 @@
 import { SiTailwindcss } from "react-icons/si";
+import { Container } from "./SkillsStyles";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <Container id="skills">
       <h2 className="skills-header">
         <i class="header-icon fas fa-tasks"></i>Skills
       </h2>
@@ -59,6 +60,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 }

@@ -1,3 +1,5 @@
+import { Container } from "./HeaderStyles";
+
 export default function Header() {
   let greeting = ["Hello, my name is "];
   let textPos = 0;
@@ -14,7 +16,7 @@ export default function Header() {
   window.addEventListener("load", typewriter);
 
   return (
-    <header>
+    <Container>
       <div id="header" className="header-content">
         <p id="message" className="greeting">
           {greeting}
@@ -39,6 +41,6 @@ export default function Header() {
           Resume
         </a>
       </div>
-    </header>
+    </Container>
   );
 }

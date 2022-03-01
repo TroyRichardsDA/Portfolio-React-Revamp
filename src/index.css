@@ -1,8 +1,8 @@
 :root {
   --main-BG: #030020;
   --mainTextColor: #adadade1;
-  --highlightColor: rgb(0, 255, 221);
-  --dimHighlightColor: rgba(0, 247, 214, 0.582);
+  --highlightColor: #00ffdd;
+  --dimHighlightColor: rgba(0, 247, 214, 0.58);
   --BrighterText: #f3f3f3;
   --box-shadow:rgba(9, 21, 37, 0.822);
   --fnt-tech: 'Share Tech Mono', monospace;
@@ -26,6 +26,12 @@ body {
   color: #adadade1;
   overflow-x: hidden;
   background-color: var(--main-BG);
+  background-image: url(/src/topography.svg);
+  background-attachment: fixed;
+}
+
+path {
+  fill-opacity: .1;
 }
 
 ul {
@@ -37,10 +43,6 @@ a {
   text-decoration: none;
 }
 
-.App {
-  width: 85%;
-  margin: 0 auto;
-}
 
 .important-text {
   color: var(--highlightColor);
@@ -302,7 +304,6 @@ Skills
 ===============*/
 
 #projects {
-  margin: 10rem 0;
 }
 
 .projects-header {
@@ -611,9 +612,7 @@ Tablet
 @media only screen and (min-width: 768px) {
 /*        General       */
 
-  .App {
-    max-width: 680px;
-  }
+
   
   /*===================
   
@@ -621,32 +620,6 @@ Tablet
   
   ===================*/
 
-  nav {
-    padding: 20px 40px;
-  }
-  
-
-  .close-button {
-    display: none;
-  }
-
-
-  .nav-item {
-    padding: 1rem;
-    font-size: unset;
-  }
-
-  .resume-nav {
-    border: 1px solid var(--highlightColor);
-    color: var(--highlightColor);
-    padding: 1rem 1.3rem;
-    border-radius: 5px;
-    transition: all .5s;
-  }
-
-  .resume-nav:hover {
-    border: 1px solid var(--dimHighlightColor);
-  }
 
   /*====================
 
@@ -864,11 +837,6 @@ Desktop
   Desktop: Gerenal
   
   ==================*/
-
-  .App {
-    max-width: 980px;
-  }
-
   /*======================
   
   Desktop: Navbar

@@ -1,5 +1,7 @@
 // Text Box on Left
 
+import { Container } from "./ProjectsLeftStyles";
+
 export default function ProjectsLeft({
   title,
   liveSite,
@@ -9,7 +11,7 @@ export default function ProjectsLeft({
   img,
 }) {
   return (
-    <article className="project-item">
+    <Container className="project-item">
       <div className="project-text project-text-left">
         <h3 className="project-title">{title}</h3>
         <div className="project-desc">
@@ -38,6 +40,6 @@ export default function ProjectsLeft({
           <div className="link-to"></div>
         </a>
       </div>
-    </article>
+    </Container>
   );
 }
