@@ -16,29 +16,27 @@ import {
 
 function Nav({ logo }) {
   let prevScroll = window.pageYOffset;
-  const dropdown = document.getElementById("dd-content");
-  const navbar = document.getElementById("nava");
 
   function showHide() {
-    dropdown.style.width = "40%";
+    document.getElementById("dd-content").style.width = "50%";
   }
 
   function closeBtn() {
-    dropdown.style.width = "0";
+    document.getElementById("dd-content").style.width = "0";
   }
 
   window.onclick = function (e) {
     if (!e.target.matches(".fa-bars")) {
-      dropdown.style.width = "0";
+      document.getElementById("dd-content").style.width = "0%";
     }
   };
 
   window.onscroll = function () {
     let currentPos = window.pageYOffset;
     if (prevScroll > currentPos) {
-      navbar.style.top = "0";
+      document.getElementById("nava").style.top = "0";
     } else {
-      navbar.style.top = "-1000px";
+      document.getElementById("nava").style.top = "-1000px";
     }
     prevScroll = currentPos;
   };

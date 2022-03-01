@@ -78,9 +78,6 @@ const DropdownContent = styled.div`
 const NavList = styled.ul`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  gap: 2rem;
 
   ${tablet({
     flexDirection: "row",
@@ -103,7 +100,7 @@ const CloseBtn = styled.li`
 
 const NavItem = styled.li`
   font-size: 1.2rem;
-  padding: 1.2rem 1rem;
+  padding: 2rem 1rem;
   white-space: nowrap;
   word-spacing: 2px;
 
@@ -120,26 +117,34 @@ const Link = styled.a`
   }
 `;
 
-const Resume = styled.a`
+const Resume = styled.li`
   font-size: 1.2rem;
-  padding: 1.2rem 1rem;
+  padding: 2rem 1rem;
   white-space: nowrap;
   word-spacing: 2px;
 
   ${tablet({
-    padding: "1rem",
-    fontSize: "unset",
-  })}
-`;
-
-const ResumeLink = styled.a`
-  ${tablet({
     border: "1px solid var(--highlightColor)",
-    color: "var(--highlightColor)",
     padding: "1rem 1.3rem",
     borderRadius: "5px",
     transition: "all .5s",
+    fontSize: "unset",
   })}
+
+  &:hover {
+    ${tablet({
+      border: "1px solid var(--dimHighlightColor)",
+    })}
+  }
+`;
+
+const ResumeLink = styled.a`
+  transition: all 0.5s;
+  &:hover {
+    ${tablet({
+      color: "var(--highlightColor)",
+    })}
+  }
 `;
 
 export {
