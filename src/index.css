@@ -116,17 +116,6 @@ Navbar
 
 
 
-.dropdown-content {
-  position: fixed;
-  height: 100vh;
-  width: 0px;
-  right: 0;
-  background-color: rgba(5, 5, 5, 0.507);
-  top: 0;
-  z-index: 2;
-  transition: width 1s ease-in-out;
-}
-
 
 
 
@@ -640,19 +629,7 @@ Tablet
   .close-button {
     display: none;
   }
-  
-  .dropdown-content {
-    display: block;
-    position: static;
-    background-color: unset;
-    height: unset;
-    width: unset;
-  }
-  
-  .dropdown-content ul {
-    display: flex;
-    background-color: unset;
-  }
+
 
   .nav-item {
     padding: 1rem;
