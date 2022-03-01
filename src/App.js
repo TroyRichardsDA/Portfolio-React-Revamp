@@ -1,11 +1,11 @@
 import Nav from "./Components/Navbar/Nav";
-import { Header } from "./Components/Header";
-import { Skills } from "./Components/Skills";
-import { ProjectsRight } from "./Components/ProjectsRight";
-import { ProjectsLeft } from "./Components/ProjectsLeft";
-import { About } from "./Components/About";
-import { Contact } from "./Components/Contact";
-import { Footer } from "./Components/Footer";
+import Header from "./Components/Header/Header";
+import Skills from "./Components/Skills/Skills";
+import ProjectsRight from "./Components/ProjectsRight/ProjectsRight";
+import ProjectsLeft from "./Components/ProjectsLeft/ProjectsLeft";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import logo from "./logo.svg";
 
 function App() {

@@ -1,6 +1,6 @@
 import { SiTailwindcss } from "react-icons/si";
 
-export function Skills() {
+export default function Skills() {
   return (
     <section id="skills">
       <h2 className="skills-header">
