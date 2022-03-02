@@ -122,42 +122,10 @@ About
 
 =====================*/
 
-.about-header {
-  display: flex;
-  align-items: center;
-  letter-spacing: 2px;
-  color: var(--BrighterText);
-  text-shadow: var(--headerTextShadow);
-  margin-bottom: 4rem;
-}
-
-.about-header::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  margin-left: 15px;
-  background-color: var(--mainTextColor);
-  box-shadow: 3px 3px 2px var(--highlightColor);
-}
-
-.about-subheader {
-  text-align: center;
-  color: var(--highlightColor);
-  font-size: 1.7rem;
-  margin-bottom: 10px;
-}
 
 
-.about-desc {
-  display: grid;
-  gap: 1rem;
-}
 
-#about small {
-  font-size: 11px;
-  color: var(--dimHighlightColor);
-  font-style: italic;
-}
+
 
 
 /*=======================
@@ -275,29 +243,6 @@ Tablet
 @media only screen and (min-width: 768px) {
 /*        General       */
 
-  /*=======================
-  
-  Tablet: About
-  
-  ====================*/
-
-
-  .about-wrapper {
-    text-align: center;
-  }
-
-  .about-header {
-    font-size: 1.7rem;
-  }
-
-  .about-subheader {
-    font-size: 3rem;
-  }
-
-  .about-desc {
-    gap: 2.4rem;
-  }
-
 
   /*====================
   
@@ -370,31 +315,6 @@ Desktop
   
 
 
-  /*===================
-  
-  Desktop: About
-  
-  =================*/
-
-  .about-header {
-    margin-bottom: 5rem;
-  }
-
-  .about-header::after {
-    width: 475px;
-  }
-
-  .about-subheader {
-    font-size: 3rem;
-    line-height: 20px;
-  }
-
-  .about-desc {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    line-height: 2rem;
-  }
 
 
   /*======================
