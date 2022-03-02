@@ -1,24 +1,31 @@
+import {
+  Container,
+  Copyright,
+  LinkIcon,
+  Social,
+  Text,
+  Wrapper,
+} from "./FooterStyles";
+
 export default function Footer() {
   return (
-    <footer>
-      <div className="social-icons">
-        <p>
+    <Container>
+      <Wrapper>
+        <Social className="social-icons">
           <a
             href="https://www.linkedin.com/in/troyrichardstonebeats/"
             target="_blank"
           >
-            <i className="fab fa-linkedin"></i>
+            <LinkIcon className="fab fa-linkedin"></LinkIcon>
           </a>
-        </p>
-        <p>
           <a href="https://github.com/AyeTone" target="_blank">
-            <i className="fab fa-github"></i>
+            <LinkIcon className="fab fa-github"></LinkIcon>
           </a>
-        </p>
-      </div>
-      <div className="copyright">
-        <p>Copyright 2022 | Troy Richards</p>
-      </div>
-    </footer>
+        </Social>
+        <Copyright className="copyright">
+          <Text>Copyright 2022 | Troy Richards</Text>
+        </Copyright>
+      </Wrapper>
+    </Container>
   );
 }

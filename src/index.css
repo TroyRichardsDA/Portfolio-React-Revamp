@@ -80,11 +80,6 @@ a {
 }
 
 
-
-
-
-
-
 .blicker {
   animation: blinker 1s linear infinite;
 }
@@ -94,9 +89,6 @@ a {
     opacity: 0;
   }
 }
-
-
-
 
 @keyframes load {
   0% {
@@ -108,90 +100,5 @@ a {
   }
 }
 
-
-
-
-
-
-
-/*===========================
-
-Footer
-
-===========================*/
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  margin: 5rem 0 2rem;
-}
-
-.social-icons {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.social-icons i {
-  font-size: 1.9rem;
-  color: var(--BrighterText);
-  transition: all .5s ease-in-out;
-}
-
-.social-icons i:hover {
-  color: var(--highlightColor);
-}
-
-
-
-/*===============================================
-
-Media Quries
-
-=================================================*/
-
-
-/*==========================
-
-Tablet
-
-==========================*/
-
-
-@media only screen and (min-width: 768px) {
-/*        General       */
-
-
-  /*====================
-  
-  Tablet: Contact
-  
-  ==================*/
-
-  
-  .copyright {
-    display: flex;
-    flex-flow: row wrap
-  }
-  
-  /*====================
-  
-  Tablet: Footer
-  
-  ==================*/
-
-  footer {
-    margin: 7rem 0 3rem;
-  }
-
-  .social-icons i {
-    font-size: 2rem;
-  }
-
-
-}
 
   
