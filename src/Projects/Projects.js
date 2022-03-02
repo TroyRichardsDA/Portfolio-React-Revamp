@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectItem from "./ProjectItem/ProjectItem";
+import Project from "./Project/Project";
 import {
   Container,
   Header,
@@ -13,10 +13,10 @@ const Projects = () => {
 
   return (
     <Container id="projects">
-      <Header className="projects-header">
+      <Header>
         <i className="header-icon fas fa-code"></i> Projects
       </Header>
-      <SubHeader className="projects-subtitle">
+      <SubHeader>
         Some things I've built.{" "}
         <SmallText>
           {" "}
@@ -27,8 +27,8 @@ const Projects = () => {
           <i className=" fas fa-file-code"></i> = Source Code
         </SmallText>
       </SubHeader>
-      <ProjectsContainer className="project-area">
-        <ProjectItem
+      <ProjectsContainer>
+        <Project
           title="Revamped Portfolio"
           img={require("../images/revamp-portfolio.png")}
           liveSite="https://ayetone.github.io/Portfolio-React-Revamp/"
@@ -68,7 +68,7 @@ const Projects = () => {
           }
           devWith="React, CSS"
         />
-        <ProjectItem
+        <Project
           title="Repo Gallery"
           img={require("../images/repo-gallery.png")}
           liveSite="https://ayetone.github.io/github-repo-gallery/"
@@ -91,7 +91,7 @@ const Projects = () => {
           }
           devWith="Javascript, API"
         />
-        <ProjectItem
+        <Project
           title="Sticky Notes"
           img={require("../images/notes.png")}
           liveSite="https://6vl2y.csb.app/"
@@ -109,7 +109,7 @@ const Projects = () => {
           }
           devWith="React, CSS"
         />
-        <ProjectItem
+        <Project
           title="Guess-The-Word"
           img={require("../images/word-guess.png")}
           liveSite="https://ayetone.github.io/guess-the-word/"
@@ -129,7 +129,7 @@ const Projects = () => {
           }
           devWith="React, CSS"
         />
-        <ProjectItem
+        <Project
           title="Advice Gen App"
           img={require("../images/advice-gen.png")}
           liveSite="https://github.com/AyeTone/Advice-Gen-App"
