@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { desktop, tablet } from "../../responsive";
 
-const Container = styled.nav`
+export const Container = styled.nav`
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0) 50%,
@@ -25,15 +25,15 @@ const Container = styled.nav`
   })}
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-const HomeBtn = styled.a``;
+export const HomeBtn = styled.a``;
 
-const Logo = styled.img`
+export const Logo = styled.img`
   width: 50px;
   height: 52px;
   opacity: 0.6;
@@ -44,9 +44,9 @@ const Logo = styled.img`
   }
 `;
 
-const Navigation = styled.div``;
+export const Navigation = styled.div``;
 
-const DropdownBtn = styled.i`
+export const DropdownBtn = styled.i`
   cursor: pointer;
   font-size: 2rem;
 
@@ -55,7 +55,7 @@ const DropdownBtn = styled.i`
   })}
 `;
 
-const DropdownContent = styled.div`
+export const DropdownContent = styled.div`
   position: fixed;
   height: 100vh;
   width: 0;
@@ -75,7 +75,7 @@ const DropdownContent = styled.div`
   })}
 `;
 
-const NavList = styled.ul`
+export const NavList = styled.ul`
   display: flex;
   flex-direction: column;
 
@@ -85,7 +85,7 @@ const NavList = styled.ul`
   })}
 `;
 
-const CloseBtn = styled.li`
+export const CloseBtn = styled.li`
   text-align: right;
   padding-bottom: 3rem;
   transition: all 0.5;
@@ -98,7 +98,7 @@ const CloseBtn = styled.li`
   })}
 `;
 
-const NavItem = styled.li`
+export const NavItem = styled.li`
   font-size: 1.2rem;
   padding: 2rem 1rem;
   white-space: nowrap;
@@ -110,14 +110,14 @@ const NavItem = styled.li`
   })}
 `;
 
-const Link = styled.a`
+export const Link = styled.a`
   transition: all 0.5s;
   &:hover {
     color: var(--highlightColor);
   }
 `;
 
-const Resume = styled.li`
+export const Resume = styled.li`
   font-size: 1.2rem;
   padding: 2rem 1rem;
   white-space: nowrap;
@@ -138,7 +138,7 @@ const Resume = styled.li`
   }
 `;
 
-const ResumeLink = styled.a`
+export const ResumeLink = styled.a`
   transition: all 0.5s;
   &:hover {
     ${tablet({
@@ -146,19 +146,3 @@ const ResumeLink = styled.a`
     })}
   }
 `;
-
-export {
-  Container,
-  Wrapper,
-  HomeBtn,
-  Logo,
-  Navigation,
-  DropdownBtn,
-  DropdownContent,
-  NavList,
-  CloseBtn,
-  NavItem,
-  Link,
-  Resume,
-  ResumeLink,
-};

@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
-const Container = styled.section`
+export const Container = styled.section`
   background-color: var(--main-BG);
   height: 100vh;
   padding: 7rem 0;
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 85%;
   margin: 0 auto;
 `;
 
-const Header = styled.h2`
+export const Header = styled.h2`
   letter-spacing: 2px;
   display: flex;
   justify-content: space-around;
@@ -43,7 +43,7 @@ const Header = styled.h2`
   })}
 `;
 
-const DevSkills = styled.div`
+export const DevSkills = styled.div`
   display: flex;
   flex-flow: wrap;
   margin: 2rem;
@@ -56,7 +56,7 @@ const DevSkills = styled.div`
   })}
 `;
 
-const DevSkill = styled.p`
+export const DevSkill = styled.p`
   flex: 1;
   min-width: min-content;
   white-space: nowrap;
@@ -77,5 +77,3 @@ const DevSkill = styled.p`
     border-radius: 15px;
   }
 `;
-
-export { Container, Wrapper, Header, DevSkills, DevSkill };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
-const Container = styled.header`
+export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,12 +12,12 @@ const Container = styled.header`
   })}
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 85%;
   margin: 0 auto;
 `;
 
-const Greeting = styled.p`
+export const Greeting = styled.p`
   color: var(--highlightColor);
   font-family: var(--fnt-tech);
   font-size: 0.9rem;
@@ -31,7 +31,7 @@ const Greeting = styled.p`
   })}
 `;
 
-const Name = styled.h1`
+export const Name = styled.h1`
   opacity: 0;
   margin-top: 20px;
   text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
@@ -49,7 +49,7 @@ const Name = styled.h1`
   })}
 `;
 
-const HeroHeading = styled.h2`
+export const HeroHeading = styled.h2`
   opacity: 0;
   font-size: 2rem;
   margin-top: 0.5rem;
@@ -64,7 +64,7 @@ const HeroHeading = styled.h2`
   })}
 `;
 
-const HeroDesc = styled.p`
+export const HeroDesc = styled.p`
   opacity: 0;
   animation: load 2s ease forwards 2.3s;
   margin-top: 2rem;
@@ -81,7 +81,7 @@ const HeroDesc = styled.p`
   })}
 `;
 
-const HeroResume = styled.a`
+export const HeroResume = styled.a`
   opacity: 0;
   border: 1px solid var(--highlightColor);
   color: var(--mainTextColor);
@@ -99,13 +99,3 @@ const HeroResume = styled.a`
     fontSize: "1.3rem",
   })}
 `;
-
-export {
-  Container,
-  Greeting,
-  Wrapper,
-  Name,
-  HeroHeading,
-  HeroDesc,
-  HeroResume,
-};

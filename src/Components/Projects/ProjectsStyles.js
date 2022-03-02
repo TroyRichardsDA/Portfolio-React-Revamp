@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
-const Container = styled.section`
+export const Container = styled.section`
   width: 85%;
   margin: 3rem auto;
 `;
 
-const Header = styled.h2`
+export const Header = styled.h2`
   display: flex;
   align-items: center;
   letter-spacing: 2px;
@@ -31,7 +31,7 @@ const Header = styled.h2`
   })}
 `;
 
-const SubHeader = styled.p`
+export const SubHeader = styled.p`
   text-align: center;
   padding: 2rem 0;
   font-family: var(--fnt-tech);
@@ -45,7 +45,7 @@ const SubHeader = styled.p`
   })}
 `;
 
-const SmallText = styled.span`
+export const SmallText = styled.span`
   font-size: 10px;
   margin-left: 30px;
   transition: all 0.5s;
@@ -56,7 +56,7 @@ const SmallText = styled.span`
   }
 `;
 
-const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.div`
   display: grid;
   margin-top: 2rem;
   gap: 6rem;
@@ -72,5 +72,3 @@ const ProjectsContainer = styled.div`
     gap: "8rem",
   })}
 `;
-
-export { Container, Header, SubHeader, SmallText, ProjectsContainer };

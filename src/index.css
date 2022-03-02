@@ -147,12 +147,6 @@ About
   margin-bottom: 10px;
 }
 
-.about-subheader > small {
-  color: var(--dimHighlightColor);
-  font-size: 10px;
-  font-style: italic;
-}
-
 
 .about-desc {
   display: grid;
@@ -162,6 +156,7 @@ About
 #about small {
   font-size: 11px;
   color: var(--dimHighlightColor);
+  font-style: italic;
 }
 
 

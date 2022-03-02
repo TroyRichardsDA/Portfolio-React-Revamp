@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../../responsive";
 
-const Container = styled.div`
+export const Container = styled.div`
   display: grid;
 
   ${tablet({
@@ -12,7 +12,7 @@ const Container = styled.div`
   })}
 `;
 
-const ImgContainer = styled.div`
+export const ImgContainer = styled.div`
   position: relative;
   display: grid;
   border: 0.3px solid var(--dimHighlightColor);
@@ -33,20 +33,23 @@ const ImgContainer = styled.div`
     transform: "translateY(-30px)",
     zIndex: 0,
     boxShadow: "40px 20px 20px rgba(48, 46, 46, 0.582)",
-    border: "1px solid var(--dimHighlightColor)",
     transition: "all .2s ease-in-out",
   })}
 `;
 
-const LinkedImg = styled.a``;
-
-const Image = styled.img`
+export const LinkedImg = styled.a`
   width: 100%;
+  height: 100%;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: 100%;
   opacity: 0.9;
   border-radius: 5px;
 `;
 
-const ImageCover = styled.div`
+export const ImageCover = styled.div`
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -65,7 +68,7 @@ const ImageCover = styled.div`
   })}
 `;
 
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
   display: grid;
   gap: 2rem;
 
@@ -79,7 +82,7 @@ const TextContainer = styled.div`
   })}
 `;
 
-const Title = styled.h3`
+export const Title = styled.h3`
   text-align: center;
   margin: 4rem 0 0;
   font-size: 1.3rem;
@@ -93,7 +96,7 @@ const Title = styled.h3`
   })}
 `;
 
-const Desc = styled.div`
+export const Desc = styled.div`
   line-height: 1.7rem;
   background-color: var(--projectTextBG);
   padding: 25px;
@@ -106,14 +109,14 @@ const Desc = styled.div`
   })}
 `;
 
-const ProjectLinks = styled.div`
+export const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
   font-size: 1.4rem;
 `;
 
-const Link = styled.a`
+export const Link = styled.a`
   color: var(--dimHighlightColor);
   transition: all 1s ease-in-out;
 
@@ -122,13 +125,13 @@ const Link = styled.a`
   }
 `;
 
-const ProjectSkills = styled.p`
+export const ProjectSkills = styled.p`
   display: grid;
   justify-content: center;
   text-align: center;
 `;
 
-const DevWith = styled.span`
+export const DevWith = styled.span`
   color: var(--highlightColor);
 
   ${tablet({
@@ -138,24 +141,8 @@ const DevWith = styled.span`
   })}
 `;
 
-const Skills = styled.span`
+export const Skills = styled.span`
   color: var(--dimHighlightColor);
   word-spacing: 0.7rem;
   font-family: var(--fnt-tech);
 `;
-
-export {
-  Container,
-  ImgContainer,
-  LinkedImg,
-  Image,
-  ImageCover,
-  TextContainer,
-  Title,
-  Desc,
-  ProjectLinks,
-  Link,
-  ProjectSkills,
-  DevWith,
-  Skills,
-};
