@@ -5,7 +5,7 @@ import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import logo from "./logo.svg";
-import Projects from "./Projects/Projects";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (

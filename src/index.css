@@ -109,11 +109,6 @@ a {
 }
 
 
-/*================
-
----Projects
-
-===============*/
 
 
 
@@ -285,39 +280,6 @@ Tablet
 @media only screen and (min-width: 768px) {
 /*        General       */
 
-
-  
-  /*===================
-  
-  Tablet: Navbar
-  
-  ===================*/
-
-
-  /*====================
-
-  Tablet: Hero
-
-  ===================*/
-
-  
-
-  /*=====================
-
-
-  
-  
-  
-  /*=====================
-  
-  Tablet: Projects
-  
-  ==================*/
-
-
-
-  
-
   /*=======================
   
   Tablet: About
@@ -408,38 +370,9 @@ Desktop
  
   ====================*/
   
-  
-  /*====================
-  
-  Desktop: Skills
-  
-  =================*/
-  
 
-  .skills-content {
-    display: flex;
-    margin: 4rem 0;
-  }
-
-  .skills-container,
-  .tools-container {
-    flex: 1;
-  }
-
-  .skill,
-  .tool {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
   
-  /*====================
-  
-  Desktop: Projects
-  
-  =================*/
-
 
 
   /*===================

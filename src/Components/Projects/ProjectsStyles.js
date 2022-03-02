@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { tablet, desktop } from "../responsive";
+import { tablet, desktop } from "../../responsive";
 
 const Container = styled.section`
   width: 85%;
-  margin: 0 auto;
+  margin: 3rem auto;
 `;
 
 const Header = styled.h2`

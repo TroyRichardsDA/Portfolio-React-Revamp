@@ -30,7 +30,7 @@ const Projects = () => {
       <ProjectsContainer>
         <Project
           title="Revamped Portfolio"
-          img={require("../images/revamp-portfolio.png")}
+          img={require("../../images/revamp-portfolio.png")}
           liveSite="https://ayetone.github.io/Portfolio-React-Revamp/"
           sourceCode="https://github.com/AyeTone/Portfolio-React-Revamp"
           desc={
@@ -70,7 +70,7 @@ const Projects = () => {
         />
         <Project
           title="Repo Gallery"
-          img={require("../images/repo-gallery.png")}
+          img={require("../../images/repo-gallery.png")}
           liveSite="https://ayetone.github.io/github-repo-gallery/"
           sourceCode="https://github.com/AyeTone/github-repo-gallery"
           desc={
@@ -93,7 +93,7 @@ const Projects = () => {
         />
         <Project
           title="Sticky Notes"
-          img={require("../images/notes.png")}
+          img={require("../../images/notes.png")}
           liveSite="https://6vl2y.csb.app/"
           sourceCode="https://codesandbox.io/s/6vl2y"
           desc={
@@ -111,7 +111,7 @@ const Projects = () => {
         />
         <Project
           title="Guess-The-Word"
-          img={require("../images/word-guess.png")}
+          img={require("../../images/word-guess.png")}
           liveSite="https://ayetone.github.io/guess-the-word/"
           sourceCode="https://github.com/AyeTone/guess-the-word"
           desc={
@@ -131,7 +131,7 @@ const Projects = () => {
         />
         <Project
           title="Advice Gen App"
-          img={require("../images/advice-gen.png")}
+          img={require("../../images/advice-gen.png")}
           liveSite="https://github.com/AyeTone/Advice-Gen-App"
           sourceCode="https://ayetone.github.io/Advice-Gen-App/"
           desc={
