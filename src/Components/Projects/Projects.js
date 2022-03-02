@@ -66,7 +66,7 @@ const Projects = () => {
               is a link to my old portfolio for reference of my improved skills.
             </>
           }
-          devWith="React, CSS"
+          devWith="React, Styled Components"
         />
         <Project
           title="Repo Gallery"
