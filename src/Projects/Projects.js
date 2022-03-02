@@ -1,26 +1,33 @@
 import React from "react";
 import ProjectItem from "./ProjectItem/ProjectItem";
+import {
+  Container,
+  Header,
+  ProjectsContainer,
+  SmallText,
+  SubHeader,
+} from "./ProjectsStyles";
 
 const Projects = () => {
   const skillCrush = "https://skillcrush.com/";
 
   return (
-    <section id="projects">
-      <h2 className="projects-header">
+    <Container id="projects">
+      <Header className="projects-header">
         <i className="header-icon fas fa-code"></i> Projects
-      </h2>
-      <p className="projects-subtitle">
+      </Header>
+      <SubHeader className="projects-subtitle">
         Some things I've built.{" "}
-        <small>
+        <SmallText>
           {" "}
           <br />
           <br />
           Pssst... Hey uh... hover over me: <br />{" "}
           <i className="fas fa-window-restore"></i> = live site <br />
           <i className=" fas fa-file-code"></i> = Source Code
-        </small>
-      </p>
-      <div className="project-area">
+        </SmallText>
+      </SubHeader>
+      <ProjectsContainer className="project-area">
         <ProjectItem
           title="Revamped Portfolio"
           img={require("../images/revamp-portfolio.png")}
@@ -123,7 +130,7 @@ const Projects = () => {
           devWith="React, CSS"
         />
         <ProjectItem
-          title="Advice"
+          title="Advice Gen App"
           img={require("../images/advice-gen.png")}
           liveSite="https://github.com/AyeTone/Advice-Gen-App"
           sourceCode="https://ayetone.github.io/Advice-Gen-App/"
@@ -146,10 +153,10 @@ const Projects = () => {
               </span> and <span className="skills-used"> React </span>.
             </>
           }
-          devWith="React, CSS"
+          devWith="React, Tailwind, API"
         />
-      </div>
-    </section>
+      </ProjectsContainer>
+    </Container>
   );
 };
 

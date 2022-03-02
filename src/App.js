@@ -8,8 +8,6 @@ import logo from "./logo.svg";
 import Projects from "./Projects/Projects";
 
 function App() {
-  const skillCrush = "https://skillcrush.com/";
-
   return (
     <div className="App">
       <Nav logo={logo} />

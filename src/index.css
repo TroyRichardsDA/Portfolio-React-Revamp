@@ -115,44 +115,6 @@ a {
 
 ===============*/
 
-#projects {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.projects-header {
-  display: flex;
-  align-items: center;
-  letter-spacing: 2px;
-  color: var(--BrighterText);
-  text-shadow: var(--headerTextShadow);
-}
-
-.projects-header::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  margin-left: 15px;
-  background-color: var(--mainTextColor);
-  box-shadow: 3px 3px 2px var(--highlightColor);
-}
-
-.projects-subtitle {
-  text-align: center;
-  padding: 2rem 0; 
-  font-family: var(--fnt-tech);
-}
-
-.projects-subtitle > small {
-  font-size: 10px;
-  margin-left: 30px;
-  transition: all .5s;
-}
-
-.projects-subtitle > small:hover {
-  font-size: 1em;
-  color: var(--dimHighlightColor);
-}
 
 .project-area {
   display: grid;
@@ -455,13 +417,6 @@ Tablet
   
   ==================*/
 
-  .projects-header {
-    font-size: 1.7rem;
-  }
-
-  .projects-subtitle {
-    font-size: 1.3rem;
-  }
 
   .project-area {
     position: relative;
@@ -655,13 +610,8 @@ Desktop
   
   =================*/
 
-  .projects-header::after {
-    width: 475px;
-  }
 
-  .projects-subtitle {
-    font-size: 1.7rem;
-  }
+
 
   .project-area {
     width: 90%;
