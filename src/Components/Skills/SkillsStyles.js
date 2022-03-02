@@ -8,7 +8,7 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 `;
 
@@ -52,7 +52,7 @@ const DevSkills = styled.div`
   align-items: center;
 
   ${tablet({
-    width: "80%",
+    width: "90%",
   })}
 `;
 
@@ -64,6 +64,7 @@ const DevSkill = styled.p`
   padding: 15px 20px;
 
   text-transform: uppercase;
+  font-weight: bolder;
   letter-spacing: 1px;
 
   border: 1px solid var(--highlightColor);

@@ -2,9 +2,6 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
 const Container = styled.header`
-  width: 80%;
-  margin: 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +12,10 @@ const Container = styled.header`
   })}
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 85%;
+  margin: 0 auto;
+`;
 
 const Greeting = styled.p`
   color: var(--highlightColor);

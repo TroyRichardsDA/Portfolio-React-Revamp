@@ -109,53 +109,6 @@ a {
 }
 
 
-
-
-
-
-/*=======================
-
-Skills
-
-======================*/
-
-
-
-
-.skills-subheader,
-.tool-subheader {
-  text-align: center;
-  margin: 4rem 0;
-  font-size: 1.2rem;
-  color: var(--BrighterText);
-}
-
-.devskills-wrap,
-.tools-wrap {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  gap: 20px;
-}
-
-.skill,
-.tool {
-  letter-spacing: 1px;
-  border: 1px solid var(--highlightColor);
-  color: var(--dimHighlightColor);
-  text-align: center;
-  padding: 15px 20px;
-  transition: all .5s ease-in-out;
-}
-
-.skill:hover,
-.tool:hover {
-  color: var(--highlightColor);
-  border: 1px solid var(--dimHighlightColor);
-  border-radius: 15px;
-}
-
-
 /*================
 
 ---Projects
@@ -163,6 +116,8 @@ Skills
 ===============*/
 
 #projects {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .projects-header {
@@ -489,24 +444,10 @@ Tablet
   
 
   /*=====================
-  
-  Tablet: Skills
-  
-  ==================*/
-  
+
 
   
-  .skills-subheader,
-  .tool-subheader {
-    font-size: 1.3rem;
-  }
   
-  .skill, 
-  .tool {
-    font-weight: bolder;
-    width: 45%;
-    text-transform: uppercase;
-  }
   
   /*=====================
   
@@ -532,13 +473,6 @@ Tablet
     margin: unset;
   }
 
-  .project-item {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    column-gap: 30px;
-  }
 
   .project-img-container {
     grid-column: 1/3;

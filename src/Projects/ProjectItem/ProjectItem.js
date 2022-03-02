@@ -1,6 +1,8 @@
 //Text box on Right
 
-export default function ProjectsRight({
+import { Container } from "./ProjectsItemStyles";
+
+export default function ProjectItem({
   title,
   liveSite,
   sourceCode,
@@ -9,7 +11,7 @@ export default function ProjectsRight({
   img,
 }) {
   return (
-    <article className="project-item">
+    <Container className="project-item">
       <div className="project-img-container project-img-right">
         <a href={liveSite} target="_blank">
           <img className="project-img" src={img} alt={title} />
@@ -39,6 +41,6 @@ export default function ProjectsRight({
           <span className="devWith-skills">{devWith}</span>
         </p>
       </div>
-    </article>
+    </Container>
   );
 }
