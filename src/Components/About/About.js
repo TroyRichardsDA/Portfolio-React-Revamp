@@ -11,16 +11,16 @@ import {
 export default function About() {
   return (
     <Container id="about">
-      <Wrapper className="about-wrapper">
-        <Header className="about-header">
+      <Wrapper>
+        <Header>
           <i className="header-icon fas fa-user"></i> About
         </Header>
-        <SubHeader className="about-subheader">
+        <SubHeader>
           Hello, <br />
           <Small>(...again?)</Small>
         </SubHeader>
 
-        <TextContainer className="about-desc">
+        <TextContainer>
           <Text>
             Hello again{" "}
             <Small>
@@ -45,7 +45,7 @@ export default function About() {
           <Text>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
-            <span className="important-text">Junior Frontend Developer </span>{" "}
+            <span className="important-text">Junoir Frontend Developer </span>{" "}
             full-time, part-time, or as an intern.
           </Text>
         </TextContainer>

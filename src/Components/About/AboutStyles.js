@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.section`
-  width: 85%;
-  margin: auto;
+  background-color: var(--main-BG);
+  padding: 7rem 0;
 `;
 
 export const Wrapper = styled.div`
+  width: 85%;
+  margin: auto;
   text-align: center;
 `;
 

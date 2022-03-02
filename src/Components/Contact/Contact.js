@@ -1,11 +1,21 @@
+import {
+  Container,
+  Header,
+  Link,
+  SubHeader,
+  Text,
+  TextContainer,
+  Wrapper,
+} from "./ContactStyles";
+
 export default function Contact() {
   return (
-    <section id="contact">
-      <div className="contact-content">
-        <h2 className="contact-header">Contact</h2>
-        <div className="contact-text">
-          <h3 className="contact-subheader">Get it touch</h3>
-          <p>
+    <Container id="contact">
+      <Wrapper className="contact-content">
+        <Header className="contact-header">Contact</Header>
+        <TextContainer className="contact-text">
+          <SubHeader className="contact-subheader">Get it touch</SubHeader>
+          <Text>
             <span className="important-text">Currently</span>, I am looking for
             a position as a{" "}
             <span className="important-text">Frontend Developer</span>. I am
@@ -13,14 +23,14 @@ export default function Contact() {
             If you would like to get in contact with me, email would be best
             followed by a direct message on LinkedIn. I will try to get back to
             you as soon as possible. Thank You!
-          </p>
-        </div>
+          </Text>
+        </TextContainer>
 
-        <a className="email-link" href="mailto:troyrichards28@gmail.com">
+        <Link className="email-link" href="mailto:troyrichards28@gmail.com">
           {" "}
           Contact Me
-        </a>
-      </div>
-    </section>
+        </Link>
+      </Wrapper>
+    </Container>
   );
 }

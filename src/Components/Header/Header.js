@@ -39,7 +39,6 @@ export default function Header() {
         <HeroResume
           href={require("../../Resume/resume-file.pdf")}
           target="_blank"
-          className="header-resume"
         >
           Resume
         </HeroResume>
