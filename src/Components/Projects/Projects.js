@@ -11,6 +11,8 @@ import {
 const Projects = () => {
   const skillCrush = "https://skillcrush.com/";
 
+  const frontendMentor = "https://www.frontendmentor.io/home";
+
   return (
     <Container id="projects">
       <Header>
@@ -110,24 +112,26 @@ const Projects = () => {
           devWith="React, CSS"
         />
         <Project
-          title="Guess-The-Word"
-          img={require("../../images/word-guess.png")}
-          liveSite="https://ayetone.github.io/guess-the-word/"
-          sourceCode="https://github.com/AyeTone/guess-the-word"
+          title="Time-Tracking-Dashboard"
+          img={require("../../images/time-tracking-dashboard.png")}
+          liveSite="https://ayetone.github.io/Time-Tracking-Dashboard/"
+          sourceCode="https://github.com/AyeTone/Time-Tracking-Dashboard"
           desc={
             <>
-              A word guessing game with a set amount of guesses allowed before
-              it's game over. The words are fetched from an{" "}
-              <span className="skills-used">API</span> at random inside of this{" "}
-              <span className="skills-used">React</span> app. The
-              design/bolierplate was provided by{" "}
-              <a href={skillCrush} className="important-text-link">
-                Skillcrush
+              This project is an app that changes its presented times depending
+              upon user selection. A javascript file provides the times in JSON
+              format, which I then store in a state for further usage. To
+              complete this challenge presented by{" "}
+              <a href={frontendMentor} className="important-text-link">
+                {" "}
+                FrontendMentor{" "}
               </a>
-              .
+              , I used <span className="skills-used"> React </span>,{" "}
+              <span className="skills-used"> Context API </span>, and{" "}
+              <span className="skills-used"> Styled Components </span>.
             </>
           }
-          devWith="React, CSS"
+          devWith="React, Styled Components, Context API"
         />
         <Project
           title="Advice Gen App"
@@ -139,10 +143,7 @@ const Projects = () => {
               {" "}
               This is app provides random advice provided by an API. This
               project was a challenge provided by{" "}
-              <a
-                href="https://www.frontendmentor.io/home"
-                className="important-text-link"
-              >
+              <a href={frontendMentor} className="important-text-link">
                 {" "}
                 Frontend Mentor
               </a>
