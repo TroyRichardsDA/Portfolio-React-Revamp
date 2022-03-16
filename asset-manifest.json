@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Revamp/static/css/main.9c0b5f8c.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.6ba5b217.js",
-    "static/media/word-guess.png": "/Portfolio-React-Revamp/static/media/word-guess.b693791839bd8ccf95de.png",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.44a80ae0.js",
     "static/media/repo-gallery.png": "/Portfolio-React-Revamp/static/media/repo-gallery.ce717e8fe927a9163913.png",
     "static/media/revamp-portfolio.png": "/Portfolio-React-Revamp/static/media/revamp-portfolio.1a8c4c49b6e42858f836.png",
     "static/media/topography.svg": "/Portfolio-React-Revamp/static/media/topography.fb53d3340eb70058f23c.svg",
+    "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6f1d980721626b1c3885.png",
     "static/media/notes.png": "/Portfolio-React-Revamp/static/media/notes.bf054cde8d4e0687957b.png",
     "static/media/advice-gen.png": "/Portfolio-React-Revamp/static/media/advice-gen.7c47a3208ea3dc7dea30.png",
     "static/media/resume-file.pdf": "/Portfolio-React-Revamp/static/media/resume-file.2cce03ead31bcf407a8c.pdf",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.a3b75007ab7f71876877a6cdfcbe9bae.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
     "main.9c0b5f8c.css.map": "/Portfolio-React-Revamp/static/css/main.9c0b5f8c.css.map",
-    "main.6ba5b217.js.map": "/Portfolio-React-Revamp/static/js/main.6ba5b217.js.map"
+    "main.44a80ae0.js.map": "/Portfolio-React-Revamp/static/js/main.44a80ae0.js.map"
   },
   "entrypoints": [
     "static/css/main.9c0b5f8c.css",
-    "static/js/main.6ba5b217.js"
+    "static/js/main.44a80ae0.js"
   ]
 }
