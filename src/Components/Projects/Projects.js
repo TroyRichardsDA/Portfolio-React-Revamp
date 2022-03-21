@@ -124,7 +124,7 @@ const Projects = () => {
               complete this challenge presented by{" "}
               <a href={frontendMentor} className="important-text-link">
                 {" "}
-                FrontendMentor{" "}
+                Frontend Mentor{" "}
               </a>
               , I used <span className="skills-used"> React </span>,{" "}
               <span className="skills-used"> Context API </span>, and{" "}
