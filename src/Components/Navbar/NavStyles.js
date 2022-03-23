@@ -13,10 +13,7 @@ export const Container = styled.nav`
   left: 0;
   padding: 1.7rem;
   z-index: 2;
-  opacity: 0;
 
-  transition: top 0.7s;
-  animation: load 2s ease forwards 1s;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
@@ -29,6 +26,10 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+
+  transition: top 0.7s;
+  animation: load 2s ease forwards 1s;
 `;
 
 export const HomeBtn = styled.a``;

@@ -1,4 +1,8 @@
-import { SiTailwindcss, SiStyledcomponents } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiStyledcomponents,
+  SiTypescript,
+} from "react-icons/si";
 import {
   Container,
   Header,
@@ -35,6 +39,9 @@ export default function Skills() {
           </DevSkill>
           <DevSkill>
             <SiStyledcomponents /> Styled Components <SiStyledcomponents />{" "}
+          </DevSkill>
+          <DevSkill>
+            <SiTypescript /> TypeScript <SiTypescript />{" "}
           </DevSkill>
           <DevSkill>
             <i className="fab fa-git-alt"></i> Git{" "}
