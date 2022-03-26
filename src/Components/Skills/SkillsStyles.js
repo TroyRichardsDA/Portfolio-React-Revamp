@@ -3,7 +3,7 @@ import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.section`
   background-color: var(--main-BG);
-  height: 100vh;
+  max-height: max-content;
   padding: 7rem 0;
 `;
 
@@ -19,6 +19,8 @@ export const Header = styled.h2`
   align-items: center;
   color: var(--BrighterText);
   text-shadow: var(--headerTextShadow);
+
+  margin-bottom: 100px;
 
   &::after {
     content: "";
@@ -58,7 +60,8 @@ export const DevSkills = styled.div`
 
 export const DevSkill = styled.p`
   flex: 1;
-  min-width: min-content;
+  min-width: max-content;
+
   white-space: nowrap;
   text-align: center;
   padding: 15px 20px;
