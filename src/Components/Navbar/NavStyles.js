@@ -72,6 +72,7 @@ export const DropdownContent = styled.div`
   transition: all 1.25s ease-in-out;
 
   ${tablet({
+    opacity: "1",
     display: "block",
     position: "static",
     backgroundColor: "unset",
