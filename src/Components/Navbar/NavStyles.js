@@ -11,8 +11,10 @@ export const Container = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1.7rem;
+
   z-index: 2;
+
+  transition: 0.7s;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -28,7 +30,8 @@ export const Wrapper = styled.div`
   align-items: center;
   opacity: 0;
 
-  transition: top 0.7s;
+  padding: 1.7rem;
+
   animation: load 2s ease forwards 1s;
 `;
 
@@ -57,7 +60,7 @@ export const DropdownBtn = styled.i`
 `;
 
 export const DropdownContent = styled.div`
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 0;
   right: 0;
@@ -65,14 +68,15 @@ export const DropdownContent = styled.div`
   z-index: 2;
 
   background-color: rgb(5, 5, 5);
-  transition: width 1s ease-in-out;
+  opacity: 0;
+  transition: all 1.25s ease-in-out;
 
   ${tablet({
     display: "block",
     position: "static",
     backgroundColor: "unset",
     height: "unset",
-    width: "unset",
+    width: "100%",
   })}
 `;
 

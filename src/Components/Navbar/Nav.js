@@ -18,25 +18,31 @@ function Nav({ logo }) {
   let prevScroll = window.pageYOffset;
 
   function showHide() {
-    document.getElementById("dd-content").style.width = "50%";
+    document.getElementById("dd-content").style.cssText = `
+    width: 100%;
+    opacity: 1;
+    `;
   }
 
   function closeBtn() {
-    document.getElementById("dd-content").style.width = "0";
+    document.getElementById("dd-content").style.cssText = `
+    width: 0;
+    opacity: 0;
+    `;
   }
-
-  window.onclick = function (e) {
-    if (!e.target.matches(".fa-bars")) {
-      document.getElementById("dd-content").style.width = "0%";
-    }
-  };
 
   window.onscroll = function () {
     let currentPos = window.pageYOffset;
+    let navbar = document.getElementById("nava");
     if (prevScroll > currentPos) {
-      document.getElementById("nava").style.top = "0";
+      navbar.style.top = "0";
     } else {
-      document.getElementById("nava").style.top = "-1000px";
+      navbar.style.top = "-1000px";
+      document.getElementById("dd-content").style.cssText = `
+      transition-duration: 0s;
+      width: 0;
+      opacity: 0;
+      `;
     }
     prevScroll = currentPos;
   };
