@@ -2,7 +2,9 @@ import {
   SiTailwindcss,
   SiStyledcomponents,
   SiTypescript,
+  SiSass,
 } from "react-icons/si";
+import { DiGulp } from "react-icons/di";
 import {
   Container,
   Header,
@@ -44,28 +46,15 @@ export default function Skills() {
             <SiTypescript /> TypeScript <SiTypescript />{" "}
           </DevSkill>
           <DevSkill>
+            <SiSass /> Sass w/ Gulp <DiGulp />{" "}
+          </DevSkill>
+          <DevSkill>
             <i className="fab fa-git-alt"></i> Git{" "}
             <i className="fab fa-git-alt"></i>
           </DevSkill>
           <DevSkill>
             <i className="fab fa-chrome"></i> Chrome DevTools{" "}
             <i className="fas fa-tools"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-codepen"></i> Codepen{" "}
-            <i className="fab fa-codepen"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fas fa-code-branch"></i> Github Pages{" "}
-            <i className="fas fa-code-branch"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="far fa-image"></i> Adobe Photoshop{" "}
-            <i className="fas fa-image"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fa-brands fa-figma"></i> Figma{" "}
-            <i className="fa-brands fa-figma"></i>
           </DevSkill>
         </DevSkills>
       </Wrapper>
