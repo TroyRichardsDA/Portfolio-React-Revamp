@@ -41,11 +41,11 @@ const Projects = () => {
               This application has the option of choosing a different user or
               searching through the repository list. To build this app, I used{" "}
               <span className="skills-used"> React </span>,{" "}
-              <span className="skills-used"> Sass </span>, and{" "}
+              <span className="skills-used"> Sass w/ Gulp </span>, and{" "}
               <span className="skills-used"> REST APIs </span>.
             </>
           }
-          devWith="React, REST API, Sass"
+          devWith="React, REST API, Sass w/ Gulp"
         />
         <Project
           title="Time-Tracking-Dashboard"
@@ -133,22 +133,21 @@ const Projects = () => {
           devWith="React, Tailwind, API"
         />
         <Project
-          title="Sticky Notes"
-          img={require("../../images/notes.png")}
-          liveSite="https://6vl2y.csb.app/"
-          sourceCode="https://codesandbox.io/s/6vl2y"
+          title="Taskify"
+          img={require("../../images/to-do_list.png")}
+          liveSite="https://ayetone.github.io/TodoList-App/"
+          sourceCode="https://github.com/AyeTone/TodoList-App"
           desc={
             <>
-              A Sticky Note app capable of saving rendered notes to the local
-              storage. The design/bolierplate was provided by{" "}
-              <a href={skillCrush} className="important-text-link">
-                Skillcrush
-              </a>{" "}
-              while I programmed the <span className="skills-used">React</span>{" "}
-              and <span className="skills-used">CSS</span> needed.
+              This project is an application that allows the set-up of a task
+              list. The application allows the user to edit, delete, or mark a
+              task as done. To complete this project I used{" "}
+              <span className="skills-used"> React </span>,{" "}
+              <span className="skills-used"> Typescript </span>, and{" "}
+              <span className="skills-used"> Styled Components </span>.
             </>
           }
-          devWith="React, CSS"
+          devWith="React, Styled Components, TypeScript"
         />
       </ProjectsContainer>
     </Container>
