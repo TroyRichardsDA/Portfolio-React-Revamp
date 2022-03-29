@@ -20,7 +20,7 @@ export const Container = styled.nav`
   -webkit-backdrop-filter: blur(4px);
 
   ${tablet({
-    padding: "20px 40px",
+    padding: "10px 40px",
   })}
 `;
 
@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   align-items: center;
   opacity: 0;
 
-  padding: 1.7rem;
+  padding: 1.3rem;
 
   animation: load 2s ease forwards 1s;
 `;
