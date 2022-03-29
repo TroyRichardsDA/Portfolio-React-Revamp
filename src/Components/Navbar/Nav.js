@@ -19,15 +19,14 @@ function Nav({ logo }) {
 
   function showHide() {
     document.getElementById("dd-content").style.cssText = `
+    transition: all 1s ease-in-out;
     width: 100%;
-    opacity: 1;
     `;
   }
 
   function closeBtn() {
     document.getElementById("dd-content").style.cssText = `
     width: 0;
-    opacity: 0;
     `;
   }
 
@@ -39,9 +38,8 @@ function Nav({ logo }) {
     } else {
       navbar.style.top = "-1000px";
       document.getElementById("dd-content").style.cssText = `
-      transition-duration: 0s;
+      transition: 0.25s;
       width: 0;
-      opacity: 0;
       `;
     }
     prevScroll = currentPos;

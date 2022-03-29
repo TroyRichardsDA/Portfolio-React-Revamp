@@ -65,16 +65,12 @@ export const DropdownContent = styled.div`
   width: 0;
   right: 0;
   top: 0;
-  z-index: 2;
 
   background-color: rgb(5, 5, 5);
-  opacity: 0;
-  transition: all 1.25s ease-in-out;
+  transition: all 1s ease-in-out;
 
   ${tablet({
-    opacity: "1",
     display: "block",
-    position: "static",
     backgroundColor: "unset",
     height: "unset",
     width: "100%",
