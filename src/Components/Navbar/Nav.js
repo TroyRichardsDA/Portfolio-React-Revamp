@@ -39,7 +39,6 @@ function Nav({ logo }) {
       navbar.style.top = "-1000px";
       document.getElementById("dd-content").style.cssText = `
       transition: 0.25s;
-      width: 0;
       `;
     }
     prevScroll = currentPos;

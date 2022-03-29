@@ -70,6 +70,7 @@ export const DropdownContent = styled.div`
   transition: all 1s ease-in-out;
 
   ${tablet({
+    position: "relative",
     display: "block",
     backgroundColor: "unset",
     height: "unset",
