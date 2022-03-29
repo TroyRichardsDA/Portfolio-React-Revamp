@@ -45,7 +45,7 @@ export default function About() {
           <Text>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
-            <span className="important-text">Junoir Frontend Developer </span>{" "}
+            <span className="important-text">Frontend Developer </span>{" "}
             full-time, part-time, or as an intern.
           </Text>
         </TextContainer>
