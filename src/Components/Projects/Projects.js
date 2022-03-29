@@ -31,6 +31,45 @@ const Projects = () => {
       </SubHeader>
       <ProjectsContainer>
         <Project
+          title="Github Showcase"
+          img={require("../../images/github-repo-display.png")}
+          liveSite="https://ayetone.github.io/github-repo/"
+          sourceCode="https://github.com/AyeTone/github-repo"
+          desc={
+            <>
+              This project is an application that displays Github users' stats.
+              This application has the option of choosing a different user or
+              searching through the repository list. To build this app, I used{" "}
+              <span className="skills-used"> React </span>,{" "}
+              <span className="skills-used"> Sass </span>, and{" "}
+              <span className="skills-used"> REST APIs </span>.
+            </>
+          }
+          devWith="React, REST API, Sass"
+        />
+        <Project
+          title="Time-Tracking-Dashboard"
+          img={require("../../images/time-tracking-dashboard.png")}
+          liveSite="https://ayetone.github.io/Time-Tracking-Dashboard/"
+          sourceCode="https://github.com/AyeTone/Time-Tracking-Dashboard"
+          desc={
+            <>
+              This project is an app that changes its presented times depending
+              upon user selection. A javascript file provides the times in JSON
+              format, which I then store in a state for further usage. To
+              complete this challenge presented by{" "}
+              <a href={frontendMentor} className="important-text-link">
+                {" "}
+                Frontend Mentor{" "}
+              </a>
+              , I used <span className="skills-used"> React </span>,{" "}
+              <span className="skills-used"> Context API </span>, and{" "}
+              <span className="skills-used"> Styled Components </span>.
+            </>
+          }
+          devWith="React, Styled Components, Context API"
+        />
+        <Project
           title="Revamped Portfolio"
           img={require("../../images/revamp-portfolio.png")}
           liveSite="https://ayetone.github.io/Portfolio-React-Revamp/"
@@ -71,69 +110,6 @@ const Projects = () => {
           devWith="React, Styled Components"
         />
         <Project
-          title="Repo Gallery"
-          img={require("../../images/repo-gallery.png")}
-          liveSite="https://ayetone.github.io/github-repo-gallery/"
-          sourceCode="https://github.com/AyeTone/github-repo-gallery"
-          desc={
-            <>
-              With the help of{" "}
-              <a
-                href={skillCrush}
-                target="_blank"
-                className="important-text-link"
-              >
-                Skillcrush
-              </a>
-              , I was able to build a gallery of all repos posted on Github. The
-              design/bolierplate was provided by, Skillcrush and I programmed
-              the <span className="skills-used"> Javascript</span> and routed
-              the <span className="skills-used"> API's </span> needed.
-            </>
-          }
-          devWith="Javascript, API"
-        />
-        <Project
-          title="Sticky Notes"
-          img={require("../../images/notes.png")}
-          liveSite="https://6vl2y.csb.app/"
-          sourceCode="https://codesandbox.io/s/6vl2y"
-          desc={
-            <>
-              A Sticky Note app capable of saving rendered notes to the local
-              storage. The design/bolierplate was provided by{" "}
-              <a href={skillCrush} className="important-text-link">
-                Skillcrush
-              </a>{" "}
-              while I programmed the <span className="skills-used">React</span>{" "}
-              and <span className="skills-used">CSS</span> needed.
-            </>
-          }
-          devWith="React, CSS"
-        />
-        <Project
-          title="Time-Tracking-Dashboard"
-          img={require("../../images/time-tracking-dashboard.png")}
-          liveSite="https://ayetone.github.io/Time-Tracking-Dashboard/"
-          sourceCode="https://github.com/AyeTone/Time-Tracking-Dashboard"
-          desc={
-            <>
-              This project is an app that changes its presented times depending
-              upon user selection. A javascript file provides the times in JSON
-              format, which I then store in a state for further usage. To
-              complete this challenge presented by{" "}
-              <a href={frontendMentor} className="important-text-link">
-                {" "}
-                Frontend Mentor{" "}
-              </a>
-              , I used <span className="skills-used"> React </span>,{" "}
-              <span className="skills-used"> Context API </span>, and{" "}
-              <span className="skills-used"> Styled Components </span>.
-            </>
-          }
-          devWith="React, Styled Components, Context API"
-        />
-        <Project
           title="Advice Gen App"
           img={require("../../images/advice-gen.png")}
           liveSite="https://github.com/AyeTone/Advice-Gen-App"
@@ -155,6 +131,24 @@ const Projects = () => {
             </>
           }
           devWith="React, Tailwind, API"
+        />
+        <Project
+          title="Sticky Notes"
+          img={require("../../images/notes.png")}
+          liveSite="https://6vl2y.csb.app/"
+          sourceCode="https://codesandbox.io/s/6vl2y"
+          desc={
+            <>
+              A Sticky Note app capable of saving rendered notes to the local
+              storage. The design/bolierplate was provided by{" "}
+              <a href={skillCrush} className="important-text-link">
+                Skillcrush
+              </a>{" "}
+              while I programmed the <span className="skills-used">React</span>{" "}
+              and <span className="skills-used">CSS</span> needed.
+            </>
+          }
+          devWith="React, CSS"
         />
       </ProjectsContainer>
     </Container>
