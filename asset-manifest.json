@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Revamp/static/css/main.9c0b5f8c.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.0ebe79ee.js",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.aa1eef14.js",
     "static/media/revamp-portfolio.png": "/Portfolio-React-Revamp/static/media/revamp-portfolio.1a8c4c49b6e42858f836.png",
     "static/media/topography.svg": "/Portfolio-React-Revamp/static/media/topography.fb53d3340eb70058f23c.svg",
     "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6f1d980721626b1c3885.png",
     "static/media/advice-gen.png": "/Portfolio-React-Revamp/static/media/advice-gen.7c47a3208ea3dc7dea30.png",
-    "static/media/resume-file.pdf": "/Portfolio-React-Revamp/static/media/resume-file.2b652ac15549ef19d424.pdf",
+    "static/media/resume-file.pdf": "/Portfolio-React-Revamp/static/media/resume-file.4da9cc6df3f54359abaa.pdf",
     "static/media/to-do_list.png": "/Portfolio-React-Revamp/static/media/to-do_list.b853a4ff5d04e60c865b.png",
     "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.e65bd1153bd0b6448d39.png",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.a3b75007ab7f71876877a6cdfcbe9bae.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
     "main.9c0b5f8c.css.map": "/Portfolio-React-Revamp/static/css/main.9c0b5f8c.css.map",
-    "main.0ebe79ee.js.map": "/Portfolio-React-Revamp/static/js/main.0ebe79ee.js.map"
+    "main.aa1eef14.js.map": "/Portfolio-React-Revamp/static/js/main.aa1eef14.js.map"
   },
   "entrypoints": [
     "static/css/main.9c0b5f8c.css",
-    "static/js/main.0ebe79ee.js"
+    "static/js/main.aa1eef14.js"
   ]
 }
