@@ -19,14 +19,14 @@ function Nav({ logo }) {
 
   function showHide() {
     document.getElementById("dd-content").style.cssText = `
-    transition: all 1s ease-in-out;
+    visibility: visible;
     width: 100%;
     `;
   }
 
   function closeBtn() {
     document.getElementById("dd-content").style.cssText = `
-    width: 0;
+   
     `;
   }
 

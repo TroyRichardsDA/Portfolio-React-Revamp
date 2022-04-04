@@ -18,7 +18,6 @@ export const Container = styled.nav`
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   ${tablet({
     padding: "10px 40px",
   })}
@@ -68,6 +67,7 @@ export const DropdownContent = styled.div`
 
   background-color: rgb(5, 5, 5);
   transition: all 1s ease-in-out;
+  visibility: visible;
 
   ${tablet({
     position: "relative",

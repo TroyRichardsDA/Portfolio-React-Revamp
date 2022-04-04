@@ -29,6 +29,17 @@ body {
   background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  border: .01px solid rgba(0, 247, 214, 0.291);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--highlightColor);
+  border-radius: 5px;
+}
+
 
 ul {
   list-style-type: none;
