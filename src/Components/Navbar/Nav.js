@@ -15,8 +15,6 @@ import {
 } from "./NavStyles";
 
 function Nav({ logo }) {
-  let prevScroll = window.pageYOffset;
-
   function showHide() {
     document.getElementById("dd-content").style.cssText = `
     visibility: visible;
@@ -29,20 +27,6 @@ function Nav({ logo }) {
    
     `;
   }
-
-  window.onscroll = function () {
-    let currentPos = window.pageYOffset;
-    let navbar = document.getElementById("nava");
-    if (prevScroll > currentPos) {
-      navbar.style.top = "0";
-    } else {
-      navbar.style.top = "-1000px";
-      document.getElementById("dd-content").style.cssText = `
-      transition: 0.25s;
-      `;
-    }
-    prevScroll = currentPos;
-  };
 
   return (
     <Container id="nava">
