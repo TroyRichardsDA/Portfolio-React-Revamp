@@ -1,6 +1,5 @@
 :root {
-  --main-BG: #030020;
-  --mainTextColor: #adadade1;
+  --main-BG: #f8f8f8;
   --highlightColor: #00ffdd;
   --dimHighlightColor: rgba(0, 247, 214, 0.58);
   --BrighterText: #f3f3f3;
@@ -23,10 +22,8 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #adadade1;
+  color: #000000e1;
   background-color: var(--main-BG);
-  background-image: url(/src/topography.svg);
-  background-attachment: fixed;
 }
 
 body::-webkit-scrollbar {

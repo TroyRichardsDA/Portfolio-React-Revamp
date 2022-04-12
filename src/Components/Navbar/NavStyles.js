@@ -2,11 +2,6 @@ import styled from "styled-components";
 import { desktop, tablet } from "../../responsive";
 
 export const Container = styled.nav`
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
   width: 100%;
   position: fixed;
   top: 0;
