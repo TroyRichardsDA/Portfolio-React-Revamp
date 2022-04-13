@@ -46,33 +46,25 @@ function Nav({ logo }) {
                 <p onClick={closeBtn}>Close</p>
               </CloseBtn>
               <NavItem>
-                <Link href="#skills">
+                <Link href="#skills" onClick={closeBtn}>
                   <i className="fas fa-tasks"></i> Skills
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="#projects">
+                <Link href="#projects" onClick={closeBtn}>
                   <i className="fas fa-code"></i> Projects
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="#about">
+                <Link href="#about" onClick={closeBtn}>
                   <i className="fas fa-user"></i> About
                 </Link>
               </NavItem>
               <NavItem>
-                <Link href="#contact">
+                <Link href="#contact" onClick={closeBtn}>
                   <i className="fa-solid fa-address-card"></i> Contact
                 </Link>
               </NavItem>
-              <Resume>
-                <ResumeLink
-                  href={require("../../Resume/resume-file.pdf")}
-                  target="_blank"
-                >
-                  <i className="fa-solid fa-file"></i> Resume
-                </ResumeLink>
-              </Resume>
             </NavList>
           </DropdownContent>
         </Navigation>
