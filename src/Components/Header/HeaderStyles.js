@@ -7,7 +7,8 @@ export const Container = styled.header`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin-top: -40px;
+
+  padding-top: -4rem;
 
   ${tablet({
     marginTop: "4rem",

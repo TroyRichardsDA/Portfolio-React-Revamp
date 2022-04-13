@@ -1,5 +1,6 @@
 :root {
   --main-BG: #f6f6f6;
+  --second-BG: #eaeaea;
   --highlightColor: #00fcdf;
   --dimHighlightColor: rgb(0, 193, 187);
   --BrighterText: #f3f3f3;
@@ -20,7 +21,6 @@
 }
 
 .App {
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   border: .01px solid rgba(0, 247, 214, 0.291);
   border-radius: 5px;
 }
@@ -83,12 +83,6 @@ a {
 
 .skills-used {
   color: var(--highlightColor);
-}
-
-/* Header Icons */
-.header-icon {
-  color: var(--highlightColor);
-  padding-right: 10px;
 }
 
 

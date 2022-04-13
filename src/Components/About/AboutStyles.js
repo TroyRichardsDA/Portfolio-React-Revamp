@@ -2,51 +2,34 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.section`
-  background-color: var(--main-BG);
+  background-color: var(--second-BG);
   padding: 7rem 0;
+
+  border-top: 10px solid var(--highlightColor);
 `;
 
 export const Wrapper = styled.div`
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
+
   text-align: center;
 `;
 
 export const Header = styled.h2`
-  display: flex;
-  align-items: center;
-  letter-spacing: 2px;
-  color: var(--BrighterText);
-  text-shadow: var(--headerTextShadow);
   margin-bottom: 4rem;
 
-  &::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    margin-left: 15px;
-    background-color: var(--mainTextColor);
-    box-shadow: 3px 3px 2px var(--highlightColor);
-
-    ${desktop({
-      width: "475px",
-    })}
-  }
+  letter-spacing: 2px;
+  font-size: 3rem;
 
   ${tablet({
     fontSize: "1.7rem",
   })}
-
-  ${desktop({
-    marginBottom: "5rem",
-  })}
 `;
 
-export const SubHeader = styled.p`
-  text-align: center;
+export const SubHeader = styled.h1`
   color: var(--highlightColor);
-  font-size: 1.7rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 
   ${tablet({
     fontSize: "3rem",

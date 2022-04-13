@@ -15,10 +15,7 @@ export default function About() {
         <Header>
           <i className="header-icon fas fa-user"></i> About
         </Header>
-        <SubHeader>
-          Hello, <br />
-          <Small>(...again?)</Small>
-        </SubHeader>
+        <SubHeader>Hello,</SubHeader>
 
         <TextContainer>
           <Text>
