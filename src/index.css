@@ -1,7 +1,7 @@
 :root {
   --main-BG: #f6f6f6;
-  --highlightColor: #00ee9b;
-  --dimHighlightColor: rgb(0, 247, 239);
+  --highlightColor: #00fcdf;
+  --dimHighlightColor: rgb(0, 193, 187);
   --BrighterText: #f3f3f3;
   --box-shadow:rgba(9, 21, 37, 0.822);
   --fnt-tech: 'Share Tech Mono', monospace;
@@ -19,6 +19,10 @@
   scroll-behavior: smooth;
 }
 
+.App {
+  width: 90%;
+  margin: 0 auto;
+}
 
 body {
   font-family: 'Raleway', sans-serif;
