@@ -66,13 +66,15 @@ export const ToProjects = styled.a`
   position: absolute;
   bottom: 20%;
   left: 30%;
-  border: 1px solid var(--highlightColor);
-  color: var(--mainTextColor);
+
   padding: 1rem 2rem;
+  border: 1px solid var(--highlightColor);
   border-radius: 5px;
+
   transition: all 0.5s;
   animation: load 2s ease forwards 2.3s;
 
+  color: var(--mainTextColor);
   box-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
 
   display: flex;
