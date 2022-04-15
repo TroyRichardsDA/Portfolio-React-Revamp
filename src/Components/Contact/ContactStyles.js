@@ -63,7 +63,8 @@ export const Link = styled.a`
   &:hover {
     border-radius: 10px;
     border: 1px solid var(--dimHighlightColor);
-    color: var(--highlightColor);
+    color: white;
+    background-color: var(--dimHighlightColor);
   }
 
   ${desktop({

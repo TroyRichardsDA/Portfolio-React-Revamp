@@ -86,8 +86,8 @@ export const TextContainer = styled.div`
 export const Title = styled.h3`
   text-align: center;
   margin: 4rem 0 0;
-  font-size: 1.3rem;
-  color: var(--highlightColor);
+  font-size: 2rem;
+  color: var(--dimHighlightColor);
   text-decoration: underline var(--mainTextColor);
   text-underline-offset: 3px;
 
@@ -98,11 +98,13 @@ export const Title = styled.h3`
 `;
 
 export const Desc = styled.div`
-  line-height: 1.7rem;
+  text-align: center;
+  line-height: 2rem;
   background-color: var(--projectTextBG);
   padding: 25px;
 
   ${tablet({
+    textAlign: "right",
     backgroundColor: "var(--projectTextBG)",
     padding: "25px",
     marginTop: "10px",
@@ -112,9 +114,9 @@ export const Desc = styled.div`
 
 export const ProjectLinks = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 30px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 `;
 
 export const Link = styled.a`

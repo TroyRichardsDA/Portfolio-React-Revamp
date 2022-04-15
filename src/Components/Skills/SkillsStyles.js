@@ -21,11 +21,6 @@ export const Header = styled.h2`
   text-shadow: var(--headerTextShadow);
 
   margin-bottom: 100px;
-
-  ${tablet({
-    fontSize: "1.7rem",
-    justifyContent: "left",
-  })}
 `;
 
 export const DevSkills = styled.div`

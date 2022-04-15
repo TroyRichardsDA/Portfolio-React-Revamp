@@ -1,8 +1,8 @@
 :root {
   --main-BG: #f6f6f6;
   --second-BG: #eaeaea;
-  --highlightColor: #00fcdf;
-  --dimHighlightColor: rgb(0, 193, 187);
+  --highlightColor: #00e2c7;
+  --dimHighlightColor: rgb(0, 180, 147);
   --BrighterText: #f3f3f3;
   --box-shadow:rgba(9, 21, 37, 0.822);
   --fnt-tech: 'Share Tech Mono', monospace;

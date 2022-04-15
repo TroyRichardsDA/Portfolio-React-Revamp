@@ -6,12 +6,9 @@ import {
   ProjectsContainer,
   Headings,
   Wrapper,
-  SubHeader,
 } from "./ProjectsStyles";
 
 const Projects = () => {
-  const skillCrush = "https://skillcrush.com/";
-
   const frontendMentor = "https://www.frontendmentor.io/home";
 
   return (
@@ -21,7 +18,6 @@ const Projects = () => {
           <Header>
             <i className="header-icon fas fa-code"></i> Projects
           </Header>
-          <SubHeader>Some things I've built.</SubHeader>
         </Headings>
         <ProjectsContainer>
           <Project
@@ -34,8 +30,8 @@ const Projects = () => {
                 This project is an application that displays Github users'
                 stats. This application has the option of choosing a different
                 user or searching through the repository list. To build this
-                app, I used <span className="skills-used"> React </span>,{" "}
-                <span className="skills-used"> Sass w/ Gulp </span>, and{" "}
+                app, I used <span className="skills-used"> react </span>,{" "}
+                <span className="skills-used"> sass w/ gulp </span>, and{" "}
                 <span className="skills-used"> REST APIs </span>.
               </>
             }
@@ -56,12 +52,11 @@ const Projects = () => {
                   {" "}
                   Frontend Mentor{" "}
                 </a>
-                , I used <span className="skills-used"> React </span>,{" "}
-                <span className="skills-used"> Context API </span>, and{" "}
-                <span className="skills-used"> Styled Components </span>.
+                , I used <span className="skills-used"> react </span>, and{" "}
+                <span className="skills-used"> styled components </span>.
               </>
             }
-            devWith="React, Styled Components, Context API"
+            devWith="React, Styled Components"
           />
           <Project
             title="Advice Gen App"
@@ -80,12 +75,12 @@ const Projects = () => {
                 . I used this challenge as an opportunity to learn and practice
                 my skills with <span className="skills-used">
                   {" "}
-                  Tailwind{" "}
+                  tailwind{" "}
                 </span>{" "}
-                and <span className="skills-used"> React </span>.
+                and <span className="skills-used"> react </span>.
               </>
             }
-            devWith="React, Tailwind, API"
+            devWith="React, Tailwind, REST APIs"
           />
           <Project
             title="Taskify"
@@ -97,9 +92,9 @@ const Projects = () => {
                 This project is an application that allows the set-up of a task
                 list. The application allows the user to edit, delete, or mark a
                 task as done. To complete this project I used{" "}
-                <span className="skills-used"> React </span>,{" "}
-                <span className="skills-used"> Typescript </span>, and{" "}
-                <span className="skills-used"> Styled Components </span>.
+                <span className="skills-used"> react </span>,{" "}
+                <span className="skills-used"> typescript </span>, and{" "}
+                <span className="skills-used"> styled components </span>.
               </>
             }
             devWith="React, Styled Components, TypeScript"
