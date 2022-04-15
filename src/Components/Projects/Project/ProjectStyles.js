@@ -101,6 +101,7 @@ export const Desc = styled.div`
   text-align: center;
   line-height: 2rem;
   background-color: var(--projectTextBG);
+  color: #ffffffe1;
   padding: 25px;
 
   ${tablet({

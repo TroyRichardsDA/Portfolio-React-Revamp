@@ -2,12 +2,12 @@
   --main-BG: #f6f6f6;
   --second-BG: #eaeaea;
   --highlightColor: #00e2c7;
-  --dimHighlightColor: rgb(0, 180, 147);
+  --dimHighlightColor: rgb(0, 202, 165);
   --BrighterText: #f3f3f3;
   --box-shadow:rgba(9, 21, 37, 0.822);
   --fnt-tech: 'Share Tech Mono', monospace;
   --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
-  --projectTextBG:#082238ce;
+  --projectTextBG:#092c36ce;
   --wrapper: 85%;
   --headers: 2.8rem;
   --containerPadding: 8rem 0;
