@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { tablet } from "../../responsive";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--main-BG);
@@ -7,7 +8,7 @@ export const Container = styled.section`
   padding: var(--containerPadding);
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: 85%;
   margin: 0 auto;
 `;

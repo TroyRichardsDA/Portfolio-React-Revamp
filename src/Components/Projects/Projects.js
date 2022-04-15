@@ -13,7 +13,12 @@ const Projects = () => {
 
   return (
     <Container id="projects">
-      <Wrapper>
+      <Wrapper
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+      >
         <Headings>
           <Header>
             <i className="header-icon fas fa-code"></i> Projects

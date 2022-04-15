@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--second-BG);
   padding: var(--containerPadding);
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: var(--wrapper);
   margin: 0 auto;
 `;
@@ -48,7 +49,7 @@ export const SmallText = styled.span`
   }
 `;
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled(motion.div)`
   display: grid;
   margin-top: 2rem;
   gap: 6rem;

@@ -16,7 +16,12 @@ import {
 export default function Skills() {
   return (
     <Container id="skills">
-      <Wrapper>
+      <Wrapper
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+      >
         <Header className="skills-header">
           <i class="header-icon fas fa-tasks"></i> Skills
         </Header>

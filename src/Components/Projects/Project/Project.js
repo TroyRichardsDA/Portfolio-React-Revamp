@@ -23,7 +23,12 @@ export default function Project({
   img,
 }) {
   return (
-    <Container>
+    <Container
+      initial={{ x: -300, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 2 }}
+    >
       <ImgContainer>
         <LinkedImg href={liveSite} target="_blank">
           <Image src={img} alt={title} />

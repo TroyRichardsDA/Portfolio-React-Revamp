@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../../responsive";
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: grid;
 
   ${tablet({
@@ -12,7 +13,7 @@ export const Container = styled.div`
   })}
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled(motion.div)`
   position: relative;
   display: grid;
 
@@ -69,7 +70,7 @@ export const ImageCover = styled.div`
   })}
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled(motion.div)`
   display: grid;
   gap: 2rem;
 

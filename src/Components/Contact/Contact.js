@@ -11,7 +11,12 @@ import {
 export default function Contact() {
   return (
     <Container id="contact">
-      <Wrapper className="contact-content">
+      <Wrapper
+        className="contact-content"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
         <Header className="contact-header">
           <i className="fa-solid fa-address-card"></i> Contact
         </Header>
