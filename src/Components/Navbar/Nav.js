@@ -46,6 +46,11 @@ function Nav({ logo }) {
                 <p onClick={closeBtn}>Close</p>
               </CloseBtn>
               <NavItem>
+                <Link href="#about" onClick={closeBtn}>
+                  <i className="fas fa-user"></i> About
+                </Link>
+              </NavItem>
+              <NavItem>
                 <Link href="#skills" onClick={closeBtn}>
                   <i className="fas fa-tasks"></i> Skills
                 </Link>
@@ -53,11 +58,6 @@ function Nav({ logo }) {
               <NavItem>
                 <Link href="#projects" onClick={closeBtn}>
                   <i className="fas fa-code"></i> Projects
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="#about" onClick={closeBtn}>
-                  <i className="fas fa-user"></i> About
                 </Link>
               </NavItem>
               <NavItem>

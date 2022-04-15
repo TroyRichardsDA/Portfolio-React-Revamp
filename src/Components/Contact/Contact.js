@@ -12,7 +12,9 @@ export default function Contact() {
   return (
     <Container id="contact">
       <Wrapper className="contact-content">
-        <Header className="contact-header">Contact</Header>
+        <Header className="contact-header">
+          <i className="fa-solid fa-address-card"></i> Contact
+        </Header>
         <TextContainer className="contact-text">
           <SubHeader className="contact-subheader">Get it touch</SubHeader>
           <Text>

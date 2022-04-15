@@ -22,10 +22,11 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 0;
 
   padding: 1.3rem;
+  margin: 0 auto;
 
+  opacity: 0;
   animation: load 2s ease forwards 1s;
 `;
 
@@ -47,6 +48,7 @@ export const Navigation = styled.div``;
 export const DropdownBtn = styled.i`
   cursor: pointer;
   font-size: 2rem;
+  padding: 10px;
 
   ${tablet({
     display: "none",
@@ -66,6 +68,7 @@ export const DropdownContent = styled.div`
 
   ${tablet({
     position: "relative",
+    transition: "0s",
     display: "block",
     backgroundColor: "unset",
     height: "unset",
@@ -81,6 +84,7 @@ export const NavList = styled.ul`
   text-align: center;
 
   ${tablet({
+    gap: "1rem",
     flexDirection: "row",
     backgroundColor: "unset",
   })}
@@ -111,6 +115,7 @@ export const NavItem = styled.li`
   word-spacing: 2px;
 
   ${tablet({
+    color: "black",
     padding: "1rem",
     fontSize: "unset",
   })}
@@ -125,5 +130,13 @@ export const Link = styled.a`
   &:hover {
     color: var(--highlightColor);
     padding: 30px 70px;
+
+    ${tablet({
+      padding: "30px 10px",
+    })}
   }
+
+  ${tablet({
+    color: "black",
+  })}
 `;

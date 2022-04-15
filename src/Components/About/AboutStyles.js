@@ -3,13 +3,13 @@ import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.section`
   background-color: var(--second-BG);
-  padding: 7rem 0;
+  padding: var(--containerPadding);
 
   border-top: 10px solid var(--highlightColor);
 `;
 
 export const Wrapper = styled.div`
-  width: 85%;
+  width: var(--wrapper);
   margin: 0 auto;
 
   text-align: center;
@@ -19,17 +19,13 @@ export const Header = styled.h2`
   margin-bottom: 4rem;
 
   letter-spacing: 2px;
-  font-size: 3rem;
-
-  ${tablet({
-    fontSize: "1.7rem",
-  })}
+  font-size: var(--headers);
 `;
 
 export const SubHeader = styled.h1`
   color: var(--highlightColor);
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   ${tablet({
     fontSize: "3rem",
@@ -50,6 +46,7 @@ export const Small = styled.span`
 export const TextContainer = styled.div`
   display: grid;
   gap: 1.5rem;
+  line-height: 2rem;
 
   ${tablet({
     gap: "2.4rem",

@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { tablet, desktop } from "../../responsive";
+import { tablet } from "../../responsive";
 
 export const Container = styled.section`
   background-color: var(--main-BG);
   max-height: max-content;
-  padding: 7rem 0;
+  padding: var(--containerPadding);
 `;
 
 export const Wrapper = styled.div`
@@ -13,31 +13,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
+  text-align: center;
+
   letter-spacing: 2px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: var(--BrighterText);
+  font-size: var(--headers);
+
   text-shadow: var(--headerTextShadow);
 
   margin-bottom: 100px;
-
-  &::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    margin-left: 15px;
-    background-color: var(--mainTextColor);
-    box-shadow: 3px 3px 2px var(--highlightColor);
-
-    ${tablet({
-      width: "300px",
-    })}
-
-    ${desktop({
-      width: "500px",
-    })}
-  }
 
   ${tablet({
     fontSize: "1.7rem",

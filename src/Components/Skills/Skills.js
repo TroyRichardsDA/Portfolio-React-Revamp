@@ -18,7 +18,7 @@ export default function Skills() {
     <Container id="skills">
       <Wrapper>
         <Header className="skills-header">
-          <i class="header-icon fas fa-tasks"></i>Skills
+          <i class="header-icon fas fa-tasks"></i> Skills
         </Header>
         <DevSkills>
           <DevSkill>

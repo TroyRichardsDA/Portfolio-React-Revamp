@@ -9,15 +9,15 @@ import {
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Header() {
-  let name = ["Troy Richards "];
+  let name = ["Troy Richards."];
   let textPos = 0;
-  let speed = 60;
+  let speed = 200;
 
   function typewriter() {
     document.getElementById("message").innerHTML =
       name[0].substring(0, textPos) + "<span class='blicker'>|</span>";
 
-    if (textPos++ != name[0].length) setTimeout(typewriter, speed);
+    if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
   }
 
   window.addEventListener("load", typewriter);
@@ -27,7 +27,7 @@ export default function Header() {
       <Wrapper>
         <Greeting>Hello, I'm</Greeting>
         <Name id="message">{name}</Name>
-        <HeroHeading> I'm a Front End Developer</HeroHeading>
+        <HeroHeading> I'm a Front End Developer.</HeroHeading>
         <ToProjects href="#projects">
           View My Work{" "}
           <span>

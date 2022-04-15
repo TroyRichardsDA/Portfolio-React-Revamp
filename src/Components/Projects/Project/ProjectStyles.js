@@ -15,16 +15,17 @@ export const Container = styled.div`
 export const ImgContainer = styled.div`
   position: relative;
   display: grid;
+
   border: 0.3px solid var(--dimHighlightColor);
   box-shadow: 10px 10px 10px 6px rgba(48, 46, 46, 0.582);
   border-radius: 5px;
 
+  transition: 0.2s;
+
   &:hover {
-    ${tablet({
-      zIndex: 2,
-      boxShadow: "unset",
-      opacity: 1,
-    })}
+    opacity: 1;
+    z-index: 2;
+    box-shadow: unset;
   }
 
   ${tablet({

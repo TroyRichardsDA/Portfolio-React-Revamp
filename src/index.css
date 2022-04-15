@@ -8,6 +8,9 @@
   --fnt-tech: 'Share Tech Mono', monospace;
   --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
   --projectTextBG:#082238ce;
+  --wrapper: 85%;
+  --headers: 2.8rem;
+  --containerPadding: 8rem 0;
 }
 
 *,
@@ -88,7 +91,7 @@ a {
 
 
 .blicker {
-  animation: blinker 1s linear infinite;
+  animation: blinker 2s linear infinite;
 }
 
 @keyframes blinker {
@@ -99,7 +102,6 @@ a {
 
 @keyframes load {
   0% {
-    transform: translate(0px, 90px);
     opacity: 0;
   }
   100%{

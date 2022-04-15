@@ -2,33 +2,25 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.section`
-  width: 85%;
-  margin: 3rem auto;
+  background-color: var(--second-BG);
+  padding: var(--containerPadding);
 `;
 
+export const Wrapper = styled.div`
+  width: var(--wrapper);
+  margin: 0 auto;
+`;
+
+export const Headings = styled.div``;
+
 export const Header = styled.h2`
-  display: flex;
-  align-items: center;
+  text-align: center;
+  font-size: var(--headers);
+
   letter-spacing: 2px;
-  color: var(--BrighterText);
   text-shadow: var(--headerTextShadow);
 
-  &::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-    margin-left: 15px;
-    background-color: var(--mainTextColor);
-    box-shadow: 3px 3px 2px var(--highlightColor);
-
-    ${tablet({
-      width: "475px",
-    })}
-  }
-
-  ${tablet({
-    fontSize: "1.7rem",
-  })}
+  ${tablet({})}
 `;
 
 export const SubHeader = styled.p`
