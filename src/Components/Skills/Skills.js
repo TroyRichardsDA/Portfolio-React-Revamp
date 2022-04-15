@@ -22,7 +22,7 @@ export default function Skills() {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
-        <Header className="skills-header">
+        <Header>
           <i class="header-icon fas fa-tasks"></i> Skills
         </Header>
         <DevSkills>

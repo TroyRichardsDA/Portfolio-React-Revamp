@@ -51,9 +51,12 @@ export const DevSkill = styled.p`
 
   border: 1px solid var(--highlightColor);
   color: var(--dimHighlightColor);
-  transition: all 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  text-shadow: 0px 10px 20px grey;
 
   &:hover {
+    box-shadow: 0px 10px 20px grey;
+
     color: var(--highlightColor);
     border: 1px solid var(--dimHighlightColor);
     border-radius: 15px;

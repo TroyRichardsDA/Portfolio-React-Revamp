@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { desktop, tablet } from "../../responsive";
+import { tablet } from "../../responsive";
 
 export const Container = styled.nav`
   width: 100%;
@@ -35,7 +35,7 @@ export const HomeBtn = styled.a``;
 export const Logo = styled.img`
   width: 50px;
   height: 52px;
-  opacity: 0.6;
+  opacity: 0.4;
   transition: all 0.5s;
 
   &:hover {
@@ -49,6 +49,13 @@ export const DropdownBtn = styled.i`
   cursor: pointer;
   font-size: 2rem;
   padding: 10px;
+  transition: 0.25s;
+
+  &:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 5px 10px grey;
+    color: var(--highlightColor);
+  }
 
   ${tablet({
     display: "none",
@@ -63,12 +70,10 @@ export const DropdownContent = styled.div`
   top: 0;
 
   background-color: rgb(5, 5, 5);
-  transition: all 1s ease-in-out;
-  visibility: visible;
 
   ${tablet({
     position: "relative",
-    transition: "0s",
+    transition: "unset",
     display: "block",
     backgroundColor: "unset",
     height: "unset",
@@ -101,6 +106,7 @@ export const CloseBtn = styled.li`
 
   &:hover {
     color: var(--highlightColor);
+    text-shadow: 0px 10px 20px white;
   }
 
   ${tablet({
@@ -124,7 +130,7 @@ export const NavItem = styled.li`
 export const Link = styled.a`
   transition: all 0.5s;
   padding: 30px 10px;
-  border-bottom: 0.02px solid var(--highlightColor);
+  border-bottom: 1px solid var(--highlightColor);
   border-radius: 10%;
 
   &:hover {
@@ -132,7 +138,9 @@ export const Link = styled.a`
     padding: 30px 70px;
 
     ${tablet({
+      borderWidth: "10px",
       padding: "30px 10px",
+      boxShadow: "0px 5px 5px grey",
     })}
   }
 

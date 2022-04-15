@@ -59,7 +59,10 @@ export const Link = styled.a`
   color: var(--dimHighlightColor);
   padding: 1rem 2rem;
   border-radius: 5px;
-  transition: all 0.3s;
+  transition: all 0.5s;
+
+  text-shadow: 0px 10px 10px grey;
+  box-shadow: 0px 10px 20px grey;
 
   &:hover {
     border-radius: 10px;

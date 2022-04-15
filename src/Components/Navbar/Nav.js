@@ -9,22 +9,20 @@ import {
   Navigation,
   NavItem,
   NavList,
-  Resume,
-  ResumeLink,
   Wrapper,
 } from "./NavStyles";
 
 function Nav({ logo }) {
   function showHide() {
     document.getElementById("dd-content").style.cssText = `
-    visibility: visible;
+    transition: all 1s ease-in-out;
     width: 100%;
     `;
   }
 
   function closeBtn() {
     document.getElementById("dd-content").style.cssText = `
-   
+    transition: all 1s ease-in-out;
     `;
   }
 

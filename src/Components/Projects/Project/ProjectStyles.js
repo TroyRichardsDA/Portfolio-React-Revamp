@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tablet, desktop } from "../../../responsive";
+import { tablet } from "../../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
@@ -138,11 +138,12 @@ export const ProjectSkills = styled.p`
 
 export const DevWith = styled.span`
   color: var(--highlightColor);
+  background-color: var(--projectTextBG);
+  padding: 10px;
 
   ${tablet({
     backgroundColor: "var(--projectTextBG)",
     zIndex: " 3",
-    padding: "10px",
   })}
 `;
 

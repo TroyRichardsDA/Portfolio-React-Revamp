@@ -24,10 +24,11 @@ export const Social = styled.div`
 
 export const LinkIcon = styled.i`
   font-size: 1.9rem;
-  color: var(--BrighterText);
-  transition: all 0.5s ease-in-out;
+  color: var(--dimHighlightColor);
+  transition: 0.5s;
 
   &:hover {
+    text-shadow: 0px 10px 10px grey;
     color: var(--highlightColor);
   }
 
