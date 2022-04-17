@@ -3,7 +3,7 @@ import { tablet } from "../../responsive";
 
 export const Container = styled.nav`
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -14,7 +14,7 @@ export const Container = styled.nav`
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   ${tablet({
-    padding: "10px 40px",
+    padding: "2px 20px",
   })}
 `;
 
@@ -23,8 +23,10 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 1.3rem;
+  padding: 10px 30px;
   margin: 0 auto;
+
+  height: 100%;
 
   opacity: 0;
   animation: load 2s ease forwards 1s;
@@ -34,7 +36,6 @@ export const HomeBtn = styled.a``;
 
 export const Logo = styled.img`
   width: 50px;
-  height: 52px;
   opacity: 0.4;
   transition: all 0.5s;
 
@@ -129,7 +130,7 @@ export const NavItem = styled.li`
 
 export const Link = styled.a`
   transition: all 0.5s;
-  padding: 30px 10px;
+  padding: 10px 10px;
   border-bottom: 1px solid var(--highlightColor);
   border-radius: 10%;
 
@@ -139,7 +140,7 @@ export const Link = styled.a`
 
     ${tablet({
       borderWidth: "10px",
-      padding: "30px 10px",
+      padding: "10px 10px",
       boxShadow: "0px 5px 5px grey",
     })}
   }
