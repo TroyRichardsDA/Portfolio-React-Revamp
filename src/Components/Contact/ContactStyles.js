@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 export const Container = styled.section`
   padding: var(--containerPadding);
+  min-height: 110vh;
+  background-color: var(--thrid-BG);
 `;
 
 export const Wrapper = styled(motion.div)`
@@ -19,6 +21,7 @@ export const Header = styled.h2`
   font-size: var(--headers);
   letter-spacing: 2px;
   text-shadow: var(--headerTextShadow);
+  color: var(--AltText);
 
   ${tablet({
     margin: "3rem 0 4rem",
@@ -30,7 +33,12 @@ export const Header = styled.h2`
 `;
 
 export const TextContainer = styled.div`
-  margin: 3rem 0;
+  width: 70%;
+  margin: 3rem auto;
+
+  font-size: 1.1rem;
+  line-height: 40px;
+  color: var(--AltText);
 
   ${desktop({
     width: "70%",
@@ -64,11 +72,14 @@ export const Link = styled.a`
   text-shadow: 0px 10px 10px grey;
   box-shadow: 0px 10px 20px grey;
 
+  background-color: var(--second-BG);
+
   &:hover {
     border-radius: 10px;
     border: 1px solid var(--dimHighlightColor);
     color: white;
     background-color: var(--dimHighlightColor);
+    box-shadow: 0px 5px 100px 10px var(--highlightColor);
   }
 
   ${desktop({
