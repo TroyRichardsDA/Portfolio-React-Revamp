@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-Revamp/static/css/main.86804ef4.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.d98d38e6.js",
+    "main.css": "/Portfolio-React-Revamp/static/css/main.371425ef.css",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.377b438d.js",
     "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6f1d980721626b1c3885.png",
     "static/media/advice-gen.png": "/Portfolio-React-Revamp/static/media/advice-gen.7c47a3208ea3dc7dea30.png",
     "static/media/to-do_list.png": "/Portfolio-React-Revamp/static/media/to-do_list.b853a4ff5d04e60c865b.png",
     "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.e65bd1153bd0b6448d39.png",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.a3b75007ab7f71876877a6cdfcbe9bae.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
-    "main.86804ef4.css.map": "/Portfolio-React-Revamp/static/css/main.86804ef4.css.map",
-    "main.d98d38e6.js.map": "/Portfolio-React-Revamp/static/js/main.d98d38e6.js.map"
+    "main.371425ef.css.map": "/Portfolio-React-Revamp/static/css/main.371425ef.css.map",
+    "main.377b438d.js.map": "/Portfolio-React-Revamp/static/js/main.377b438d.js.map"
   },
   "entrypoints": [
-    "static/css/main.86804ef4.css",
-    "static/js/main.d98d38e6.js"
+    "static/css/main.371425ef.css",
+    "static/js/main.377b438d.js"
   ]
 }
