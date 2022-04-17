@@ -7,7 +7,6 @@ import {
   TextContainer,
   Wrapper,
 } from "./AboutStyles";
-import { useEffect } from "react/cjs/react.development";
 import { useRef } from "react";
 import { useContext } from "react";
 import { ScrollContext } from "../../Context/ScrollObsever";

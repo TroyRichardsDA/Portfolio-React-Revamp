@@ -3,7 +3,7 @@ import { tablet } from "../../responsive";
 
 export const Container = styled.nav`
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 

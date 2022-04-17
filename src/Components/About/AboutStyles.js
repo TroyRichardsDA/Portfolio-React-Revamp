@@ -3,8 +3,9 @@ import { tablet, desktop } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
-  background-color: var(--second-BG);
+  background-color: var(--thrid-BG);
   padding: var(--containerPadding);
+  min-height: 100vh;
 
   border-top: 10px solid var(--highlightColor);
 `;
@@ -17,6 +18,8 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Header = styled.h2`
+  color: white;
+
   margin-bottom: 4rem;
 
   letter-spacing: 2px;
@@ -62,5 +65,10 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.p`
+  color: white;
   transition: 0.3s;
+
+  cur &:hover {
+    opacity: 1 !important;
+  }
 `;
