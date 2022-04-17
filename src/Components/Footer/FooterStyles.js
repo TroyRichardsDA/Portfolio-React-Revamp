@@ -2,9 +2,7 @@ import styled from "styled-components";
 import { tablet, desktop } from "../../responsive";
 
 export const Container = styled.footer`
-  background-color: var(--main-BG);
-
-  margin-top: 5rem;
+  background-color: var(--thrid-BG);
 `;
 
 export const Wrapper = styled.div`
@@ -25,10 +23,10 @@ export const Social = styled.div`
 export const LinkIcon = styled.i`
   font-size: 1.9rem;
   color: var(--dimHighlightColor);
-  transition: 0.5s;
+  transition: 0.25s ease-in-out;
 
   &:hover {
-    text-shadow: 0px 10px 10px grey;
+    text-shadow: 0px 10px 20px var(--highlightColor);
     color: var(--highlightColor);
   }
 
@@ -39,4 +37,6 @@ export const LinkIcon = styled.i`
 
 export const Copyright = styled.div``;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  color: var(--AltText);
+`;

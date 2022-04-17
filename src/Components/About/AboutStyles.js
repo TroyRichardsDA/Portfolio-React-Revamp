@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--thrid-BG);
-  padding: var(--containerPadding);
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
 
   border-top: 10px solid var(--highlightColor);
 `;
@@ -21,8 +21,6 @@ export const Wrapper = styled(motion.div)`
 export const Header = styled.h2`
   color: white;
 
-  margin-bottom: 4rem;
-
   letter-spacing: 2px;
   font-size: var(--headers);
 `;
@@ -30,7 +28,7 @@ export const Header = styled.h2`
 export const SubHeader = styled.h1`
   color: var(--highlightColor);
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin: 5rem 0;
 
   ${tablet({
     fontSize: "3rem",

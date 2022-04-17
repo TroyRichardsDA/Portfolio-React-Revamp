@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 export const Container = styled.section`
   padding: var(--containerPadding);
-  min-height: 110vh;
   background-color: var(--thrid-BG);
 `;
 
@@ -79,7 +78,7 @@ export const Link = styled.a`
     border: 1px solid var(--dimHighlightColor);
     color: white;
     background-color: var(--dimHighlightColor);
-    box-shadow: 0px 5px 100px 10px var(--highlightColor);
+    box-shadow: 0px 5px 50px 10px var(--highlightColor);
   }
 
   ${desktop({
