@@ -88,9 +88,9 @@ export const Title = styled.h3`
   text-align: center;
   margin: 4rem 0 0;
   font-size: 2rem;
-  color: var(--dimHighlightColor);
-  text-decoration: underline var(--mainTextColor);
-  text-underline-offset: 3px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--highlightColor);
 
   ${tablet({
     margin: "unset",
@@ -107,7 +107,6 @@ export const Desc = styled.div`
 
   ${tablet({
     textAlign: "right",
-    backgroundColor: "var(--projectTextBG)",
     padding: "25px",
     marginTop: "10px",
     boxShadow: "0 10px 30px -15px var(--box-shadow)",
@@ -123,16 +122,19 @@ export const ProjectLinks = styled.div`
 
 export const Link = styled.a`
   color: var(--dimHighlightColor);
-  transition: all 1s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
   &:hover {
     color: var(--highlightColor);
   }
 `;
 
-export const ProjectSkills = styled.p`
-  display: grid;
+export const ProjectSkills = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
   text-align: center;
 `;
 

@@ -5,7 +5,7 @@ export const Container = styled.section`
   background-color: var(--main-BG);
   padding: var(--containerPadding);
 
-  min-height: 100vh;
+  min-height: 80vh;
 `;
 
 export const Wrapper = styled(motion.div)`

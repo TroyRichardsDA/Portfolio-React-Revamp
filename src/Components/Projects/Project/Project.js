@@ -13,6 +13,7 @@ import {
   TextContainer,
   Title,
 } from "./ProjectStyles";
+import Marquee from "react-easy-marquee";
 
 export default function Project({
   title,
@@ -51,7 +52,9 @@ export default function Project({
         </Desc>
         <ProjectSkills className="project-skills">
           <DevWith className="developed-with"> Developed With: </DevWith> <br />
-          <Skills className="devWith-skills">{devWith}</Skills>
+          <Marquee width="70%" duration={6000}>
+            <Skills className="devWith-skills">{devWith}</Skills>
+          </Marquee>
         </ProjectSkills>
       </TextContainer>
     </Container>

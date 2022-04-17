@@ -8,10 +8,10 @@
   --box-shadow:rgba(9, 21, 37, 0.822);
   --fnt-tech: 'Share Tech Mono', monospace;
   --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
-  --projectTextBG:#092c36ce;
+  --projectTextBG:#000000b4 ;
   --wrapper: 85%;
   --headers: 2.8rem;
-  --containerPadding: 3rem 0;
+  --containerPadding: 5rem 0;
   --navBG: linear-gradient(147deg, rgba(255,255,255,0.7986577181208054) 28%, rgba(20,15,0,0.3803131991051454) 85%)
 }
 
