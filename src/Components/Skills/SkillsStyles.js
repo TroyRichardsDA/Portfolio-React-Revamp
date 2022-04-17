@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { tablet } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
@@ -24,19 +23,6 @@ export const Header = styled.h2`
   margin-bottom: 100px;
 `;
 
-export const DevSkills = styled.div`
-  display: flex;
-  flex-flow: wrap;
-  margin: 2rem;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-
-  ${tablet({
-    width: "90%",
-  })}
-`;
-
 export const DevSkill = styled.p`
   flex: 1;
   min-width: max-content;
@@ -44,6 +30,8 @@ export const DevSkill = styled.p`
   white-space: nowrap;
   text-align: center;
   padding: 15px 20px;
+
+  margin: 10px;
 
   text-transform: uppercase;
   font-weight: bolder;
@@ -55,7 +43,8 @@ export const DevSkill = styled.p`
   text-shadow: 0px 10px 20px grey;
 
   &:hover {
-    box-shadow: 0px 10px 20px grey;
+    cursor: default;
+    box-shadow: 0px 5px 9px grey;
 
     color: var(--highlightColor);
     border: 1px solid var(--dimHighlightColor);

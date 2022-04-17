@@ -5,13 +5,8 @@ import {
   SiSass,
 } from "react-icons/si";
 import { DiGulp } from "react-icons/di";
-import {
-  Container,
-  Header,
-  DevSkills,
-  DevSkill,
-  Wrapper,
-} from "./SkillsStyles";
+import { Container, Header, DevSkill, Wrapper } from "./SkillsStyles";
+import Marquee from "react-easy-marquee";
 
 export default function Skills() {
   return (
@@ -25,7 +20,7 @@ export default function Skills() {
         <Header>
           <i class="header-icon fas fa-tasks"></i> Skills
         </Header>
-        <DevSkills>
+        <Marquee duration={8000} className="marquee" pauseOnHover={true}>
           <DevSkill>
             <i className="fab fa-html5"></i> HTML{" "}
             <i className="fab fa-html5"></i>
@@ -42,14 +37,17 @@ export default function Skills() {
             <i className="fab fa-react"></i>{" "}
           </DevSkill>
           <DevSkill>
+            <SiTypescript /> TypeScript <SiTypescript />{" "}
+          </DevSkill>
+        </Marquee>
+        <Marquee pauseOnHover={true} duration={12000}>
+          <DevSkill>
             <SiTailwindcss /> Tailwind <SiTailwindcss />{" "}
           </DevSkill>
           <DevSkill>
             <SiStyledcomponents /> Styled Components <SiStyledcomponents />{" "}
           </DevSkill>
-          <DevSkill>
-            <SiTypescript /> TypeScript <SiTypescript />{" "}
-          </DevSkill>
+
           <DevSkill>
             <SiSass /> Sass w/ Gulp <DiGulp />{" "}
           </DevSkill>
@@ -61,7 +59,7 @@ export default function Skills() {
             <i className="fab fa-chrome"></i> Chrome DevTools{" "}
             <i className="fas fa-tools"></i>
           </DevSkill>
-        </DevSkills>
+        </Marquee>
       </Wrapper>
     </Container>
   );
