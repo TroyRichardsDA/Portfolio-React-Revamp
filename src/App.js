@@ -6,18 +6,21 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import logo from "./logo.svg";
 import Projects from "./Components/Projects/Projects";
+import ScrollObserver from "./Context/ScrollObsever";
 
 function App() {
   return (
-    <div className="App">
-      <Nav logo={logo} />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ScrollObserver>
+      <div className="App">
+        <Nav logo={logo} />
+        <Header />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ScrollObserver>
   );
 }
 

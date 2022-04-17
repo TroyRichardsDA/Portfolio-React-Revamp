@@ -18,9 +18,10 @@ export default function Skills() {
         viewport={{ once: true }}
       >
         <Header>
-          <i class="header-icon fas fa-tasks"></i> Skills
+          <i className="header-icon fas fa-tasks"></i> Skills
         </Header>
-        <Marquee duration={8000} className="marquee" pauseOnHover={true}>
+
+        <Marquee duration={8000} pauseOnHover={true}>
           <DevSkill>
             <i className="fab fa-html5"></i> HTML{" "}
             <i className="fab fa-html5"></i>
@@ -47,7 +48,6 @@ export default function Skills() {
           <DevSkill>
             <SiStyledcomponents /> Styled Components <SiStyledcomponents />{" "}
           </DevSkill>
-
           <DevSkill>
             <SiSass /> Sass w/ Gulp <DiGulp />{" "}
           </DevSkill>

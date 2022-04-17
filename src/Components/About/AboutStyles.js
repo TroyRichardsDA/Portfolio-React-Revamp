@@ -61,4 +61,6 @@ export const TextContainer = styled.div`
   })}
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+  transition: 0.3s;
+`;
