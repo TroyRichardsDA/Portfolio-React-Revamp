@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import {
   CloseBtn,
   Container,
@@ -22,10 +22,11 @@ function Nav({ logo }) {
   }
   function close() {
     document.getElementById("dd-content").style.cssText = `
-    transition: all 1s ease-in-out;
+    width: -100px;
     `;
   }
 
+  /* Nav BG Colors */
   const white = {
     backgroundColor: "rgba( 255, 255, 255, 48%)",
     height: "50px",
@@ -39,9 +40,12 @@ function Nav({ logo }) {
     } else {
       setColorChange(false);
     }
-  });
+  }, []);
 
-  window.addEventListener("scroll", changeNavbarColor);
+  useEffect(() => {
+    document.addEventListener("scroll", changeNavbarColor, { passive: true });
+    return () => document.removeEventListener("scroll", changeNavbarColor);
+  }, [changeNavbarColor]);
 
   return (
     <Container style={!colorChange ? trans : white} id="nava">

@@ -7,9 +7,7 @@ export const Container = styled.nav`
   top: 0;
   left: 0;
 
-  z-index: 2;
-
-  transition: 0.7s;
+  z-index: 10;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -71,10 +69,11 @@ export const DropdownContent = styled.div`
   top: 0;
 
   background-color: rgb(5, 5, 5);
+  transition: 0s;
 
   ${tablet({
     position: "relative",
-    transition: "unset",
+    transition: "0s",
     display: "block",
     backgroundColor: "unset",
     height: "unset",
@@ -90,7 +89,7 @@ export const NavList = styled.ul`
   text-align: center;
 
   ${tablet({
-    gap: "1rem",
+    gap: "10px",
     flexDirection: "row",
     backgroundColor: "unset",
   })}
@@ -130,7 +129,7 @@ export const NavItem = styled.li`
 
 export const Link = styled.a`
   transition: all 0.5s;
-  padding: 10px 10px;
+  padding: 30px 10px;
   border-bottom: 1px solid var(--highlightColor);
   border-radius: 10%;
 
@@ -146,6 +145,7 @@ export const Link = styled.a`
   }
 
   ${tablet({
+    padding: "10px 10px",
     color: "black",
   })}
 `;

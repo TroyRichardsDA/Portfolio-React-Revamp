@@ -21,7 +21,7 @@ export default function Skills() {
           <i className="header-icon fas fa-tasks"></i> Skills
         </Header>
 
-        <Marquee duration={8000} pauseOnHover={true}>
+        <Marquee duration={11000} pauseOnHover={true}>
           <DevSkill>
             <i className="fab fa-html5"></i> HTML{" "}
             <i className="fab fa-html5"></i>

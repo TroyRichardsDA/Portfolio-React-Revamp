@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--main-BG);
-  max-height: max-content;
   padding: var(--containerPadding);
+
+  min-height: 100vh;
 `;
 
 export const Wrapper = styled(motion.div)`

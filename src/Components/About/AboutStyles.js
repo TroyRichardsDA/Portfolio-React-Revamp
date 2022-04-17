@@ -6,6 +6,7 @@ export const Container = styled.section`
   background-color: var(--thrid-BG);
   padding: var(--containerPadding);
   min-height: 100vh;
+  padding-top: 10rem;
 
   border-top: 10px solid var(--highlightColor);
 `;
@@ -68,7 +69,7 @@ export const Text = styled.p`
   color: white;
   transition: 0.3s;
 
-  cur &:hover {
+  &:hover {
     opacity: 1 !important;
   }
 `;
