@@ -30,15 +30,13 @@ export const Wrapper = styled.div`
   animation: load 2s ease forwards 1s;
 `;
 
-export const HomeBtn = styled.a``;
+export const HomeBtn = styled.a`
+  svg {
+    opacity: 0.5;
 
-export const Logo = styled.img`
-  width: 50px;
-  opacity: 0.4;
-  transition: all 0.5s;
-
-  &:hover {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 `;
 

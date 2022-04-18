@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Container = styled.section`
   background-color: var(--thrid-BG);
   min-height: 100vh;
-  padding-top: 7rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
 
   border-top: 10px solid var(--highlightColor);
