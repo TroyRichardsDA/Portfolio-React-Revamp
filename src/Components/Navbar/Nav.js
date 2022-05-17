@@ -28,7 +28,7 @@ function Nav({ logo }) {
 
   /* Nav BG Colors */
   const white = {
-    backgroundColor: "rgba( 255, 255, 255, 48%)",
+    backgroundColor: "rgba( 255, 255, 255, 38%)",
     height: "50px",
   };
   const trans = { backgroundColor: "transparent" };

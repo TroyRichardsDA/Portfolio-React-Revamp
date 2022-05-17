@@ -26,11 +26,13 @@ export default function Contact() {
           <Text>
             <span className="important-text">Currently</span>, I am looking for
             a position as a{" "}
-            <span className="important-text">Frontend Developer</span>. I am
-            open to Full-time, Part-time, or Internship positions at this time.
-            If you would like to get in contact with me, email would be best
-            followed by a direct message on LinkedIn. I will try to get back to
-            you as soon as possible. Thank You!
+            <span className="important-text">
+              Frontend Focused Software Engineer
+            </span>
+            . I am open to Full-time, Part-time, or Internship positions at this
+            time. If you would like to get in contact with me, email would be
+            best followed by a direct message on LinkedIn. I will try to get
+            back to you as soon as possible. Thank You!
           </Text>
         </TextContainer>
 
