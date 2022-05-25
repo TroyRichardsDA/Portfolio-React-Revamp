@@ -26,6 +26,24 @@ const Projects = () => {
         </Headings>
         <ProjectsContainer>
           <Project
+            title="Interactive Comment Section"
+            img={require("../../images/interactive-comment.png")}
+            liveSite="https://ayetone.github.io/interactive-comment-section/"
+            sourceCode="https://github.com/AyeTone/interactive-comment-section"
+            desc={
+              <>
+                This project is a challenge from{" "}
+                <a href={frontendMentor}>Frontendmentor.com</a>. The app can add
+                messages to existing chat, reply to existing comments, dislike
+                or like a comment, and allows the current user to delete or edit
+                their comments. To complete this project I used{" "}
+                <span className="skills-used"> react </span> and{" "}
+                <span className="skills-used"> sass / gulp </span>.
+              </>
+            }
+            devWith="React, Styled Components, Sass w/ Gulp"
+          />
+          <Project
             title="Github Showcase"
             img={require("../../images/github-repo-display.png")}
             liveSite="https://ayetone.github.io/github-repo/"
@@ -86,23 +104,6 @@ const Projects = () => {
               </>
             }
             devWith="React, Tailwind, REST APIs"
-          />
-          <Project
-            title="Taskify"
-            img={require("../../images/to-do_list.png")}
-            liveSite="https://ayetone.github.io/TodoList-App/"
-            sourceCode="https://github.com/AyeTone/TodoList-App"
-            desc={
-              <>
-                This project is an application that allows the set-up of a task
-                list. The application allows the user to edit, delete, or mark a
-                task as done. To complete this project I used{" "}
-                <span className="skills-used"> react </span>,{" "}
-                <span className="skills-used"> typescript </span>, and{" "}
-                <span className="skills-used"> styled components </span>.
-              </>
-            }
-            devWith="React, Styled Components, TypeScript"
           />
         </ProjectsContainer>
       </Wrapper>

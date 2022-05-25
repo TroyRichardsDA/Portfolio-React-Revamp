@@ -37,9 +37,6 @@ export default function Skills() {
             <i className="fab fa-react"></i> React{" "}
             <i className="fab fa-react"></i>{" "}
           </DevSkill>
-          <DevSkill>
-            <SiTypescript /> TypeScript <SiTypescript />{" "}
-          </DevSkill>
         </Marquee>
         <Marquee pauseOnHover={true} duration={12000}>
           <DevSkill>
