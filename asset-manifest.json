@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Revamp/static/css/main.371425ef.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.ff9f2394.js",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.880a4d01.js",
+    "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.015cd20d9d40671df94d.png",
     "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.3f10e491b4324ec94302.png",
     "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6f1d980721626b1c3885.png",
-    "static/media/advice-gen.png": "/Portfolio-React-Revamp/static/media/advice-gen.7c47a3208ea3dc7dea30.png",
     "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.e65bd1153bd0b6448d39.png",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
     "main.371425ef.css.map": "/Portfolio-React-Revamp/static/css/main.371425ef.css.map",
-    "main.ff9f2394.js.map": "/Portfolio-React-Revamp/static/js/main.ff9f2394.js.map"
+    "main.880a4d01.js.map": "/Portfolio-React-Revamp/static/js/main.880a4d01.js.map"
   },
   "entrypoints": [
     "static/css/main.371425ef.css",
-    "static/js/main.ff9f2394.js"
+    "static/js/main.880a4d01.js"
   ]
 }
