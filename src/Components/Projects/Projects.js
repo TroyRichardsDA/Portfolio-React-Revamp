@@ -26,6 +26,28 @@ const Projects = () => {
         </Headings>
         <ProjectsContainer>
           <Project
+            title="Ecommerce Product Page"
+            img={require("../../images/ecommerce-product-page.png")}
+            liveSite="https://ayetone.github.io/ecommerce-product-page/"
+            sourceCode="https://github.com/AyeTone/ecommerce-product-page"
+            desc={
+              <>
+                {" "}
+                This app is a fake ecommerce product page. This project was a
+                challenge provided by{" "}
+                <a href={frontendMentor} className="important-text-link">
+                  {" "}
+                  Frontend Mentor
+                </a>
+                . I used this challenge as an opportunity to learn and practice
+                my skills with <span className="skills-used"> react </span>{" "}
+                <span className="skills-used"> typescript </span>, and
+                <span className="skills-used"> sass w/gulp </span>.
+              </>
+            }
+            devWith="React, Sass w/gulp, Sass w/gulp"
+          />
+          <Project
             title="Interactive Comment Section"
             img={require("../../images/interactive-comment.png")}
             liveSite="https://ayetone.github.io/interactive-comment-section/"
@@ -41,7 +63,7 @@ const Projects = () => {
                 <span className="skills-used"> sass / gulp </span>.
               </>
             }
-            devWith="React, Styled Components, Sass w/ Gulp"
+            devWith="React, Sass w/ Gulp"
           />
           <Project
             title="Github Showcase"
@@ -80,30 +102,6 @@ const Projects = () => {
               </>
             }
             devWith="React, Styled Components"
-          />
-          <Project
-            title="Advice Gen App"
-            img={require("../../images/advice-gen.png")}
-            liveSite="https://github.com/AyeTone/Advice-Gen-App"
-            sourceCode="https://ayetone.github.io/Advice-Gen-App/"
-            desc={
-              <>
-                {" "}
-                This is app provides random advice provided by an API. This
-                project was a challenge provided by{" "}
-                <a href={frontendMentor} className="important-text-link">
-                  {" "}
-                  Frontend Mentor
-                </a>
-                . I used this challenge as an opportunity to learn and practice
-                my skills with <span className="skills-used">
-                  {" "}
-                  tailwind{" "}
-                </span>{" "}
-                and <span className="skills-used"> react </span>.
-              </>
-            }
-            devWith="React, Tailwind, REST APIs"
           />
         </ProjectsContainer>
       </Wrapper>
