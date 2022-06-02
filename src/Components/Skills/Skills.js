@@ -1,14 +1,55 @@
+import skills from "./SkillsData";
 import {
-  SiTailwindcss,
-  SiStyledcomponents,
-  SiTypescript,
-  SiSass,
-} from "react-icons/si";
-import { DiGulp } from "react-icons/di";
-import { Container, Header, DevSkill, Wrapper } from "./SkillsStyles";
+  Container,
+  Header,
+  DevSkill,
+  Wrapper,
+  IconsList,
+  IconsListWrapper,
+  Icon,
+  StaticList,
+  Summary,
+  SummarySkills,
+  Skill,
+} from "./SkillsStyles";
 import Marquee from "react-easy-marquee";
 
 export default function Skills() {
+  const icons = skills.map((skill, id) => {
+    if (skill.icon) return <Icon key={id}>{skill.icon}</Icon>;
+    else return null;
+  });
+
+  const marquee1 = skills.map(({ name, mark, icon }, id) => {
+    if (mark === 1)
+      return (
+        <DevSkill key={id}>
+          {" "}
+          {icon} {name} {icon}{" "}
+        </DevSkill>
+      );
+    else return null;
+  });
+
+  const marquee2 = skills.map(({ name, mark, icon }, id) => {
+    if (mark === 2)
+      return (
+        <DevSkill key={id}>
+          {" "}
+          {icon} {name} {icon}{" "}
+        </DevSkill>
+      );
+    else return null;
+  });
+
+  const list = skills.map(({ icon, name }, id) => {
+    return (
+      <Skill key={id}>
+        {icon} {name}{" "}
+      </Skill>
+    );
+  });
+
   return (
     <Container id="skills">
       <Wrapper
@@ -21,42 +62,21 @@ export default function Skills() {
           <i className="header-icon fas fa-tasks"></i> Skills
         </Header>
 
+        <IconsListWrapper>
+          <IconsList>{icons}</IconsList>
+        </IconsListWrapper>
+
         <Marquee duration={11000} pauseOnHover={true}>
-          <DevSkill>
-            <i className="fab fa-html5"></i> HTML{" "}
-            <i className="fab fa-html5"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-css3"></i> CSS <i className="fab fa-css3"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-js"></i> JavaScript{" "}
-            <i className="fab fa-js"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-react"></i> React{" "}
-            <i className="fab fa-react"></i>{" "}
-          </DevSkill>
+          {marquee1}
         </Marquee>
-        <Marquee pauseOnHover={true} duration={12000}>
-          <DevSkill>
-            <SiTailwindcss /> Tailwind <SiTailwindcss />{" "}
-          </DevSkill>
-          <DevSkill>
-            <SiStyledcomponents /> Styled Components <SiStyledcomponents />{" "}
-          </DevSkill>
-          <DevSkill>
-            <SiSass /> Sass w/ Gulp <DiGulp />{" "}
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-git-alt"></i> Git{" "}
-            <i className="fab fa-git-alt"></i>
-          </DevSkill>
-          <DevSkill>
-            <i className="fab fa-chrome"></i> Chrome DevTools{" "}
-            <i className="fas fa-tools"></i>
-          </DevSkill>
+        <Marquee pauseOnHover={true} duration={27000}>
+          {marquee2}
         </Marquee>
+
+        <StaticList>
+          <Summary>Static List</Summary>
+          <SummarySkills>{list}</SummarySkills>
+        </StaticList>
       </Wrapper>
     </Container>
   );

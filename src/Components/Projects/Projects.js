@@ -75,12 +75,11 @@ const Projects = () => {
                 This project is an application that displays Github users'
                 stats. This application has the option of choosing a different
                 user or searching through the repository list. To build this
-                app, I used <span className="skills-used"> react </span>,{" "}
-                <span className="skills-used"> sass w/ gulp </span>, and{" "}
-                <span className="skills-used"> REST APIs </span>.
+                app, I used <span className="skills-used"> react </span>, and{" "}
+                <span className="skills-used"> sass w/ gulp </span>.
               </>
             }
-            devWith="React, REST API, Sass w/ Gulp"
+            devWith="React, Sass w/ Gulp"
           />
           <Project
             title="Time-Tracking-Dashboard"

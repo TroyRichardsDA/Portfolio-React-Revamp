@@ -68,16 +68,13 @@ export default function About() {
             University, I have decided to pursue a career in frontend
             development as I find it more enjoyable. Every day that I can, I
             expand my knowledge with the help of Scrimba, SkillCrush,
-            Frontmentor, CodeWithMosh and Stack Overflow
-            <Small>(The chad of the group)</Small>.
+            Frontmentor, CodeWithMosh and Stack Overflow.
           </Text>
           <Text style={{ opacity: opacityControl(progress, 2) }}>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
-            <span className="important-text">
-              Frontend Focused Software Engineer{" "}
-            </span>{" "}
-            apprentice or as an intern.
+            <span className="important-text"> Frontend Developer </span>{" "}
+            apprentice, intern, or an entry level position.
           </Text>
         </TextContainer>
       </Wrapper>

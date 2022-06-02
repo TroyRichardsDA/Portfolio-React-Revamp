@@ -37,10 +37,14 @@ export const Greeting = styled.h2`
 export const Name = styled.h1`
   margin: 20px 0;
 
+  opacity: 0;
+
   color: var(--highlightColor);
   text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
   font-size: 2.3rem;
   font-family: var(--fnt-tech);
+
+  animation: load 1.6s ease forwards 1s;
 
   ${tablet({
     letterSpacing: "2px",

@@ -20,8 +20,6 @@ export const Header = styled.h2`
 
   letter-spacing: 2px;
   text-shadow: var(--headerTextShadow);
-
-  ${tablet({})}
 `;
 
 export const SubHeader = styled.p`

@@ -27,7 +27,7 @@ export default function Header() {
       <Wrapper>
         <Greeting>Hello, I'm</Greeting>
         <Name id="message">{name}</Name>
-        <HeroHeading>An aspiring Frontend Software Engineer </HeroHeading>
+        <HeroHeading>An aspiring Frontend Developer </HeroHeading>
         <ToProjects href="#projects">
           View My Work{" "}
           <span>
