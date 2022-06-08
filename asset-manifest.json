@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Revamp/static/css/main.c6db8d33.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.30656167.js",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.30767d8b.js",
     "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.015cd20d9d40671df94d.png",
     "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.3f10e491b4324ec94302.png",
     "static/media/rest-countries-api.png": "/Portfolio-React-Revamp/static/media/rest-countries-api.9bc307ccf5a44f47d07a.png",
@@ -10,10 +10,10 @@
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
     "main.c6db8d33.css.map": "/Portfolio-React-Revamp/static/css/main.c6db8d33.css.map",
-    "main.30656167.js.map": "/Portfolio-React-Revamp/static/js/main.30656167.js.map"
+    "main.30767d8b.js.map": "/Portfolio-React-Revamp/static/js/main.30767d8b.js.map"
   },
   "entrypoints": [
     "static/css/main.c6db8d33.css",
-    "static/js/main.30656167.js"
+    "static/js/main.30767d8b.js"
   ]
 }
