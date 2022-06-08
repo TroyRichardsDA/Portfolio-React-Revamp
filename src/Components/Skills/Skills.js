@@ -90,7 +90,7 @@ export default function Skills() {
         <Marquee duration={11000} pauseOnHover={true}>
           {marquee1}
         </Marquee>
-        <Marquee useOnHover={true} duration={30000}>
+        <Marquee pauseOnHover={true} duration={30000}>
           {marquee2}
         </Marquee>
       </Wrapper>
