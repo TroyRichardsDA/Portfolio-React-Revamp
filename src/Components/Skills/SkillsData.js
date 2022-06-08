@@ -6,10 +6,12 @@ import {
   SiFramer,
   SiMaterialui,
   SiBootstrap,
+  SiCypress,
+  SiAdobephotoshop,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
-import { DiGulp } from "react-icons/di";
+import { DiGulp, DiJava } from "react-icons/di";
 
 const skills = [
   {
@@ -23,19 +25,22 @@ const skills = [
     mark: 1,
   },
   {
-    icon: <i className="fab fa-js"></i>,
-    name: "JavaScript",
-    mark: 1,
-  },
-  {
     icon: <i className="fab fa-react"></i>,
     name: "React",
     mark: 1,
+    isMain: true,
+  },
+  {
+    icon: <i className="fab fa-js"></i>,
+    name: "JavaScript",
+    mark: 1,
+    isMain: true,
   },
   {
     icon: <SiTypescript />,
     name: "TypeScript",
     mark: 1,
+    isMain: true,
   },
   {
     icon: <SiTailwindcss />,
@@ -55,6 +60,7 @@ const skills = [
     ),
     name: "Sass w/ Gulp",
     mark: 2,
+    isMain: true,
   },
   {
     icon: <i className="fab fa-git-alt"></i>,
@@ -98,6 +104,21 @@ const skills = [
   },
   {
     name: "React Context",
+    mark: 2,
+  },
+  {
+    icon: <DiJava />,
+    name: "Java",
+    mark: 2,
+  },
+  {
+    icon: <SiCypress />,
+    name: "Cypress",
+    mark: 2,
+  },
+  {
+    icon: <SiAdobephotoshop />,
+    name: "Photoshop",
     mark: 2,
   },
 ];

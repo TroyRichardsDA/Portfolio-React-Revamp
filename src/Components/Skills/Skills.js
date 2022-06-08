@@ -2,7 +2,7 @@ import skills from "./SkillsData";
 import {
   Container,
   Header,
-  DevSkill,
+  MarqueeSkill,
   Wrapper,
   IconsList,
   IconsListWrapper,
@@ -11,22 +11,31 @@ import {
   Summary,
   SummarySkills,
   Skill,
+  MainSkills,
+  Disclaimer,
+  DText,
 } from "./SkillsStyles";
 import Marquee from "react-easy-marquee";
 
 export default function Skills() {
   const icons = skills.map((skill, id) => {
-    if (skill.icon) return <Icon key={id}>{skill.icon}</Icon>;
-    else return null;
+    if (skill.icon && skill.isMain) {
+      return (
+        <MainSkills key={id}>
+          <h2> {skill.name} </h2>
+          <Icon>{skill.icon}</Icon>
+        </MainSkills>
+      );
+    } else return null;
   });
 
   const marquee1 = skills.map(({ name, mark, icon }, id) => {
     if (mark === 1)
       return (
-        <DevSkill key={id}>
+        <MarqueeSkill key={id}>
           {" "}
           {icon} {name} {icon}{" "}
-        </DevSkill>
+        </MarqueeSkill>
       );
     else return null;
   });
@@ -34,10 +43,10 @@ export default function Skills() {
   const marquee2 = skills.map(({ name, mark, icon }, id) => {
     if (mark === 2)
       return (
-        <DevSkill key={id}>
+        <MarqueeSkill key={id}>
           {" "}
           {icon} {name} {icon}{" "}
-        </DevSkill>
+        </MarqueeSkill>
       );
     else return null;
   });
@@ -66,17 +75,24 @@ export default function Skills() {
           <IconsList>{icons}</IconsList>
         </IconsListWrapper>
 
+        <StaticList>
+          <Summary>Static List</Summary>
+          <Disclaimer>Disclaimer: </Disclaimer>
+          <DText>
+            Most of the Skills listed below are not my primary skills. My
+            primary skills are the ones listed above. They mostly represent
+            exposure and/or mild to slight usage.... sorry if it got your hopes
+            up... I'm willing to learn if you're willing to teach though.
+          </DText>
+          <SummarySkills>{list}</SummarySkills>
+        </StaticList>
+
         <Marquee duration={11000} pauseOnHover={true}>
           {marquee1}
         </Marquee>
-        <Marquee pauseOnHover={true} duration={27000}>
+        <Marquee useOnHover={true} duration={30000}>
           {marquee2}
         </Marquee>
-
-        <StaticList>
-          <Summary>Static List</Summary>
-          <SummarySkills>{list}</SummarySkills>
-        </StaticList>
       </Wrapper>
     </Container>
   );

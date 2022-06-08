@@ -9,7 +9,7 @@
   --fnt-tech: 'Share Tech Mono', monospace;
   --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
   --projectTextBG:#000000b4 ;
-  --wrapper: 85%;
+  --wrapper: 80%;
   --headers: 2.8rem;
   --containerPadding: 5rem 0;
   --navBG: linear-gradient(147deg, rgba(255,255,255,0.7986577181208054) 28%, rgba(20,15,0,0.3803131991051454) 85%)
@@ -55,6 +55,10 @@ ul {
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+h1, h2, h3, p {
+  cursor: default;
 }
 
 

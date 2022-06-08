@@ -10,7 +10,7 @@ export const Container = styled.section`
 `;
 
 export const Wrapper = styled(motion.div)`
-  width: 85%;
+  width: var(--wrapper);
   margin: 0 auto;
 `;
 
@@ -26,26 +26,41 @@ export const Header = styled.h2`
 `;
 
 export const IconsListWrapper = styled.div`
-  margin-bottom: 40px;
+  margin: 40px 0;
 `;
 
-export const IconsList = styled.ul`
+export const IconsList = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+
+  margin: 20px 0;
 `;
 
-export const Icon = styled.li`
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--dimHighlightColor);
-  padding: 4px;
+export const MainSkills = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 
   border: 2px solid transparent;
   transition: 0.4s;
+  text-align: center;
+
+  > * {
+    transition: 0.4s;
+  }
+
+  > h2 {
+    color: var(--dimHighlightColor);
+    font-size: 1.5rem;
+  }
 
   &:hover {
-    color: var(--highlightColor);
+    > * {
+      color: var(--highlightColor);
+    }
     border-color: var(--dimHighlightColor);
     border-radius: 5px;
 
@@ -53,37 +68,15 @@ export const Icon = styled.li`
   }
 `;
 
-export const DevSkill = styled.p`
-  flex: 1;
-  min-width: max-content;
-
-  white-space: nowrap;
+export const Icon = styled.p`
   text-align: center;
-  padding: 15px 20px;
-
-  margin: 10px;
-
-  text-transform: uppercase;
-  font-weight: bolder;
-  letter-spacing: 1px;
-
-  border: 1px solid var(--highlightColor);
+  font-size: 3rem;
   color: var(--dimHighlightColor);
-  transition: 0.5s ease-in-out;
-  text-shadow: 0px 10px 20px grey;
-
-  &:hover {
-    cursor: default;
-    box-shadow: 0px 5px 9px grey;
-
-    color: var(--highlightColor);
-    border: 1px solid var(--dimHighlightColor);
-    border-radius: 15px;
-  }
+  padding: 4px;
 `;
 
 export const StaticList = styled.details`
-  margin-top: 30px;
+  margin: 40px 0;
 `;
 
 export const Summary = styled.summary`
@@ -97,12 +90,33 @@ export const Summary = styled.summary`
   }
 `;
 
+export const Disclaimer = styled.p`
+  margin: 20px 0 10px;
+
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+
+  color: red;
+`;
+
+export const DText = styled.p`
+  text-align: center;
+  margin: 0 auto 60px;
+
+  width: 80%;
+  line-height: 30px;
+  letter-spacing: 3px;
+
+  color: red;
+`;
+
 export const SummarySkills = styled.div`
   margin-top: 20px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 30px;
 
   ${tablet({
     gridTemplateColumns: "repeat(3, 1fr)",
@@ -136,5 +150,34 @@ export const Skill = styled.p`
     &::after {
       width: 100%;
     }
+  }
+`;
+
+export const MarqueeSkill = styled.p`
+  flex: 1;
+  min-width: max-content;
+
+  white-space: nowrap;
+  text-align: center;
+  padding: 15px 20px;
+
+  margin: 10px;
+
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+
+  border: 1px solid var(--highlightColor);
+  color: var(--dimHighlightColor);
+  transition: 0.5s ease-in-out;
+  text-shadow: 0px 10px 20px grey;
+
+  &:hover {
+    cursor: default;
+    box-shadow: 0px 5px 9px grey;
+
+    color: var(--highlightColor);
+    border: 1px solid var(--dimHighlightColor);
+    border-radius: 15px;
   }
 `;

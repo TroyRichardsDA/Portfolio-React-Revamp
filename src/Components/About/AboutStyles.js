@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--thrid-BG);
-  min-height: 100vh;
+
   padding-top: 10rem;
   padding-bottom: 10rem;
 
@@ -28,7 +28,7 @@ export const Header = styled.h2`
 export const SubHeader = styled.h1`
   color: var(--highlightColor);
   font-size: 3rem;
-  margin: 5rem 0;
+  margin: 3rem 0;
 
   ${tablet({
     fontSize: "3rem",

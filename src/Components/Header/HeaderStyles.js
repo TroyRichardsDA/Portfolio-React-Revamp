@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Greeting = styled.h2`
-  font-size: 2rem;
+  font-size: 1.4rem;
 
   transition: all 0.5s;
   opacity: 0;
@@ -58,13 +58,13 @@ export const Name = styled.h1`
 `;
 
 export const HeroHeading = styled.h2`
-  font-size: 2rem;
+  font-size: 1.4rem;
 
   opacity: 0;
   animation: load 2s ease forwards 2.3s;
 
   ${tablet({
-    fontSize: "2.5rem",
+    fontSize: "2rem",
   })}
 
   ${desktop({
@@ -76,7 +76,7 @@ export const ToProjects = styled.a`
   padding: 1rem 2rem;
   margin-top: 2rem;
 
-  transition: all 0.5s;
+  transition: all 0.3s;
   opacity: 0;
   animation: load 2s ease forwards 2.3s;
 
@@ -102,6 +102,10 @@ export const ToProjects = styled.a`
       color: white;
       transform: rotate(90deg);
     }
+  }
+
+  &:active {
+    transform: scale(0.8);
   }
 
   ${desktop({

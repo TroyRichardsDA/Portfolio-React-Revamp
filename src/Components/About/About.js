@@ -1,7 +1,6 @@
 import {
   Container,
   Header,
-  Small,
   SubHeader,
   Text,
   TextContainer,
@@ -13,8 +12,11 @@ import { ScrollContext } from "../../Context/ScrollObsever";
 
 const opacityControl = (sectionProgress, blockNo) => {
   const progress = sectionProgress - blockNo;
-  if (progress >= 0 && progress < 1) return 1;
-  return 0.2;
+  if (window.innerWidth < 600) {
+    if (progress >= 0 && progress < 1) return 1;
+    else return 0.2;
+  }
+  return undefined;
 };
 
 export default function About() {
@@ -28,7 +30,7 @@ export default function About() {
   if (elContainer) {
     const { clientHeight, offsetTop } = elContainer;
     const screenH = window.innerHeight;
-    const halfH = screenH / 2;
+    const halfH = screenH / 4;
     const percentY =
       Math.min(
         clientHeight + halfH,
@@ -63,14 +65,8 @@ export default function About() {
             upon Frontend Development. Every day that I can, I am looking for
             ways to expand my knowledge and become even better at Development.
           </Text>
+
           <Text style={{ opacity: opacityControl(progress, 1) }}>
-            Although I have a degree in Audio Production granted by Full Sail
-            University, I have decided to pursue a career in frontend
-            development as I find it more enjoyable. Every day that I can, I
-            expand my knowledge with the help of Scrimba, SkillCrush,
-            Frontmentor, CodeWithMosh and Stack Overflow.
-          </Text>
-          <Text style={{ opacity: opacityControl(progress, 2) }}>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
             <span className="important-text"> Frontend Developer </span>{" "}

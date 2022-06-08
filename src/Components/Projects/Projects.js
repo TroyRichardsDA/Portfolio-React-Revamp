@@ -6,6 +6,9 @@ import {
   ProjectsContainer,
   Headings,
   Wrapper,
+  SubHeader,
+  FYI,
+  Brackets,
 } from "./ProjectsStyles";
 
 const Projects = () => {
@@ -24,6 +27,21 @@ const Projects = () => {
             <i className="header-icon fas fa-code"></i> Projects
           </Header>
         </Headings>
+
+        <SubHeader>
+          Just an fyi from the guy: <Brackets> [ </Brackets>
+        </SubHeader>
+        <FYI>
+          {"{"} "Live Site": "<i className="fas fa-window-restore"></i>" {"}"},
+        </FYI>
+        <FYI>
+          {"{"} "Source Code": "<i className=" fas fa-file-code"></i>" {"}"}
+        </FYI>
+
+        <SubHeader>
+          <Brackets> ] </Brackets>
+        </SubHeader>
+
         <ProjectsContainer>
           <Project
             title="REST Countries API"

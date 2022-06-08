@@ -54,6 +54,10 @@ export const DropdownBtn = styled.i`
     color: var(--highlightColor);
   }
 
+  &:active {
+    transform: scale(0.8);
+  }
+
   ${tablet({
     display: "none",
   })}
