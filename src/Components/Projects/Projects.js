@@ -26,6 +26,38 @@ const Projects = () => {
         </Headings>
         <ProjectsContainer>
           <Project
+            title="REST Countries API"
+            img={require("../../images/rest-countries-api.png")}
+            liveSite="https://ayetone.github.io/rest-countries-api/"
+            sourceCode="https://github.com/AyeTone/rest-countries-api"
+            desc={
+              <>
+                {" "}
+                This website displays the stats of countries around the world
+                using the
+                <a
+                  href="https://restcountries.com/"
+                  target="_blank"
+                  className="important-text-link"
+                  rel="noreferrer"
+                >
+                  REST Countries
+                </a>{" "}
+                API. The website allows users to search for a country via the
+                searchbar and filter. This project was a challenge provided by{" "}
+                <a href={frontendMentor} className="important-text-link">
+                  {" "}
+                  Frontend Mentor
+                </a>
+                . To complete this I used{" "}
+                <span className="skills-used"> react</span> ,
+                <span className="skills-used"> typescript</span>, and
+                <span className="skills-used"> sass w/gulp</span>.
+              </>
+            }
+            devWith="React, Sass w/gulp, Sass w/gulp"
+          />
+          <Project
             title="Ecommerce Product Page"
             img={require("../../images/ecommerce-product-page.png")}
             liveSite="https://ayetone.github.io/ecommerce-product-page/"
@@ -40,9 +72,9 @@ const Projects = () => {
                   Frontend Mentor
                 </a>
                 . I used this challenge as an opportunity to learn and practice
-                my skills with <span className="skills-used"> react </span>{" "}
-                <span className="skills-used"> typescript </span>, and
-                <span className="skills-used"> sass w/gulp </span>.
+                my skills with <span className="skills-used"> react</span>,{" "}
+                <span className="skills-used"> typescript</span>, and
+                <span className="skills-used"> sass w/gulp</span>.
               </>
             }
             devWith="React, Sass w/gulp, Sass w/gulp"
@@ -60,7 +92,7 @@ const Projects = () => {
                 or like a comment, and allows the current user to delete or edit
                 their comments. To complete this project I used{" "}
                 <span className="skills-used"> react </span> and{" "}
-                <span className="skills-used"> sass / gulp </span>.
+                <span className="skills-used"> sass w/ gulp</span>.
               </>
             }
             devWith="React, Sass w/ Gulp"
@@ -75,11 +107,11 @@ const Projects = () => {
                 This project is an application that displays Github users'
                 stats. This application has the option of choosing a different
                 user or searching through the repository list. To build this
-                app, I used <span className="skills-used"> react </span>, and{" "}
-                <span className="skills-used"> sass w/ gulp </span>.
+                app, I used <span className="skills-used"> react</span>, and{" "}
+                <span className="skills-used"> sass w/ gulp</span>.
               </>
             }
-            devWith="React, Sass w/ Gulp"
+            devWith="React, Sass w/ Gulp, REST API"
           />
           <Project
             title="Time-Tracking-Dashboard"
@@ -94,10 +126,10 @@ const Projects = () => {
                 usage. To complete this challenge presented by{" "}
                 <a href={frontendMentor} className="important-text-link">
                   {" "}
-                  Frontend Mentor{" "}
+                  Frontend Mentor
                 </a>
-                , I used <span className="skills-used"> react </span>, and{" "}
-                <span className="skills-used"> styled components </span>.
+                , I used <span className="skills-used"> react</span>, and{" "}
+                <span className="skills-used"> styled components</span>.
               </>
             }
             devWith="React, Styled Components"
