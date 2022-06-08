@@ -79,9 +79,9 @@ export default function Skills() {
           <Summary>Static List</Summary>
           <Disclaimer>Disclaimer: </Disclaimer>
           <DText>
-            Most of the Skills listed below are not my primary skills. My
-            primary skills are the ones listed above. They mostly represent
-            exposure and/or mild to slight usage.... sorry if it got your hopes
+            Most of the Skills listed below are not my primary skills.They
+            mostly represent exposure and/or mild to slight usage. My primary
+            skills are the ones listed above..... sorry if it got your hopes
             up... I'm willing to learn if you're willing to teach though.
           </DText>
           <SummarySkills>{list}</SummarySkills>
