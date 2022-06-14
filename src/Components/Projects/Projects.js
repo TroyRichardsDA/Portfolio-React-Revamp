@@ -12,8 +12,6 @@ import {
 } from "./ProjectsStyles";
 
 const Projects = () => {
-  const frontendMentor = "https://www.frontendmentor.io/home";
-
   return (
     <Container id="projects">
       <Wrapper
@@ -50,9 +48,10 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/rest-countries-api"
             desc={
               <>
-                {" "}
-                This website displays the stats of countries around the world
-                using the
+                Every wanted to know something about a country that you didn't
+                know yet? I'm sure this UI will tell something you didn't know
+                about that one country! If it's not accurate, blame the creaters
+                of this{" "}
                 <a
                   href="https://restcountries.com/"
                   target="_blank"
@@ -61,19 +60,10 @@ const Projects = () => {
                 >
                   REST Countries
                 </a>{" "}
-                API. The website allows users to search for a country via the
-                searchbar and filter. This project was a challenge provided by{" "}
-                <a href={frontendMentor} className="important-text-link">
-                  {" "}
-                  Frontend Mentor
-                </a>
-                . To complete this I used{" "}
-                <span className="skills-used"> react</span> ,
-                <span className="skills-used"> typescript</span>, and
-                <span className="skills-used"> sass w/gulp</span>.
+                API! T'was but tah messenger I was.
               </>
             }
-            devWith="React, Sass w/gulp, Sass w/gulp"
+            devWith="React, TypeScript, Sass w/Gulp, BEM, REST API"
           />
           <Project
             title="Ecommerce Product Page"
@@ -82,20 +72,14 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/ecommerce-product-page"
             desc={
               <>
-                {" "}
-                This app is a fake ecommerce product page. This project was a
-                challenge provided by{" "}
-                <a href={frontendMentor} className="important-text-link">
-                  {" "}
-                  Frontend Mentor
-                </a>
-                . I used this challenge as an opportunity to learn and practice
-                my skills with <span className="skills-used"> react</span>,{" "}
-                <span className="skills-used"> typescript</span>, and
-                <span className="skills-used"> sass w/gulp</span>.
+                Did you ever want to not buy something? You came to the right
+                place! This website allows users{" "}
+                <small>{"(Meaning you... maybe)"}</small> to cycle through the
+                display options, add/remove items from a cart and not buy it!
+                Exciting Right!?!?!
               </>
             }
-            devWith="React, Sass w/gulp, Sass w/gulp"
+            devWith="React, TypeScript, Sass w/gulp, BEM"
           />
           <Project
             title="Interactive Comment Section"
@@ -104,16 +88,15 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/interactive-comment-section"
             desc={
               <>
-                This project is a challenge from{" "}
-                <a href={frontendMentor}>Frontendmentor.com</a>. The app can add
-                messages to existing chat, reply to existing comments, dislike
-                or like a comment, and allows the current user to delete or edit
-                their comments. To complete this project I used{" "}
-                <span className="skills-used"> react </span> and{" "}
-                <span className="skills-used"> sass w/ gulp</span>.
+                Ever wanted a comment section all to yourself? Look no further!
+                This UI allows the user to add messages to existing chat, reply
+                to existing comments, dislike or like a comment, and delete or
+                edit their own comments! This UI was brought to you by Troy and
+                sponsered by Handsome JACK!
+                <small>{"(Not really)"}</small>
               </>
             }
-            devWith="React, Sass w/ Gulp"
+            devWith="React, Sass w/ Gulp, BEM"
           />
           <Project
             title="Github Showcase"
@@ -122,11 +105,10 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/github-repo"
             desc={
               <>
-                This project is an application that displays Github users'
-                stats. This application has the option of choosing a different
-                user or searching through the repository list. To build this
-                app, I used <span className="skills-used"> react</span>, and{" "}
-                <span className="skills-used"> sass w/ gulp</span>.
+                The shade room at work just got a bit darker... Use this UI to
+                look up the stats of your co-workers GitHub account. That's if
+                they are willing to share their username! I'm sure the detective
+                in you will find it.
               </>
             }
             devWith="React, Sass w/ Gulp, REST API"
@@ -138,16 +120,9 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/Time-Tracking-Dashboard"
             desc={
               <>
-                This project is an app that changes its presented times
-                depending upon user selection. A javascript file provides the
-                times in JSON format, which I then store in a state for further
-                usage. To complete this challenge presented by{" "}
-                <a href={frontendMentor} className="important-text-link">
-                  {" "}
-                  Frontend Mentor
-                </a>
-                , I used <span className="skills-used"> react</span>, and{" "}
-                <span className="skills-used"> styled components</span>.
+                I'm going to be honest with you. This is probably the most
+                lackluster project on this list. However it hold a special place
+                in my heart as my turning point in getting better at react.
               </>
             }
             devWith="React, Styled Components"

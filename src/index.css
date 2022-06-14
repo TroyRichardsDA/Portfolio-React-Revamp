@@ -15,88 +15,6 @@
   --navBG: linear-gradient(147deg, rgba(255,255,255,0.7986577181208054) 28%, rgba(20,15,0,0.3803131991051454) 85%)
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-.App {
-  margin: 0 auto;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-  color: #000000e1;
-  background-color: var(--main-BG);
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-  border: .01px solid rgba(0, 247, 214, 0.291);
-  border-radius: 5px;
-  background-color: var(--main-BG);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--highlightColor);
-  border-radius: 5px;
-}
-
-
-ul {
-  list-style-type: none;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-
-
-.important-text {
-  color: var(--highlightColor);
-}
-
-.important-text-link {
-  position: relative;
-  color: var(--dimHighlightColor);
-  transition: all .5s;
-  cursor: pointer;
-}
-
-.important-text-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  left: 1px;
-  bottom: 1px;
-  background-color: var(--highlightColor);
-  transition: all .2s;
-}
-
-.important-text-link:hover::after {
-  width: 100%;
-}
-
-.important-text-link:hover {
-  color: var(--highlightColor);
-}
-
-.skills-used {
-  color: var(--highlightColor);
-}
-
-.blicker {
-  animation: blinker 2s linear infinite;
-}
-
 /* Animation Bank */
 
 @keyframes blinker {
@@ -156,6 +74,114 @@ a {
     transform: rotate(20deg);
   }
 }
+
+/* 
+
+        CSS Start
+
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000000e1;
+  background-color: var(--main-BG);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  border: .01px solid rgba(0, 247, 214, 0.291);
+  border-radius: 5px;
+  background-color: var(--main-BG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--highlightColor);
+  border-radius: 5px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+small {
+  font-size: 8px;
+  color: var(--highlightColor);
+}
+
+
+
+.important-text {
+  color: var(--highlightColor);
+}
+
+.important-text-link {
+  position: relative;
+  color: var(--highlightColor);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.important-text-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 1px;
+  bottom: 1px;
+  background-color: var(--highlightColor);
+  transition: all .2s;
+}
+
+.important-text-link:hover::after {
+  width: 100%;
+}
+
+.important-text-link:hover {
+  color: var(--highlightColor);
+}
+
+.skills-used {
+  color: var(--highlightColor);
+}
+
+.blicker {
+  animation: blinker 2s linear infinite;
+}
+
+/* 
+
+    Media Queries
+
+*/
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  .important-text-link {
+    color: var(--dimHighlightColor);
+  }
+}
+
 
 
   

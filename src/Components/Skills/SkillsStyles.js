@@ -53,7 +53,10 @@ export const MainSkills = styled.div`
   .skill-name {
     color: var(--dimHighlightColor);
     font-size: 1.5rem;
-    transform: scale(0) translateY(-50px);
+
+    ${tablet({
+      transform: "scale(0) translateY(-50px)",
+    })}
   }
 
   &:hover {

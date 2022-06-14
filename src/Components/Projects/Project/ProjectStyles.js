@@ -2,16 +2,7 @@ import styled from "styled-components";
 import { tablet } from "../../../responsive";
 import { motion } from "framer-motion";
 
-export const Container = styled(motion.div)`
-  display: grid;
-
-  ${tablet({
-    width: "100%",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    alignItems: "center",
-    columnGap: "30px",
-  })}
-`;
+export const Container = styled(motion.div)``;
 
 export const ImgContainer = styled(motion.div)`
   position: relative;
@@ -25,7 +16,6 @@ export const ImgContainer = styled(motion.div)`
 
   &:hover {
     opacity: 1;
-    z-index: 2;
     box-shadow: unset;
   }
 
@@ -39,58 +29,38 @@ export const ImgContainer = styled(motion.div)`
   })}
 `;
 
-export const LinkedImg = styled.a`
-  width: 100%;
-  height: 100%;
-`;
+export const LinkedImg = styled.a``;
 
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  opacity: 0.9;
   border-radius: 5px;
 `;
 
 export const ImageCover = styled.div`
-  opacity: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 5px;
   top: 0;
-  background: var(--dimHighlightColor);
+  background-color: rgba(0, 0, 0, 55%);
   transition: opacity 0.5s ease-in-out;
-
-  &:hover {
-    opacity: 0;
-  }
-
-  ${tablet({
-    opacity: "0.3",
-  })}
 `;
 
 export const TextContainer = styled(motion.div)`
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  ${tablet({
-    textAlign: "right",
-    gridColumn: "2 / -1",
-    gridRow: 1,
-    right: 0,
-    gap: "10px",
-    zIndex: 1,
-  })}
+  height: 100%;
+  width: 100%;
+  padding: 0px 12px;
 `;
 
 export const Title = styled.h3`
-  text-align: center;
-  margin: 4rem 0 0;
-  font-size: 2rem;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-color: var(--highlightColor);
+  font-size: 16px;
+  margin-bottom: 8px;
 
   ${tablet({
     margin: "unset",
@@ -98,59 +68,30 @@ export const Title = styled.h3`
   })}
 `;
 
-export const Desc = styled.div`
-  text-align: center;
-  line-height: 2rem;
-  background-color: var(--projectTextBG);
-  color: #ffffffe1;
-  padding: 25px;
+export const DevWith = styled.p`
+  color: var(--highlightColor);
+  margin: 4px 0;
+  font-size: 12px;
+`;
 
-  ${tablet({
-    textAlign: "right",
-    padding: "25px",
-    marginTop: "10px",
-    boxShadow: "0 10px 30px -15px var(--box-shadow)",
-  })}
+export const Desc = styled.div`
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
 `;
 
 export const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
   font-size: 1.5rem;
 `;
 
 export const Link = styled.a`
+  display: none;
   color: var(--dimHighlightColor);
   transition: all 0.25s ease-in-out;
 
   &:hover {
     color: var(--highlightColor);
   }
-`;
-
-export const ProjectSkills = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
-`;
-
-export const DevWith = styled.span`
-  color: var(--highlightColor);
-  background-color: var(--projectTextBG);
-  padding: 10px;
-
-  ${tablet({
-    backgroundColor: "var(--projectTextBG)",
-    zIndex: " 3",
-  })}
-`;
-
-export const Skills = styled.span`
-  color: var(--dimHighlightColor);
-  word-spacing: 0.7rem;
-  font-family: var(--fnt-tech);
 `;
