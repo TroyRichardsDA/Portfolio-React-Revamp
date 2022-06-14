@@ -67,6 +67,15 @@ export const Text = styled.p`
   color: white;
   transition: 0.3s;
 
+  .about-title {
+    font-size: 24px;
+  }
+
+  .shake {
+    display: inline-block;
+    animation: shaking 1s infinite;
+  }
+
   &:hover {
     opacity: 1 !important;
   }

@@ -123,8 +123,8 @@ export const Backdrop = styled.div`
   width: 100%;
   height: 100%;
 
-  z-index: -1;
   opacity: 0;
+  z-index: -1;
 
   animation: load 2s ease forwards 2.3s;
 
@@ -136,6 +136,7 @@ export const Backdrop = styled.div`
   .back-drop__icon {
     position: fixed;
     animation: backdrop 3s infinite alternate;
+    z-index: 2;
   }
 
   .icon--0 {

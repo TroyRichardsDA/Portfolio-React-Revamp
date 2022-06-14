@@ -24,7 +24,7 @@ const Projects = () => {
       >
         <Headings>
           <Header>
-            <i className="header-icon fas fa-code"></i> Projects
+            Here are some of my <span className="skills-used">projects</span>
           </Header>
         </Headings>
 

@@ -3,13 +3,18 @@ import { tablet, desktop } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
-  background-color: var(--second-BG);
+  background-color: var(--main-BG);
   padding: var(--containerPadding);
+
+  position: relative;
 `;
 
 export const Wrapper = styled(motion.div)`
   width: var(--wrapper);
   margin: 0 auto;
+
+  position: relative;
+  z-index: 3;
 `;
 
 export const Headings = styled.div``;

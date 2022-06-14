@@ -67,6 +67,7 @@ a {
   position: relative;
   color: var(--dimHighlightColor);
   transition: all .5s;
+  cursor: pointer;
 }
 
 .important-text-link::after {
@@ -129,6 +130,30 @@ a {
     opacity: 1;
     height: -100px;
     transform: rotate(360deg);
+  }
+}
+
+@keyframes shaking {
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(20deg);
   }
 }
 

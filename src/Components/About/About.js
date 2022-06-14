@@ -49,28 +49,54 @@ export default function About() {
         viewport={{ once: true }}
         ref={refContainer}
       >
-        <Header>
-          <i className="header-icon fas fa-user"></i> About
-        </Header>
+        <Header>A bit...</Header>
 
-        <SubHeader>Hello,</SubHeader>
+        <SubHeader>ABOUT MEH</SubHeader>
 
         <TextContainer>
           <Text style={{ opacity: opacityControl(progress, 0) }}>
-            Hello again ! My name is Troy Richards, and I have recently started
-            my journey to becoming a Frontend Developer. After Covid-19 caused
-            me to lose my job as a server, I began my hunt for a more stable
-            job. I landed a job at Publix. However, it did last long due to an
-            unfortunate injury. Thus I began my hunt for at-home work and came
-            upon Frontend Development. Every day that I can, I am looking for
-            ways to expand my knowledge and become even better at Development.
+            Hello! My name is Troy Richards, and I am what some would call a{" "}
+            <br /> <span className="shake">🎉</span>{" "}
+            <b className="skills-used about-title">Frontend Developer!!!!!!</b>{" "}
+            <span className="shake">🎉</span>
+            <br />
+            <small>
+              if they don't call me that, they don't know about me. Don't worry
+              about them, we talking about me.
+            </small>
           </Text>
 
           <Text style={{ opacity: opacityControl(progress, 1) }}>
+            If you couldn't tell from the AMAZING animations so far, I love to
+            create websites/apps that look and feel amazing to use. I mainly
+            work with <span className="skills-used">react</span> and{" "}
+            <span className="skills-used">sass</span> but don't mind branching
+            out for the right opportunity.
+          </Text>
+
+          <Text style={{ opacity: opacityControl(progress, 2) }}>
+            <b className="important-text">
+              You can skip this chunk is you're pressed for time,
+            </b>{" "}
+            but I would be happy if you read it. About me as a person, I am a
+            gamer. I like to play games in my spare time, mainly moba's
+            {"(SMITE!!!)"}. In my spare, I use to make use of my degree in audio
+            production and make music. However, when covid hit, I had to sell a
+            lot of my equipment and that made me very say :(. My dream is to be
+            able to buy my equipment back {"(over even better equipment)"} and
+            go back to producing in my spare time. But enough about that, let's
+            move on to what you're really here for!
+          </Text>
+
+          <Text style={{ opacity: opacityControl(progress, 3) }}>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
-            <span className="important-text"> Frontend Developer </span>{" "}
-            apprentice, intern, or an entry level position.
+            <span className="important-text"> Frontend Developer </span>. Want
+            to know what I can bring to your team? Just a bit more scrolling and
+            you can{" "}
+            <a href="#skills" className="important-text-link">
+              find out!
+            </a>
           </Text>
         </TextContainer>
       </Wrapper>

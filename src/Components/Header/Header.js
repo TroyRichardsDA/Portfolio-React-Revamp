@@ -28,24 +28,10 @@ export default function Header() {
     if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
   }
 
-  function moveIcons(event) {
-    const icons = document.querySelectorAll(".back-drop__icon");
-    const x = event.clientX * scaleFactor;
-    const y = event.clientY * scaleFactor;
-
-    for (let i = 0; i < icons.length; ++i) {
-      const isOdd = i % 2 !== 0;
-      const boolInt = isOdd ? -1 : 1;
-      icons[i].style.transform = `translate(${x * boolInt}px, ${
-        y * boolInt
-      }px)`;
-    }
-  }
-
   window.addEventListener("load", typewriter);
 
   return (
-    <Container onMouseMove={(e) => moveIcons(e)}>
+    <Container>
       <Wrapper>
         <Name id="message">{name}</Name>
         <HeroHeading>Frontend Developer </HeroHeading>
