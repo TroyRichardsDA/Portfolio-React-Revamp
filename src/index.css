@@ -57,9 +57,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, p {
-  cursor: default;
-}
 
 
 .important-text {
@@ -99,6 +96,8 @@ h1, h2, h3, p {
   animation: blinker 2s linear infinite;
 }
 
+/* Animation Bank */
+
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -111,6 +110,25 @@ h1, h2, h3, p {
   }
   100%{
     opacity: 1;
+  }
+}
+
+@keyframes backdrop {
+  0% {
+    opacity: 0.3;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-50deg);
+    width: 32px;
+    height: 30px;
+  }
+
+  100% {
+    opacity: 1;
+    height: -100px;
+    transform: rotate(360deg);
   }
 }
 

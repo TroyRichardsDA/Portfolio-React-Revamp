@@ -72,6 +72,8 @@ export const HeroHeading = styled.h2`
   })}
 `;
 
+export const Desc = styled.p``;
+
 export const ToProjects = styled.a`
   padding: 1rem 2rem;
   margin-top: 2rem;
@@ -111,4 +113,65 @@ export const ToProjects = styled.a`
   ${desktop({
     fontSize: "1.3rem",
   })}
+`;
+
+export const Backdrop = styled.div`
+  position: fixed;
+  top: 13%;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  opacity: 0;
+
+  animation: load 2s ease forwards 2.3s;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .back-drop__icon {
+    position: fixed;
+    animation: backdrop 3s infinite alternate;
+  }
+
+  .icon--0 {
+    top: 13vh;
+    left: 3vw;
+  }
+  .icon--1 {
+    top: 18vh;
+    left: 50vw;
+  }
+  .icon--2 {
+    top: 20vh;
+    right: 2vw;
+  }
+  .icon--3 {
+    top: 50vh;
+    left: 5vw;
+  }
+  .icon--4 {
+    top: 43vh;
+    left: 50vw;
+  }
+  .icon--5 {
+    top: 60vh;
+    right: 8vw;
+  }
+  .icon--6 {
+    top: 80vh;
+    left: 5vw;
+  }
+  .icon--7 {
+    top: 90vh;
+    left: 50vw;
+  }
+  .icon--8 {
+    top: 80vh;
+    left: 80vw;
+  }
 `;
