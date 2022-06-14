@@ -30,7 +30,7 @@ export default function About() {
   if (elContainer) {
     const { clientHeight, offsetTop } = elContainer;
     const screenH = window.innerHeight;
-    const halfH = screenH / 4;
+    const halfH = screenH / 3;
     const percentY =
       Math.min(
         clientHeight + halfH,
@@ -76,23 +76,25 @@ export default function About() {
 
           <Text style={{ opacity: opacityControl(progress, 2) }}>
             <b className="important-text">
-              You can skip this chunk is you're pressed for time,
+              You can skip this chunk if you're pressed for time,
             </b>{" "}
-            but I would be happy if you read it. About me as a person, I am a
-            gamer. I like to play games in my spare time, mainly moba's
-            {"(SMITE!!!)"}. In my spare, I use to make use of my degree in audio
-            production and make music. However, when covid hit, I had to sell a
-            lot of my equipment and that made me very say :(. My dream is to be
-            able to buy my equipment back {"(over even better equipment)"} and
-            go back to producing in my spare time. But enough about that, let's
-            move on to what you're really here for!
+            but I would be happy if you read it. Let's talk about me as a
+            person. I like to play games in my spare time, mainly moba's
+            {"(SMITE!!!)"} and my favorite role is jungle. Don't ever ask me to
+            play support. Just don't. Another thing about me is I use to make
+            use of my degree in audio production and make music. However, when
+            covid hit, I had to sell a lot of my equipment and that made me very
+            sad :(. My dream is to be able to buy my equipment back{" "}
+            {"(over even better equipment)"} and go back to producing in my
+            spare time. But enough about that, let's move on to what you're
+            really here for!
           </Text>
 
-          <Text style={{ opacity: opacityControl(progress, 3) }}>
+          <Text style={{ opacity: opacityControl(progress, 2) }}>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
-            <span className="important-text"> Frontend Developer </span>. Want
-            to know what I can bring to your team? Just a bit more scrolling and
+            <span className="important-text"> Frontend Developer</span>. Want to
+            know what I can bring to your team? Just a bit more scrolling and
             you can{" "}
             <a href="#skills" className="important-text-link">
               find out!

@@ -32,9 +32,7 @@ export const IconsListWrapper = styled.div`
 export const IconsList = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-
-  margin: 20px 0;
+  gap: 24px;
 `;
 
 export const MainSkills = styled.div`
@@ -52,19 +50,29 @@ export const MainSkills = styled.div`
     transition: 0.4s;
   }
 
-  > h2 {
+  .skill-name {
     color: var(--dimHighlightColor);
     font-size: 1.5rem;
+    transform: scale(0) translateY(-50px);
   }
 
   &:hover {
-    > * {
-      color: var(--highlightColor);
-    }
     border-color: var(--dimHighlightColor);
     border-radius: 5px;
 
     box-shadow: 3px 10px 20px grey;
+
+    * {
+      color: var(--highlightColor);
+    }
+
+    p {
+      transform: scale(0.8);
+    }
+
+    .skill-name {
+      transform: scale(1) translateY(0);
+    }
   }
 `;
 

@@ -22,8 +22,8 @@ export default function Skills() {
     if (skill.icon && skill.isMain) {
       return (
         <MainSkills key={id}>
-          <h2> {skill.name} </h2>
           <Icon>{skill.icon}</Icon>
+          <span className="skill-name"> {skill.name} </span>
         </MainSkills>
       );
     } else return null;
@@ -68,7 +68,7 @@ export default function Skills() {
         viewport={{ once: true }}
       >
         <Header>
-          <i className="header-icon fas fa-tasks"></i> Skills
+          These are my <span className="important-text">skills</span>
         </Header>
 
         <IconsListWrapper>

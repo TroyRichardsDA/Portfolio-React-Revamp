@@ -9,6 +9,8 @@ import {
   SiCypress,
   SiAdobephotoshop,
   SiRedux,
+  SiJest,
+  SiReactrouter,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
@@ -108,8 +110,12 @@ const skills = [
     mark: 2,
   },
   {
-    icon: <DiJava />,
-    name: "Java",
+    icon: <SiReactrouter />,
+    name: "React Router",
+    mark: 2,
+  },
+  {
+    name: "React Hooks",
     mark: 2,
   },
   {
@@ -125,6 +131,15 @@ const skills = [
   {
     icon: <SiRedux />,
     name: "Redux",
+    mark: 2,
+  },
+  {
+    name: "BEM naming",
+    mark: 2,
+  },
+  {
+    icon: <SiJest />,
+    name: "Jest",
     mark: 2,
   },
 ];
