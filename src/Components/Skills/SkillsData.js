@@ -8,6 +8,7 @@ import {
   SiBootstrap,
   SiCypress,
   SiAdobephotoshop,
+  SiRedux,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
@@ -119,6 +120,11 @@ const skills = [
   {
     icon: <SiAdobephotoshop />,
     name: "Photoshop",
+    mark: 2,
+  },
+  {
+    icon: <SiRedux />,
+    name: "Redux",
     mark: 2,
   },
 ];

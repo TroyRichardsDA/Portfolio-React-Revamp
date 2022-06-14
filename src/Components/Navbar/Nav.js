@@ -9,18 +9,33 @@ import {
   Navigation,
   NavItem,
   NavList,
+  NavListDesktop,
   Wrapper,
 } from "./NavStyles";
 import { motion } from "framer-motion";
 
 function Nav({ logo }) {
-  function show() {
+  const navItems = ["about", "skills", "projects", "contact"];
+
+  const displayNavItems = navItems.map((item, id) => {
+    const firstLetter = item.split("").slice(0, 1);
+    const capitalize = firstLetter.join("").toUpperCase() + item.slice(1);
+
+    return (
+      <NavItem>
+        <Link href={`#${item}`} onClick={() => closeMenu()} key={id}>
+          <i className="fas fa-user"></i> {capitalize}
+        </Link>
+      </NavItem>
+    );
+  });
+  function showMenu() {
     document.getElementById("dd-content").style.cssText = `
-    transition: all 1s ease-in-out;
+
     width: 100%;
     `;
   }
-  function close() {
+  function closeMenu() {
     document.getElementById("dd-content").style.cssText = `
     width: -100px;
     `;
@@ -72,37 +87,16 @@ function Nav({ logo }) {
         </HomeBtn>
         <Navigation>
           <DropdownBtn
-            onClick={show}
+            onClick={() => showMenu()}
             className="fas fa-soild fa-bars"
           ></DropdownBtn>
           <DropdownContent id="dd-content">
             <NavList>
-              <CloseBtn>
-                {" "}
-                <p onClick={close}>Close</p>
-              </CloseBtn>
-              <NavItem>
-                <Link href="#about" onClick={close}>
-                  <i className="fas fa-user"></i> About
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="#skills" onClick={close}>
-                  <i className="fas fa-tasks"></i> Skills
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="#projects" onClick={close}>
-                  <i className="fas fa-code"></i> Projects
-                </Link>
-              </NavItem>
-              <NavItem>
-                <Link href="#contact" onClick={close}>
-                  <i className="fa-solid fa-address-card"></i> Contact
-                </Link>
-              </NavItem>
+              <CloseBtn onClick={() => closeMenu()}>Close</CloseBtn>
+              {displayNavItems}
             </NavList>
           </DropdownContent>
+          <NavListDesktop>{displayNavItems}</NavListDesktop>
         </Navigation>
       </Wrapper>
     </Container>

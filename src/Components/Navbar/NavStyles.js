@@ -71,15 +71,10 @@ export const DropdownContent = styled.div`
   top: 0;
 
   background-color: rgb(5, 5, 5);
-  transition: 0s;
+  transition: all 1s ease-in-out;
 
   ${tablet({
-    position: "relative",
-    transition: "0s",
-    display: "block",
-    backgroundColor: "unset",
-    height: "unset",
-    width: "100%",
+    display: "none",
   })}
 `;
 
@@ -113,6 +108,14 @@ export const CloseBtn = styled.li`
 
   ${tablet({
     display: "none",
+  })}
+`;
+
+export const NavListDesktop = styled.ul`
+  display: none;
+
+  ${tablet({
+    display: "flex",
   })}
 `;
 
