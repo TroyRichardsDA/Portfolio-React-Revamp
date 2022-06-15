@@ -7,7 +7,7 @@ import {
   Wrapper,
 } from "./FooterStyles";
 
-export default function Footer() {
+export default function Footer({ setDisplayModal }) {
   return (
     <Container id="footer">
       <Wrapper>
@@ -16,11 +16,23 @@ export default function Footer() {
             href="https://www.linkedin.com/in/troyrichardsdevloper/"
             target="_blank"
             rel="noreferrer"
+            className="important-text-link"
           >
-            <LinkIcon className="fab fa-linkedin"></LinkIcon>
+            LinkedIn
           </a>
-          <a href="https://github.com/AyeTone" target="_blank" rel="noreferrer">
-            <LinkIcon className="fab fa-github"></LinkIcon>
+          <p
+            className="important-text-link"
+            onClick={() => setDisplayModal(true)}
+          >
+            Contact
+          </p>
+          <a
+            href="https://github.com/AyeTone"
+            className="important-text-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
           </a>
         </Social>
         <Copyright className="copyright">

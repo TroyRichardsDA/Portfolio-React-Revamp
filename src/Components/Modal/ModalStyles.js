@@ -87,6 +87,8 @@ export const Contact = styled.div`
     font-size: 32px;
     transition: all 300ms ease;
     cursor: default;
+    &:hover {
+    }
   }
 
   .modal__contact--icon {
