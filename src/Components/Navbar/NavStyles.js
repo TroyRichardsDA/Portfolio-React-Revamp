@@ -6,7 +6,7 @@ export const Container = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-
+  transition: all 1s ease 2s;
   z-index: 10;
 
   backdrop-filter: blur(4px);

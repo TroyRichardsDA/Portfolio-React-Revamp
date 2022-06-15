@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <Container>
+    <Container id="footer">
       <Wrapper>
         <Social className="social-icons">
           <a

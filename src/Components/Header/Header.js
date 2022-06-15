@@ -34,18 +34,20 @@ export default function Header() {
   return (
     <Container>
       <Wrapper>
-        <Name id="message">{name}</Name>
-        <HeroHeading>Frontend Developer </HeroHeading>
-        <ToProjects href="#projects">
-          View My Work{" "}
-          <span>
-            <AiOutlineArrowRight />
-          </span>
-        </ToProjects>
-        <ScrollIcon href="#about">
-          <p>learn about me</p>
-          <div></div>
-        </ScrollIcon>
+        <div id="header__content">
+          <Name id="message">{name}</Name>
+          <HeroHeading>Frontend Developer </HeroHeading>
+          <ToProjects href="#projects">
+            View My Work{" "}
+            <span>
+              <AiOutlineArrowRight />
+            </span>
+          </ToProjects>
+          <ScrollIcon href="#about">
+            <p>learn about me</p>
+            <div></div>
+          </ScrollIcon>
+        </div>
         <Backdrop>
           <ReactIcon className="back-drop__icon icon--1" />
           <Controller className="back-drop__icon icon--0" />

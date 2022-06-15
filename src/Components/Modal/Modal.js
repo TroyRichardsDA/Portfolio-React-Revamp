@@ -5,28 +5,36 @@ import {
   Desc,
   Footer,
   Header,
+  TopHalf,
   Wrapper,
 } from "./ModalStyles";
-import { GrLinkedinOption } from "react-icons/gr";
+import { GrClose, GrLinkedinOption } from "react-icons/gr";
 import { BiMailSend } from "react-icons/bi";
 
-const Modal = () => {
+const Modal = ({ setDisplayModal }) => {
   return (
-    <Container>
-      <Wrapper>
-        <div>
+    <Container id="modal">
+      <Wrapper className="modal__wrapper">
+        <TopHalf className="modal__content--top">
           <Header>
-            <p>
+            <div>
+              <GrClose
+                className="modal__close"
+                onClick={() => setDisplayModal(false)}
+              />
+            </div>
+            <h2>
               You were so impressed that you're trying to{" "}
-              <b className="important-text">contact me</b>? ME?!? Very Good{" "}
-              <small>Veerrry Goooood.... </small>.. ah, right contact.
-            </p>
+              <span className="important-text">contact me</span>? ME?!?
+            </h2>
           </Header>
-
           <Desc>
-            <h3>AHEM</h3>
             <p>
-              The best way to me contact by far is a DM on{" "}
+              <small>Very Good... Veerrry Goooood.... </small>.. ah, right
+              contact. <br />
+              AHEM.
+              <br />
+              The best way to me contact is through a DM on{" "}
               <a
                 href="https://www.linkedin.com/in/troyrichardsdevloper/"
                 className="important-text-link"
@@ -34,34 +42,34 @@ const Modal = () => {
                 {" "}
                 LinkedIn
               </a>{" "}
-              followed up by email. I am currently seeking as a{" "}
+              followed up by email. I am currently seeking a role as a{" "}
               <b className="important-text">Frontend Developer</b>.
             </p>
           </Desc>
+        </TopHalf>
 
-          <Footer>
-            <p>
-              There's only 1 me left on the market!{" "}
-              <b className="important-text">Get me fast!</b>
-            </p>
-            <Contact>
-              <a
-                className="linkedin modal__contact--icon"
-                href="https://www.linkedin.com/in/troyrichardsdevloper/"
-              >
-                <GrLinkedinOption />
-              </a>
-              <p>👨🏽‍💻</p>
-              <a
-                className="mail modal__contact--icon"
-                href="mailto:troyrichards28@gmail.com"
-              >
-                <BiMailSend />
-              </a>
-            </Contact>
-            <small>psst.. hover over the guy</small>
-          </Footer>
-        </div>
+        <Footer className="modal__content--bottom">
+          <p>
+            There's only <b>1</b> me left on the market! <br />
+            <b className="important-text">Get me fast!</b>
+          </p>
+          <Contact>
+            <a
+              className="linkedin modal__contact--icon"
+              href="https://www.linkedin.com/in/troyrichardsdevloper/"
+            >
+              <GrLinkedinOption />
+            </a>
+            <p>👨🏽‍💻</p>
+            <a
+              className="mail modal__contact--icon"
+              href="mailto:troyrichards28@gmail.com"
+            >
+              <BiMailSend />
+            </a>
+          </Contact>
+          <small>psst.. hover over the guy</small>
+        </Footer>
       </Wrapper>
     </Container>
   );

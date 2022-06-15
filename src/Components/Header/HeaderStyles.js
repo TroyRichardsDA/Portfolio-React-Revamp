@@ -76,7 +76,9 @@ export const Desc = styled.p``;
 
 export const ToProjects = styled.a`
   padding: 1rem 2rem;
+  margin: 0 auto;
   margin-top: 2rem;
+  width: max-content;
 
   transition: all 0.3s;
   opacity: 0;
@@ -123,10 +125,12 @@ export const ScrollIcon = styled.a`
   height: 40px;
   border-radius: 10px;
   border: 2px solid black;
+  opacity: 0;
 
   display: flex;
   justify-content: center;
   transition: all 400ms ease;
+  animation: load 2s ease forwards 2.3s;
 
   div {
     margin-top: 4px;

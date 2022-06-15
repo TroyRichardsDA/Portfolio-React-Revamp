@@ -7,18 +7,30 @@ import Footer from "./Components/Footer/Footer";
 import logo from "./logo.svg";
 import Projects from "./Components/Projects/Projects";
 import ScrollObserver from "./Context/ScrollObsever";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
+  const [displayModal, setDisplayModal] = useState(false);
+
+  useEffect(() => {
+    if (displayModal) {
+      document.body.classList += " modal-open";
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+  }, [displayModal]);
+
   return (
     <ScrollObserver>
       <div className="App">
-        <Nav logo={logo} />
-        <Modal />
+        <Nav setDisplayModal={setDisplayModal} logo={logo} />
+        <Modal setDisplayModal={setDisplayModal} />
         <Header />
         <About />
         <Skills />
         <Projects />
-        <Footer />
+        <Footer setDisplayModal={setDisplayModal} />
       </div>
     </ScrollObserver>
   );

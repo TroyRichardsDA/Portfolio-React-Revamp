@@ -10,26 +10,49 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+  transition: all 1s;
 
-  z-index: 5;
+  z-index: -1;
 `;
 
 export const Wrapper = styled.div`
   width: 80%;
   max-width: 550px;
   margin: 0 auto;
-  background-color: white;
+  position: relative;
+
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
   border-bottom-right-radius: 0px;
-  box-shadow: 0px 10px 80px 0 grey;
+  transition: box-shadow 1s ease 2.5s;
+
+  .modal__close {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 20px;
+  }
+`;
+
+export const TopHalf = styled.div`
+  transition: all 1s ease;
+  transform: translateX(-110%);
+  background-color: white;
 `;
 
 export const Header = styled.div`
   padding: 20px;
+  padding-top: 52px;
 
   font-weight: bold;
+`;
+
+export const Desc = styled.div`
+  line-height: 1.5;
+  padding: 20px;
+  padding-top: 4px;
 
   small {
     background: linear-gradient(
@@ -40,21 +63,31 @@ export const Header = styled.div`
   }
 `;
 
-export const Desc = styled.div`
-  line-height: 1.5;
-  padding: 20px;
-  padding-top: 4px;
-`;
-
 export const Footer = styled.div`
   background-color: black;
   color: white;
   padding: 20px;
+
+  transition: all 1s ease;
+  transform: translateX(110%);
+
+  small {
+    display: none;
+    ${tablet({
+      display: "block",
+    })}
+  }
 `;
 
 export const Contact = styled.div`
   margin-top: 12px;
   position: relative;
+
+  p {
+    font-size: 32px;
+    transition: all 300ms ease;
+    cursor: default;
+  }
 
   .modal__contact--icon {
     position: absolute;
@@ -84,12 +117,6 @@ export const Contact = styled.div`
     ${tablet({
       transform: "translate(0px, 2px) scale(0)",
     })}
-  }
-
-  p {
-    font-size: 32px;
-    transition: all 300ms ease;
-    cursor: default;
   }
 
   &:hover {

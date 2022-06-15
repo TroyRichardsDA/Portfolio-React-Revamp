@@ -14,18 +14,30 @@ import {
 } from "./NavStyles";
 import { motion } from "framer-motion";
 
-function Nav({ logo }) {
+function Nav({ setDisplayModal }) {
   const navItems = ["about", "skills", "projects", "contact"];
 
   const displayNavItems = navItems.map((item, id) => {
     const firstLetter = item.split("").slice(0, 1);
     const capitalize = firstLetter.join("").toUpperCase() + item.slice(1);
-
+    const isContact = item === "contact";
     return (
       <NavItem key={id}>
-        <Link href={`#${item}`} onClick={() => closeMenu()}>
-          <i className="fas fa-user"></i> {capitalize}
-        </Link>
+        {!isContact ? (
+          <Link href={`#${item}`} onClick={() => closeMenu()}>
+            <i className="fas fa-user"></i> {capitalize}
+          </Link>
+        ) : (
+          <Link
+            href="#"
+            onClick={() => {
+              closeMenu();
+              setDisplayModal(true);
+            }}
+          >
+            <i className="fas fa-user"></i> {capitalize}
+          </Link>
+        )}
       </NavItem>
     );
   });
