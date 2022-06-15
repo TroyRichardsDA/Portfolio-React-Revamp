@@ -158,7 +158,7 @@ export const ScrollIcon = styled.a`
     p {
       color: var(--highlightColor);
       ${tablet({
-        transform: "translateY(0) scale(0)",
+        transform: "translateY(0px) scale(1)",
       })}
     }
 

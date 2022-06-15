@@ -47,7 +47,7 @@ export const MainSkills = styled.div`
   text-align: center;
 
   > * {
-    transition: 0.4s;
+    transition: all 400ms ease;
   }
 
   .skill-name {
