@@ -100,6 +100,23 @@ const Projects = () => {
             devWith="React, Sass w/ Gulp, REST API"
           />
           <Project
+            title="Google Clone"
+            img={require("../../images/google-clone.png")}
+            liveSite="https://ayetone.github.io/google-clone/"
+            sourceCode="https://github.com/AyeTone/google-clone"
+            desc={
+              <>
+                A CLONE?!?!? I know what you're thinking, he probably followed a
+                tutorial on youtube... you are 100% correct. I won't lie, I
+                coded along with a youtube to make this. HOWEVER! I did learn a
+                good bit about the tech used to make it. I am not a copy paste
+                warrior!<small>{"(StackOver RN 👀)"}</small>... all the time...
+                shhh..
+              </>
+            }
+            devWith="React, CSS BEM, Firebase, React Router, Material UI"
+          />
+          <Project
             title="Time-Tracking-Dashboard"
             img={require("../../images/time-tracking-dashboard.png")}
             liveSite="https://ayetone.github.io/Time-Tracking-Dashboard/"

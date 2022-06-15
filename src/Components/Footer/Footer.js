@@ -15,15 +15,16 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/troyrichardsdevloper/"
             target="_blank"
+            rel="noreferrer"
           >
             <LinkIcon className="fab fa-linkedin"></LinkIcon>
           </a>
-          <a href="https://github.com/AyeTone" target="_blank">
+          <a href="https://github.com/AyeTone" target="_blank" rel="noreferrer">
             <LinkIcon className="fab fa-github"></LinkIcon>
           </a>
         </Social>
         <Copyright className="copyright">
-          <Text>Copyright 2022 | Troy Richards</Text>
+          <Text>Copyright &copy; 2022 | Troy Richards</Text>
         </Copyright>
       </Wrapper>
     </Container>
