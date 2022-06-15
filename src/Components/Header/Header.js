@@ -3,6 +3,7 @@ import {
   Container,
   HeroHeading,
   Name,
+  ScrollIcon,
   ToProjects,
   Wrapper,
 } from "./HeaderStyles";
@@ -41,6 +42,10 @@ export default function Header() {
             <AiOutlineArrowRight />
           </span>
         </ToProjects>
+        <ScrollIcon href="#about">
+          <p>learn about me</p>
+          <div></div>
+        </ScrollIcon>
         <Backdrop>
           <ReactIcon className="back-drop__icon icon--1" />
           <Controller className="back-drop__icon icon--0" />

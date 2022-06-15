@@ -115,6 +115,59 @@ export const ToProjects = styled.a`
   })}
 `;
 
+export const ScrollIcon = styled.a`
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  width: 20px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: center;
+  transition: all 400ms ease;
+
+  div {
+    margin-top: 4px;
+    width: 4px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: black;
+    transition: all 400ms ease;
+    animation: scroll 1s infinite linear alternate;
+  }
+
+  p {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    color: black;
+    white-space: nowrap;
+    transition: all 400ms ease;
+
+    ${tablet({
+      transform: "translateY(40px) scale(0)",
+    })}
+  }
+
+  &:hover {
+    transform: scale(1.07);
+    border-color: var(--highlightColor);
+
+    p {
+      color: var(--highlightColor);
+      ${tablet({
+        transform: "translateY(0) scale(0)",
+      })}
+    }
+
+    div {
+      background-color: var(--highlightColor);
+    }
+  }
+`;
+
 export const Backdrop = styled.div`
   position: fixed;
   top: 13%;
@@ -145,7 +198,7 @@ export const Backdrop = styled.div`
   }
   .icon--1 {
     top: 18vh;
-    left: 50vw;
+    left: 43vw;
   }
   .icon--2 {
     top: 20vh;
@@ -153,7 +206,7 @@ export const Backdrop = styled.div`
   }
   .icon--3 {
     top: 50vh;
-    left: 5vw;
+    left: 12vw;
   }
   .icon--4 {
     top: 67vh;
@@ -164,15 +217,15 @@ export const Backdrop = styled.div`
     right: 8vw;
   }
   .icon--6 {
-    top: 80vh;
-    left: 5vw;
+    top: 92vh;
+    left: 2vw;
   }
   .icon--7 {
-    top: 90vh;
-    left: 50vw;
+    top: 84vh;
+    left: 30vw;
   }
   .icon--8 {
-    top: 80vh;
+    top: 90vh;
     left: 80vw;
   }
 `;
