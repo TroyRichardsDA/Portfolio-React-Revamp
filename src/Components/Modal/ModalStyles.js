@@ -30,9 +30,19 @@ export const Wrapper = styled.div`
 
   .modal__close {
     position: absolute;
-    top: 4px;
-    right: 8px;
+    top: 8px;
+    right: 12px;
     font-size: 20px;
+
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+      border-color: black;
+      transform: scale(1.2) rotate(360deg);
+    }
   }
 `;
 
