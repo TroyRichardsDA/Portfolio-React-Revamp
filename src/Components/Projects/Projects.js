@@ -22,7 +22,8 @@ const Projects = () => {
       >
         <Headings>
           <Header>
-            Here are some of my <span className="skills-used">projects</span>
+            Here are some of my <br />{" "}
+            <span className="skills-used">projects</span>
           </Header>
         </Headings>
 

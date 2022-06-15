@@ -55,14 +55,14 @@ export default function About() {
 
         <TextContainer>
           <Text style={{ opacity: opacityControl(progress, 0) }}>
-            Hello! My name is Troy Richards, and I am what some would call a{" "}
+            Hello! My name is Troy Richards, and I am, what some would call, a{" "}
             <br /> <span className="shake">🎉</span>{" "}
             <b className="skills-used about-title">Frontend Developer!!!!!!</b>{" "}
             <span className="shake">🎉</span>
             <br />
             <small>
               if they don't call me that, they don't know about me. Don't worry
-              about them, we talking about me.
+              about them, we're talking about me.
             </small>
           </Text>
 

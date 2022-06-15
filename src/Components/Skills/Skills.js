@@ -68,7 +68,7 @@ export default function Skills() {
         viewport={{ once: true }}
       >
         <Header>
-          These are my <span className="important-text">skills</span>
+          These are my <br /> <span className="important-text">skills</span>
         </Header>
 
         <IconsListWrapper>

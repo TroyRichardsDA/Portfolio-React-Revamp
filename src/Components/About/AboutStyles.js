@@ -68,7 +68,13 @@ export const Text = styled.p`
   transition: 0.3s;
 
   .about-title {
+    display: inline-block;
     font-size: 24px;
+    margin-top: 16px;
+
+    ${desktop({
+      fontSize: "32px",
+    })}
   }
 
   .shake {
