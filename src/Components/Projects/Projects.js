@@ -26,20 +26,6 @@ const Projects = () => {
           </Header>
         </Headings>
 
-        <SubHeader>
-          Just an fyi from the guy: <Brackets> [ </Brackets>
-        </SubHeader>
-        <FYI>
-          {"{"} "Live Site": "<i className="fas fa-window-restore"></i>" {"}"},
-        </FYI>
-        <FYI>
-          {"{"} "Source Code": "<i className=" fas fa-file-code"></i>" {"}"}
-        </FYI>
-
-        <SubHeader>
-          <Brackets> ] </Brackets>
-        </SubHeader>
-
         <ProjectsContainer>
           <Project
             title="REST Countries API"
@@ -89,10 +75,10 @@ const Projects = () => {
             desc={
               <>
                 Ever wanted a comment section all to yourself? Look no further!
-                This UI allows the user to add messages to existing chat, reply
-                to existing comments, dislike or like a comment, and delete or
-                edit their own comments! This UI was brought to you by Troy and
-                sponsered by Handsome JACK!
+                This UI allows you <small>{"(the user)"}</small> to talk
+                yourself, edit your cringe, and delete it once your filled with
+                regret! This UI was brought to you by Troy and sponsered by
+                Handsome JACK!
                 <small>{"(Not really)"}</small>
               </>
             }

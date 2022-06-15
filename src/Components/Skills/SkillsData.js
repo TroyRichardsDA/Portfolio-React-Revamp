@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { FiFigma } from "react-icons/fi";
-import { DiGulp, DiJava } from "react-icons/di";
+import { DiGulp } from "react-icons/di";
 
 const skills = [
   {

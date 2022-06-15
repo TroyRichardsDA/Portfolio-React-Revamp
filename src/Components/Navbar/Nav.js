@@ -22,8 +22,8 @@ function Nav({ logo }) {
     const capitalize = firstLetter.join("").toUpperCase() + item.slice(1);
 
     return (
-      <NavItem>
-        <Link href={`#${item}`} onClick={() => closeMenu()} key={id}>
+      <NavItem key={id}>
+        <Link href={`#${item}`} onClick={() => closeMenu()}>
           <i className="fas fa-user"></i> {capitalize}
         </Link>
       </NavItem>

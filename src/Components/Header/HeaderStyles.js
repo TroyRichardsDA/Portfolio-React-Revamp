@@ -92,7 +92,7 @@ export const ToProjects = styled.a`
   gap: 10px;
 
   span {
-    transition: 0.4s;
+    transition: 1.5s;
   }
 
   &:hover {
@@ -102,7 +102,7 @@ export const ToProjects = styled.a`
 
     span {
       color: white;
-      transform: rotate(90deg);
+      transform: rotate(450deg);
     }
   }
 
@@ -156,7 +156,7 @@ export const Backdrop = styled.div`
     left: 5vw;
   }
   .icon--4 {
-    top: 43vh;
+    top: 67vh;
     left: 50vw;
   }
   .icon--5 {

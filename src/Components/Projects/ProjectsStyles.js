@@ -5,16 +5,11 @@ import { motion } from "framer-motion";
 export const Container = styled.section`
   background-color: var(--main-BG);
   padding: var(--containerPadding);
-
-  position: relative;
 `;
 
 export const Wrapper = styled(motion.div)`
   width: var(--wrapper);
   margin: 0 auto;
-
-  position: relative;
-  z-index: 3;
 `;
 
 export const Headings = styled.div``;
@@ -73,13 +68,12 @@ export const ProjectsContainer = styled(motion.div)`
   gap: 6rem;
 
   ${tablet({
-    position: "relative",
-    gridTemplateColumns: "1fr",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "20px",
   })}
 
   ${desktop({
-    width: "90%",
     margin: "4rem auto",
-    gap: "8rem",
+    gap: "32px",
   })}
 `;

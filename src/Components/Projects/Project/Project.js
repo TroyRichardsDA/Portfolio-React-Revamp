@@ -11,6 +11,7 @@ import {
   TextContainer,
   Title,
 } from "./ProjectStyles";
+import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 
 export default function Project({
   title,
@@ -28,27 +29,25 @@ export default function Project({
       transition={{ duration: 2 }}
     >
       <ImgContainer>
-        <LinkedImg href={liveSite} target="_blank">
-          <Image src={img} alt={title} />
+        <Image src={img} alt={title} />
 
-          <ImageCover>
-            <TextContainer>
-              <Title>{title}</Title>
-              <DevWith>{devWith}</DevWith>
-              <Desc>
-                {desc}
-                <ProjectLinks>
-                  <Link href={liveSite} target="_blank">
-                    <i className="fas fa-window-restore"></i>
-                  </Link>
-                  <Link href={sourceCode} target="_blank">
-                    <i className=" fas fa-file-code"></i>
-                  </Link>
-                </ProjectLinks>
-              </Desc>
-            </TextContainer>
-          </ImageCover>
-        </LinkedImg>
+        <ImageCover>
+          <TextContainer>
+            <Title>{title}</Title>
+            <DevWith>{devWith}</DevWith>
+            <Desc>
+              {desc}
+              <ProjectLinks>
+                <Link href={liveSite} target="_blank">
+                  <AiOutlineLink />
+                </Link>
+                <Link href={sourceCode} target="_blank">
+                  <AiOutlineGithub />
+                </Link>
+              </ProjectLinks>
+            </Desc>
+          </TextContainer>
+        </ImageCover>
       </ImgContainer>
     </Container>
   );
