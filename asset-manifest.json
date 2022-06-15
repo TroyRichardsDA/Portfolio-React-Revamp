@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-Revamp/static/css/main.c6db8d33.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.30767d8b.js",
-    "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.015cd20d9d40671df94d.png",
-    "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.3f10e491b4324ec94302.png",
-    "static/media/rest-countries-api.png": "/Portfolio-React-Revamp/static/media/rest-countries-api.9bc307ccf5a44f47d07a.png",
-    "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6f1d980721626b1c3885.png",
-    "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.e65bd1153bd0b6448d39.png",
+    "main.css": "/Portfolio-React-Revamp/static/css/main.f51c2dd0.css",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.971b204d.js",
+    "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.32c3c820dc59915a72cf.png",
+    "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.d2d58809d6ded68da8df.png",
+    "static/media/rest-countries-api.png": "/Portfolio-React-Revamp/static/media/rest-countries-api.cd8939360d25300f4a0d.png",
+    "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6ce4c138224d2c5c9bef.png",
+    "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.a03fe067cc473b56794d.png",
+    "static/media/google-clone.png": "/Portfolio-React-Revamp/static/media/google-clone.f7206f2ef41beb042a04.png",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
+    "static/media/react.svg": "/Portfolio-React-Revamp/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
+    "static/media/music-reader.svg": "/Portfolio-React-Revamp/static/media/music-reader.a690fec223888053068a5ede9c0972ca.svg",
+    "static/media/down-step-note.svg": "/Portfolio-React-Revamp/static/media/down-step-note.ca20f98526f7983592860d4dd2f66daa.svg",
+    "static/media/controller.svg": "/Portfolio-React-Revamp/static/media/controller.97d41eab94f206ee2aa04214d65f02ee.svg",
+    "static/media/bold-note.svg": "/Portfolio-React-Revamp/static/media/bold-note.f479cbb7a21da17a11e56120bd948301.svg",
+    "static/media/code.svg": "/Portfolio-React-Revamp/static/media/code.948c22a0dc8d6778c7a27d45e7f1b1ab.svg",
+    "static/media/playstation.svg": "/Portfolio-React-Revamp/static/media/playstation.376df1c4fbeada1dfd17077372828f01.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
-    "main.c6db8d33.css.map": "/Portfolio-React-Revamp/static/css/main.c6db8d33.css.map",
-    "main.30767d8b.js.map": "/Portfolio-React-Revamp/static/js/main.30767d8b.js.map"
+    "main.f51c2dd0.css.map": "/Portfolio-React-Revamp/static/css/main.f51c2dd0.css.map",
+    "main.971b204d.js.map": "/Portfolio-React-Revamp/static/js/main.971b204d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6db8d33.css",
-    "static/js/main.30767d8b.js"
+    "static/css/main.f51c2dd0.css",
+    "static/js/main.971b204d.js"
   ]
 }
