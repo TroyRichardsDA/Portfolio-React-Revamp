@@ -49,6 +49,11 @@ export const Image = styled.img`
   border-radius: 5px;
 
   transition: all 600ms ease;
+  filter: blur(2px) brightness(0.4);
+
+  ${tablet({
+    filter: "unset",
+  })}
 `;
 
 export const ImgContainer = styled(motion.div)`
