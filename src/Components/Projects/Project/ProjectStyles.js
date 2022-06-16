@@ -131,10 +131,11 @@ export const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-evenly;
   font-size: 1.5rem;
+  margin-top: 8px;
 
   ${desktop({
     justifyContent: "unset",
-    gap: "12px",
+    gap: "16px",
   })}
 `;
 
@@ -144,13 +145,10 @@ export const Link = styled.a`
   cursor: alias;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
 
     ${tablet({
       color: "var(--highlightColor)",
     })}
   }
-  ${tablet({
-    color: "var(--dimHighlightColor)",
-  })}
 `;

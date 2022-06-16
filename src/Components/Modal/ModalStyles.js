@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { tablet, desktop } from "../../responsive";
+import { tablet } from "../../responsive";
 
 export const Container = styled.div`
   position: absolute;

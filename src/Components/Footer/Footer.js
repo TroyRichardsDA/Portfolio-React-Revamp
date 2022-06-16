@@ -1,11 +1,4 @@
-import {
-  Container,
-  Copyright,
-  LinkIcon,
-  Social,
-  Text,
-  Wrapper,
-} from "./FooterStyles";
+import { Container, Copyright, Social, Text, Wrapper } from "./FooterStyles";
 
 export default function Footer({ setDisplayModal }) {
   return (

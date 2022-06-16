@@ -6,9 +6,6 @@ import {
   ProjectsContainer,
   Headings,
   Wrapper,
-  SubHeader,
-  FYI,
-  Brackets,
 } from "./ProjectsStyles";
 
 const Projects = () => {
@@ -35,7 +32,7 @@ const Projects = () => {
             sourceCode="https://github.com/AyeTone/rest-countries-api"
             desc={
               <>
-                Every wanted to know something about a country that you didn't
+                Ever wanted to know something about a country that you didn't
                 know yet? I'm sure this UI will tell something you didn't know
                 about that one country! If it's not accurate, blame the creaters
                 of this{" "}

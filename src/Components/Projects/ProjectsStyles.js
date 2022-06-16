@@ -23,34 +23,6 @@ export const Header = styled.h2`
   text-shadow: var(--headerTextShadow);
 `;
 
-export const SubHeader = styled.p`
-  text-align: center;
-  margin: 10px 0;
-  font-family: var(--fnt-tech);
-
-  ${tablet({
-    fontSize: "1.1rem",
-  })}
-
-  ${desktop({
-    fontSize: "1.3rem",
-  })}
-`;
-
-export const Brackets = styled.span`
-  font-size: 1.1rem;
-`;
-
-export const FYI = styled.p`
-  text-align: center;
-  font-size: 1rem;
-  margin: 5px 0;
-
-  color: var(--dimHighlightColor);
-
-  letter-spacing: 5px;
-`;
-
 export const SmallText = styled.span`
   font-size: 10px;
   margin-left: 30px;
