@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio-React-Revamp/static/css/main.beb75fce.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.4979dcf4.js",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.c5a05474.js",
     "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.32c3c820dc59915a72cf.png",
     "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.d2d58809d6ded68da8df.png",
     "static/media/rest-countries-api.png": "/Portfolio-React-Revamp/static/media/rest-countries-api.cd8939360d25300f4a0d.png",
-    "static/media/time-tracking-dashboard.png": "/Portfolio-React-Revamp/static/media/time-tracking-dashboard.6ce4c138224d2c5c9bef.png",
+    "static/media/library.png": "/Portfolio-React-Revamp/static/media/library.6c22f6bdf2feebd1fd3e.png",
     "static/media/github-repo-display.png": "/Portfolio-React-Revamp/static/media/github-repo-display.a03fe067cc473b56794d.png",
     "static/media/google-clone.png": "/Portfolio-React-Revamp/static/media/google-clone.f7206f2ef41beb042a04.png",
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
@@ -18,10 +18,10 @@
     "static/media/playstation.svg": "/Portfolio-React-Revamp/static/media/playstation.376df1c4fbeada1dfd17077372828f01.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
     "main.beb75fce.css.map": "/Portfolio-React-Revamp/static/css/main.beb75fce.css.map",
-    "main.4979dcf4.js.map": "/Portfolio-React-Revamp/static/js/main.4979dcf4.js.map"
+    "main.c5a05474.js.map": "/Portfolio-React-Revamp/static/js/main.c5a05474.js.map"
   },
   "entrypoints": [
     "static/css/main.beb75fce.css",
-    "static/js/main.4979dcf4.js"
+    "static/js/main.c5a05474.js"
   ]
 }
