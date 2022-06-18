@@ -20,11 +20,13 @@ export default function Project({
   desc,
   devWith,
   img,
+  x,
+  y,
 }) {
   return (
     <Container
-      initial={{ x: -300, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ x, y, opacity: 0 }}
+      whileInView={{ x: 0, y: 0, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
     >

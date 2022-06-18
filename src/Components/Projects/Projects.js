@@ -48,6 +48,8 @@ const Projects = () => {
               </>
             }
             devWith="React, TypeScript, Sass w/Gulp, BEM, REST API"
+            y="-300"
+            x="0"
           />
           <Project
             title="Ecommerce Product Page"
@@ -64,6 +66,26 @@ const Projects = () => {
               </>
             }
             devWith="React, TypeScript, Sass w/gulp, BEM"
+            x="300"
+            y="0"
+          />
+          <Project
+            title="Library-Ecom Store"
+            img={require("../../images/library.png")}
+            liveSite="https://ayetone.github.io/Library-Ecom/"
+            sourceCode="https://github.com/AyeTone/Library-Ecom"
+            desc={
+              <>
+                I present to you another way to no buy something. Come not shop
+                at Library, The Store! Took a look at all of our books in our
+                book section. You can filter them by "Broke", "Got MONEY money",
+                or "Just tell me whats good"! Pick a book {"(or books)"}
+                and go not checkout in the cart. Come not shop today!
+              </>
+            }
+            devWith="React, React Router, BEM"
+            y="0"
+            x="-300"
           />
           <Project
             title="Interactive Comment Section"
@@ -81,6 +103,8 @@ const Projects = () => {
               </>
             }
             devWith="React, Sass w/ Gulp, BEM"
+            x="0"
+            y="300"
           />
           <Project
             title="Github Showcase"
@@ -96,6 +120,8 @@ const Projects = () => {
               </>
             }
             devWith="React, Sass w/ Gulp, REST API"
+            x="0"
+            y="300"
           />
           <Project
             title="Google Clone"
@@ -113,20 +139,8 @@ const Projects = () => {
               </>
             }
             devWith="React, CSS BEM, Firebase, React Router, Material UI"
-          />
-          <Project
-            title="Time-Tracking-Dashboard"
-            img={require("../../images/time-tracking-dashboard.png")}
-            liveSite="https://ayetone.github.io/Time-Tracking-Dashboard/"
-            sourceCode="https://github.com/AyeTone/Time-Tracking-Dashboard"
-            desc={
-              <>
-                I'm going to be honest with you. This is probably the most
-                lackluster project on this list. However it hold a special place
-                in my heart as my turning point in getting better at react.
-              </>
-            }
-            devWith="React, Styled Components"
+            y="0"
+            x="300"
           />
         </ProjectsContainer>
       </Wrapper>
