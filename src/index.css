@@ -158,7 +158,7 @@ small {
 .section__title::after {
   position: absolute;
   content: ' ';
-  bottom: 0;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
@@ -167,7 +167,6 @@ small {
 
   animation: sectTitle 10s infinite ease alternate;
 }
-
 
 .important-text {
   color: var(--highlightColor);
@@ -302,7 +301,6 @@ small {
 .modal-open .back-drop__icon {
   animation: unset !important;
 }
-
 
 
 /* 

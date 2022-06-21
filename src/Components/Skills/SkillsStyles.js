@@ -100,33 +100,12 @@ export const Summary = styled.summary`
   }
 `;
 
-export const Disclaimer = styled.p`
-  margin: 20px 0 10px;
-
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 700;
-
-  color: red;
-`;
-
-export const DText = styled.p`
-  text-align: center;
-  margin: 0 auto 60px;
-
-  width: 80%;
-  line-height: 30px;
-  letter-spacing: 3px;
-
-  color: red;
-`;
-
 export const SummarySkills = styled.div`
   margin-top: 20px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 32px;
 
   ${tablet({
     gridTemplateColumns: "repeat(3, 1fr)",
@@ -135,27 +114,33 @@ export const SummarySkills = styled.div`
 
 export const Skill = styled.p`
   position: relative;
-  transition: 0.2s;
+  transition: all 300ms ease;
 
-  letter-spacing: 2px;
-  font-size: 1.2rem;
+  letter-spacing: 4px;
+  font-size: 20px;
   text-align: center;
 
   &::after {
     content: " ";
     position: absolute;
     bottom: -2px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0;
 
     height: 2px;
     transition: 0.4s;
 
-    background-color: var(--dimHighlightColor);
+    background-color: var(--highlightColor);
   }
 
   &:hover {
     color: var(--dimHighlightColor);
+
+    .main {
+      color: var(--highlightColor);
+      font-weight: 800;
+    }
 
     &::after {
       width: 100%;

@@ -51,10 +51,12 @@ export default function Skills() {
     else return null;
   });
 
-  const list = skills.map(({ icon, name }, id) => {
+  const list = skills.map(({ icon, name, isMain }, id) => {
     return (
       <Skill key={id}>
-        {icon} {name}{" "}
+        <span className={isMain && "main"}>
+          {icon} {name}
+        </span>
       </Skill>
     );
   });
@@ -68,7 +70,7 @@ export default function Skills() {
         viewport={{ once: true }}
       >
         <Header>
-          These are my <br /> <span className="important-text">skills</span>
+          Wild <span className="important-text">S</span>kills List Appeared!
         </Header>
 
         <IconsListWrapper>
