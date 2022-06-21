@@ -29,7 +29,7 @@ const skills = [
   },
   {
     icon: <i className="fab fa-react"></i>,
-    name: "React",
+    name: "React (Hooks+)",
     mark: 1,
     isMain: true,
   },

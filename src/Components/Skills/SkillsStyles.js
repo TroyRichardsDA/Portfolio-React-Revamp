@@ -14,6 +14,7 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Header = styled.h2`
+  position: relative;
   text-align: center;
 
   letter-spacing: 2px;

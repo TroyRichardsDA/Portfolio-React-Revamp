@@ -4,7 +4,6 @@ import {
   Container,
   Header,
   ProjectsContainer,
-  Headings,
   Wrapper,
 } from "./ProjectsStyles";
 
@@ -17,12 +16,9 @@ const Projects = () => {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
-        <Headings>
-          <Header>
-            Here are some of my <br />{" "}
-            <span className="skills-used">projects</span>
-          </Header>
-        </Headings>
+        <Header className="section__title">
+          My Shiny <span className="skills-used">P</span>rojects
+        </Header>
 
         <ProjectsContainer>
           <Project

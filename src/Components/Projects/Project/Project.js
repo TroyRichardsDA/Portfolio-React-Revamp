@@ -6,7 +6,6 @@ import {
   ImageCover,
   ImgContainer,
   Link,
-  LinkedImg,
   ProjectLinks,
   TextContainer,
   Title,

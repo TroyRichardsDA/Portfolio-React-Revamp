@@ -12,8 +12,6 @@ import {
   SummarySkills,
   Skill,
   MainSkills,
-  Disclaimer,
-  DText,
 } from "./SkillsStyles";
 import Marquee from "react-easy-marquee";
 
@@ -69,7 +67,7 @@ export default function Skills() {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
-        <Header>
+        <Header className="section__title">
           Wild <span className="important-text">S</span>kills List Appeared!
         </Header>
 

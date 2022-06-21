@@ -97,8 +97,6 @@ export const ImgContainer = styled(motion.div)`
   })}
 `;
 
-export const LinkedImg = styled.a``;
-
 export const Title = styled.h3`
   font-size: 16px;
   margin-bottom: 8px;

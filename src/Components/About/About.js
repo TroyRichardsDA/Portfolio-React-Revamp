@@ -73,15 +73,15 @@ function About() {
               <FaRegLightbulb className="light-bulb--out" />
             </MobileShowMore>
             <p className="show-more__para">
-              Let's talk about me as a person. I like to play games in my spare
-              time, mainly moba's
-              {"(SMITE!!!)"} and my favorite role is jungle. Don't ever ask me
-              to play support. Just don't. Wrong tree. Another thing about me is
-              I use to make use of my degree in audio production and make music.
-              However, when covid hit, I had to sell a lot of my equipment and
-              that made me very sad :(. My goal is buy my equipment back{" "}
-              {"(or even better equipment)"} and get back to producing in my
-              spare time.
+              Let's talk about me as a person. I'm a gamer. Moba's take up a
+              good amount of my games list with Smite being at the top of that
+              list. I promise you, that my jungle is saucey. It's not SPL saucey
+              but it's close. Give me any assassin expect Awilix and the
+              rotations will be on point. Another thing about me is I use to
+              make use of my degree in audio production and make music. However,
+              when covid hit, I had to sell a lot of my equipment to get by.
+              Eventually, somewhere down the line I will buy back my equipment
+              so I can get back to making music.
             </p>
           </ShowMore>
         </TextContainer>
