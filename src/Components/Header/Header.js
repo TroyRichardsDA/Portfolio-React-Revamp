@@ -22,16 +22,16 @@ export default function Header() {
   let textPos = -20;
   let speed = 100;
 
-  function typewriter() {
-    document.getElementById("message").innerHTML =
-      name[0].substring(0, textPos) + "<span class='blicker'>|</span>";
-
-    if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
-  }
-
   useEffect(() => {
+    console.log("ran");
+    function typewriter() {
+      document.getElementById("message").innerHTML =
+        name[0].substring(0, textPos) + "<span class='blicker'>|</span>";
+
+      if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
+    }
     typewriter();
-  });
+  }, []);
 
   return (
     <Container>

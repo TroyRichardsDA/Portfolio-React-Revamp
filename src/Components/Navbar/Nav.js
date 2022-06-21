@@ -1,4 +1,5 @@
 import { useCallback, useState, useEffect } from "react";
+import { HiMoon, HiOutlineMoon } from "react-icons/hi";
 import {
   CloseBtn,
   Container,
@@ -14,13 +15,14 @@ import {
 } from "./NavStyles";
 import { motion } from "framer-motion";
 
-function Nav({ setDisplayModal }) {
+function Nav(props) {
+  const { setDisplayModal, light, dark, setTheme, isDark, setIsDark } = props;
   const navItems = ["about", "skills", "projects", "contact"];
-
   const displayNavItems = navItems.map((item, id) => {
     const firstLetter = item.split("").slice(0, 1);
     const capitalize = firstLetter.join("").toUpperCase() + item.slice(1);
     const isContact = item === "contact";
+
     return (
       <NavItem key={id}>
         {!isContact ? (
@@ -41,41 +43,34 @@ function Nav({ setDisplayModal }) {
       </NavItem>
     );
   });
+
   function showMenu() {
     document.getElementById("dd-content").style.cssText = `
 
     width: 100%;
     `;
   }
+
   function closeMenu() {
     document.getElementById("dd-content").style.cssText = `
     width: -100px;
     `;
   }
 
-  /* Nav BG Colors */
-  const white = {
-    backgroundColor: "rgba( 255, 255, 255, 38%)",
-    height: "50px",
-  };
-  const trans = { backgroundColor: "transparent" };
-
-  const [colorChange, setColorChange] = useState(false);
-  const changeNavbarColor = useCallback(() => {
-    if (window.scrollY >= 80) {
-      setColorChange(true);
+  function toggleTheme() {
+    if (!isDark) {
+      setTheme(dark);
+      setIsDark(true);
+      document.body.classList += " dark";
     } else {
-      setColorChange(false);
+      setTheme(light);
+      setIsDark(false);
+      document.body.classList.remove("dark");
     }
-  }, []);
-
-  useEffect(() => {
-    document.addEventListener("scroll", changeNavbarColor, { passive: true });
-    return () => document.removeEventListener("scroll", changeNavbarColor);
-  }, [changeNavbarColor]);
+  }
 
   return (
-    <Container style={!colorChange ? trans : white} id="nava">
+    <Container id="nava">
       <Wrapper>
         <HomeBtn href="">
           <motion.svg
@@ -109,6 +104,11 @@ function Nav({ setDisplayModal }) {
             </NavList>
           </DropdownContent>
           <NavListDesktop>{displayNavItems}</NavListDesktop>
+          {isDark ? (
+            <HiMoon className="moon" onClick={() => toggleTheme()} />
+          ) : (
+            <HiOutlineMoon className="moon" onClick={() => toggleTheme()} />
+          )}
         </Navigation>
       </Wrapper>
     </Container>

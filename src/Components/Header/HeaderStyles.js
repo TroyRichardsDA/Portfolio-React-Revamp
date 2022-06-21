@@ -120,7 +120,7 @@ export const ScrollIcon = styled.a`
   width: 20px;
   height: 40px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 2px solid ${(p) => p.theme.color};
   opacity: 0;
 
   display: flex;

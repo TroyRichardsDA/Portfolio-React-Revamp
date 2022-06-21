@@ -3,17 +3,11 @@ import { tablet } from "../../responsive";
 
 export const Container = styled.nav`
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   transition: all 1s ease 2s;
   z-index: 10;
-
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  ${tablet({
-    padding: "2px 20px",
-  })}
 `;
 
 export const Wrapper = styled.div`
@@ -21,7 +15,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 10px 30px;
+  padding: 12px 20px;
   margin: 0 auto;
 
   height: 100%;
@@ -41,17 +35,32 @@ export const HomeBtn = styled.a`
   }
 `;
 
-export const Navigation = styled.div``;
+export const Navigation = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  .moon {
+    font-size: 32px;
+    transition: all 1s ease;
+    cursor: pointer;
+
+    &:hover {
+      filter: blur(1px);
+      transform: rotate(360deg);
+    }
+  }
+`;
 
 export const DropdownBtn = styled.i`
   cursor: pointer;
   font-size: 2rem;
-  padding: 10px;
-  transition: 0.25s;
+  padding: 12px;
+  transition: all 100ms ease;
 
   &:hover {
     transform: scale(1.2);
-    text-shadow: 0px 5px 10px grey;
+    text-shadow: 0px 4px 12px grey;
     color: var(--highlightColor);
   }
 
@@ -71,7 +80,7 @@ export const DropdownContent = styled.div`
   right: 0;
   top: 0;
 
-  background-color: rgb(5, 5, 5);
+  background-color: rgb(5, 5, 5, 0.9);
   transition: all 1s ease-in-out;
 
   ${tablet({
@@ -83,11 +92,11 @@ export const NavList = styled.ul`
   display: flex;
   height: 100%;
   flex-direction: column;
-  gap: 3rem;
+  gap: 40px;
   text-align: center;
 
   ${tablet({
-    gap: "10px",
+    gap: "12px",
     flexDirection: "row",
     backgroundColor: "unset",
   })}
@@ -95,16 +104,16 @@ export const NavList = styled.ul`
 
 export const CloseBtn = styled.li`
   text-align: right;
-  padding-bottom: 3rem;
+  padding-bottom: 40px;
   transition: 0.5s;
   cursor: pointer;
-  padding: 1.4em;
-  font-size: 1.2rem;
+  padding: 24px;
+  font-size: 20px;
   color: white;
 
   &:hover {
     color: var(--highlightColor);
-    text-shadow: 0px 10px 20px white;
+    text-shadow: 0px 8px 20px white;
   }
 
   ${tablet({
@@ -135,23 +144,23 @@ export const NavItem = styled.li`
 
 export const Link = styled.a`
   transition: all 0.5s;
-  padding: 30px 10px;
+  padding: 32px 12px;
   border-bottom: 1px solid var(--highlightColor);
   border-radius: 10%;
 
   &:hover {
     color: var(--highlightColor);
-    padding: 30px 70px;
+    padding: 32px 72px;
 
     ${tablet({
-      borderWidth: "10px",
-      padding: "10px 10px",
+      borderWidth: "12px",
+      padding: "12px 12px",
       boxShadow: "0px 5px 5px grey",
     })}
   }
 
   ${tablet({
-    padding: "10px 10px",
+    padding: "12px 12px",
     color: "black",
   })}
 `;

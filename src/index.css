@@ -124,8 +124,11 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  color: #000000e1;
+  color: #000000;
   background-color: var(--main-BG);
+  transition: all 300ms ease;
+
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -138,6 +141,15 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: var(--highlightColor);
   border-radius: 5px;
+}
+
+.dark {
+  background-color: #181818;
+  color: rgb(230, 230, 230);
+}
+
+.dark .fill {
+  fill: rgb(230, 230, 230);
 }
 
 
