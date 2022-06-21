@@ -14,10 +14,12 @@ import { ThemeProvider } from "styled-components";
 
 const dark = {
   color: "rgb(230, 230, 230)",
+  backgroundColor: "black",
 };
 
 const light = {
   color: "black",
+  backgroundColor: "white",
 };
 
 function App() {

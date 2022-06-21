@@ -1,4 +1,3 @@
-import { useCallback, useState, useEffect } from "react";
 import { HiMoon, HiOutlineMoon } from "react-icons/hi";
 import {
   CloseBtn,
