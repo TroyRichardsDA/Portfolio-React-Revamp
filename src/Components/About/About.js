@@ -49,18 +49,18 @@ function About() {
               <b className="important-text">Frontend Developer!!!!!!</b>
             </Text>
             <Text>
-              If you couldn't tell from the AMAZING animations so far, I love to
-              create websites/apps that look and feel amazing to use. I mainly
-              work with <span className="skills-used">react</span> and{" "}
-              <span className="skills-used">sass</span> but don't mind branching
-              out for the right opportunity.
+              If you couldn't tell from the AMAZING animations so far, I strong
+              passion for developing websites with great user{" "}
+              <b className="important-text">experiences.</b> As a mainly
+              self-taught developer, I spent most of my free time learning and
+              honing my skills to progress to the next level.
             </Text>
             <Text>
-              <span className="important-text">Currently</span>, I am looking
-              for opportunities to work remotely as a{" "}
-              <span className="important-text"> Frontend Developer</span>. Want
-              to know what I can bring to your team? Just a bit more scrolling
-              and you can{" "}
+              <b className="important-text">Currently</b>, I am looking for
+              opportunities to work remotely as a{" "}
+              <b className="important-text"> Frontend Developer</b>. Want to
+              know what I can bring to your team? Just a bit more scrolling and
+              you can{" "}
               <a href="#skills" className="important-text-link">
                 find out!
               </a>
