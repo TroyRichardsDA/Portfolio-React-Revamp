@@ -1,45 +1,6 @@
-import {
-  Container,
-  Header,
-  SubHeader,
-  Text,
-  TextContainer,
-  Wrapper,
-} from "./AboutStyles";
-import { useRef } from "react";
-import { useContext } from "react";
-import { ScrollContext } from "../../Context/ScrollObsever";
+import { Container, Header, Text, TextContainer, Wrapper } from "./AboutStyles";
 
-const opacityControl = (sectionProgress, blockNo) => {
-  const progress = sectionProgress - blockNo;
-  if (window.innerWidth < 600) {
-    if (progress >= 0 && progress < 1) return 1;
-    else return 0.2;
-  }
-  return undefined;
-};
-
-export default function About() {
-  const { scrollY } = useContext(ScrollContext);
-  const refContainer = useRef(null);
-
-  const numOfPages = 3;
-  let progress = 0;
-
-  const { current: elContainer } = refContainer;
-  if (elContainer) {
-    const { clientHeight, offsetTop } = elContainer;
-    const screenH = window.innerHeight;
-    const halfH = screenH / 3;
-    const percentY =
-      Math.min(
-        clientHeight + halfH,
-        Math.max(-screenH, scrollY - offsetTop) + halfH
-      ) / clientHeight;
-
-    progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages));
-  }
-
+function About() {
   return (
     <Container id="about">
       <Wrapper
@@ -47,14 +8,13 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        ref={refContainer}
       >
-        <Header>A bit...</Header>
-
-        <SubHeader>ABOUT MEH</SubHeader>
+        <Header>
+          <b className="important-text">A</b>bout
+        </Header>
 
         <TextContainer>
-          <Text style={{ opacity: opacityControl(progress, 0) }}>
+          <Text>
             Hello! My name is Troy Richards, and I am, what some would call, a{" "}
             <br /> <span className="shake">🎉</span>{" "}
             <b className="skills-used about-title">Frontend Developer!!!!!!</b>{" "}
@@ -66,7 +26,7 @@ export default function About() {
             </small>
           </Text>
 
-          <Text style={{ opacity: opacityControl(progress, 1) }}>
+          <Text>
             If you couldn't tell from the AMAZING animations so far, I love to
             create websites/apps that look and feel amazing to use. I mainly
             work with <span className="skills-used">react</span> and{" "}
@@ -74,7 +34,7 @@ export default function About() {
             out for the right opportunity.
           </Text>
 
-          <Text style={{ opacity: opacityControl(progress, 2) }}>
+          <Text>
             <b className="important-text">
               You can skip this chunk if you're pressed for time,
             </b>{" "}
@@ -90,7 +50,7 @@ export default function About() {
             really here for!
           </Text>
 
-          <Text style={{ opacity: opacityControl(progress, 2) }}>
+          <Text>
             <span className="important-text">Currently</span>, I am looking for
             opportunities to work remotely as a{" "}
             <span className="important-text"> Frontend Developer</span>. Want to
@@ -105,3 +65,5 @@ export default function About() {
     </Container>
   );
 }
+
+export default About;

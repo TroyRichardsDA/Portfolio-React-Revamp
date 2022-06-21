@@ -32,6 +32,7 @@ export const Wrapper = styled.div`
 
 export const HomeBtn = styled.a`
   svg {
+    transition: all 300ms ease;
     opacity: 0.5;
 
     &:hover {

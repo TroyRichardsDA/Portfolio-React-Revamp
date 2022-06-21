@@ -38,15 +38,10 @@
     transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(-50deg);
-    width: 32px;
-    height: 30px;
-  }
+
 
   100% {
     opacity: 1;
-    height: -100px;
     transform: rotate(360deg);
   }
 }

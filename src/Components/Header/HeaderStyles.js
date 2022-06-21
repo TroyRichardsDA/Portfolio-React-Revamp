@@ -174,14 +174,14 @@ export const ScrollIcon = styled.a`
 
 export const Backdrop = styled.div`
   position: fixed;
-  top: 13%;
+  top: 1%;
   left: 0;
 
   width: 100%;
   height: 100%;
 
   opacity: 0;
-  z-index: -1;
+  z-index: -2;
 
   animation: load 2s ease forwards 2.3s;
 
@@ -191,9 +191,9 @@ export const Backdrop = styled.div`
   }
 
   .back-drop__icon {
-    position: fixed;
+    position: absolute;
     animation: backdrop 3s infinite alternate;
-    z-index: 2;
+    z-index: -1;
   }
 
   .icon--0 {

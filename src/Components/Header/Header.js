@@ -15,12 +15,12 @@ import { ReactComponent as DownStep } from "../../svgs/down-step-note.svg";
 import { ReactComponent as MusicIcon } from "../../svgs/music-reader.svg";
 import { ReactComponent as PlayStation } from "../../svgs/playstation.svg";
 import { ReactComponent as Controller } from "../../svgs/controller.svg";
+import { useEffect } from "react";
 
 export default function Header() {
   let name = ["Troy Richards"];
   let textPos = -20;
   let speed = 100;
-  const scaleFactor = 1 / 20;
 
   function typewriter() {
     document.getElementById("message").innerHTML =
@@ -29,7 +29,9 @@ export default function Header() {
     if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
   }
 
-  window.addEventListener("load", typewriter);
+  useEffect(() => {
+    typewriter();
+  });
 
   return (
     <Container>

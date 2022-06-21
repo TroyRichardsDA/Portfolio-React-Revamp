@@ -3,12 +3,12 @@ import { tablet, desktop } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
-  background-color: var(--thrid-BG);
-
   padding-top: 10rem;
   padding-bottom: 10rem;
 
-  border-top: 10px solid var(--highlightColor);
+  background-color: var(--main-BG);
+  border-top: 4px solid var(--highlightColor);
+  border-bottom: 4px solid var(--highlightColor);
 `;
 
 export const Wrapper = styled(motion.div)`
@@ -19,8 +19,6 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const Header = styled.h2`
-  color: white;
-
   letter-spacing: 2px;
   font-size: var(--headers);
 `;
@@ -64,7 +62,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.p`
-  color: white;
   transition: 0.3s;
 
   .about-title {

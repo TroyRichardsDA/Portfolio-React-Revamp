@@ -3,7 +3,6 @@ import { tablet } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
-  background-color: var(--main-BG);
   padding: var(--containerPadding);
 
   min-height: 80vh;

@@ -1,12 +1,13 @@
-import Nav from "./Components/Navbar/Nav";
-import Header from "./Components/Header/Header";
-import Skills from "./Components/Skills/Skills";
-import About from "./Components/About/About";
-import Modal from "./Components/Modal/Modal";
-import Footer from "./Components/Footer/Footer";
+import {
+  Nav,
+  Footer,
+  Header,
+  Modal,
+  About,
+  Skills,
+  Projects,
+} from "./Components";
 import logo from "./logo.svg";
-import Projects from "./Components/Projects/Projects";
-import ScrollObserver from "./Context/ScrollObsever";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -22,17 +23,15 @@ function App() {
   }, [displayModal]);
 
   return (
-    <ScrollObserver>
-      <div className="App">
-        <Nav setDisplayModal={setDisplayModal} logo={logo} />
-        <Modal setDisplayModal={setDisplayModal} />
-        <Header />
-        <About />
-        <Skills />
-        <Projects />
-        <Footer setDisplayModal={setDisplayModal} />
-      </div>
-    </ScrollObserver>
+    <div className="App">
+      <Nav setDisplayModal={setDisplayModal} logo={logo} />
+      <Modal setDisplayModal={setDisplayModal} />
+      <Header />
+      <About />
+      <Skills />
+      <Projects />
+      <Footer setDisplayModal={setDisplayModal} />
+    </div>
   );
 }
 
