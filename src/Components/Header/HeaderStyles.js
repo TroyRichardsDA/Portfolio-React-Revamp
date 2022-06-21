@@ -5,7 +5,7 @@ export const Container = styled.header`
   position: relative;
 
   min-height: 100vh;
-  padding-top: -4rem;
+  padding-top: -48px;
 
   display: flex;
   justify-content: center;
@@ -28,11 +28,10 @@ export const Wrapper = styled.div`
 
 export const Name = styled.h1`
   margin: 20px 0;
-
   opacity: 0;
 
   color: var(--highlightColor);
-  text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
+  text-shadow: 8px 8px 12px rgba(136, 136, 136, 0.507);
   font-size: 40px;
   font-family: var(--fnt-tech);
 
@@ -45,7 +44,6 @@ export const Name = styled.h1`
   })}
 
   ${desktop({
-    paddingTop: ".2em",
     fontSize: "60px",
   })}
 `;
@@ -67,9 +65,9 @@ export const HeroHeading = styled.h2`
 `;
 
 export const ToProjects = styled.a`
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 32px;
   width: max-content;
 
   transition: all 0.3s;
@@ -77,13 +75,13 @@ export const ToProjects = styled.a`
   animation: load 2s ease forwards 2.3s;
 
   color: var(--mainTextColor);
-  box-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
+  box-shadow: 0px 8px 12px rgba(136, 136, 136, 0.507);
   border: 1px solid var(--highlightColor);
   border-radius: 5px;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 
   span {
     transition: 1.5s;
@@ -109,7 +107,7 @@ export const ToProjects = styled.a`
   })}
 
   ${desktop({
-    fontSize: "1.3rem",
+    fontSize: "20px",
   })}
 `;
 
@@ -133,7 +131,7 @@ export const ScrollIcon = styled.a`
     width: 4px;
     height: 8px;
     border-radius: 10px;
-    background-color: black;
+    background-color: ${(p) => p.theme.color};
     transition: all 400ms ease;
     animation: scroll 1s infinite linear alternate;
   }
@@ -141,8 +139,8 @@ export const ScrollIcon = styled.a`
   p {
     display: inline-block;
     position: absolute;
-    top: -20px;
-    color: black;
+    top: -24px;
+    color: ${(p) => p.theme.color};
     white-space: nowrap;
     transition: all 400ms ease;
 

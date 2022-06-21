@@ -143,16 +143,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-.dark {
-  background-color: #181818;
-  color: rgb(230, 230, 230);
-}
-
-.dark .fill {
-  fill: rgb(230, 230, 230);
-}
-
-
 ul {
   list-style-type: none;
 }
@@ -312,6 +302,22 @@ small {
 
 .modal-open .back-drop__icon {
   animation: unset !important;
+}
+
+
+/* 
+
+      Dark Mode
+
+*/
+
+.dark {
+  background-color: #181818;
+  color: rgb(230, 230, 230);
+}
+
+.dark .fill {
+  fill: rgb(230, 230, 230);
 }
 
 
