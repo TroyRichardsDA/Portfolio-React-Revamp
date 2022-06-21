@@ -26,14 +26,6 @@ export const Wrapper = styled.div`
   text-align: center;
 `;
 
-export const Greeting = styled.h2`
-  font-size: 1.4rem;
-
-  transition: all 0.5s;
-  opacity: 0;
-  animation: load 2s ease forwards 2.3s;
-`;
-
 export const Name = styled.h1`
   margin: 20px 0;
 
@@ -41,38 +33,38 @@ export const Name = styled.h1`
 
   color: var(--highlightColor);
   text-shadow: 3px 8px 10px rgba(136, 136, 136, 0.507);
-  font-size: 2.3rem;
+  font-size: 40px;
   font-family: var(--fnt-tech);
 
   animation: load 1.6s ease forwards 1s;
+  transition: all 300ms ease;
 
   ${tablet({
     letterSpacing: "2px",
-    fontSize: "3rem",
+    fontSize: "56px",
   })}
 
   ${desktop({
     paddingTop: ".2em",
-    fontSize: "3.5rem",
+    fontSize: "60px",
   })}
 `;
 
 export const HeroHeading = styled.h2`
-  font-size: 1.4rem;
+  font-size: 28px;
 
   opacity: 0;
   animation: load 2s ease forwards 2.3s;
+  transition: all 300ms ease;
 
   ${tablet({
-    fontSize: "2rem",
+    fontSize: "36px",
   })}
 
   ${desktop({
-    fontSize: "3rem",
+    fontSize: "40px",
   })}
 `;
-
-export const Desc = styled.p``;
 
 export const ToProjects = styled.a`
   padding: 1rem 2rem;
@@ -111,6 +103,10 @@ export const ToProjects = styled.a`
   &:active {
     transform: scale(0.8);
   }
+
+  ${tablet({
+    fontSize: "",
+  })}
 
   ${desktop({
     fontSize: "1.3rem",
