@@ -9,8 +9,8 @@
   --fnt-tech: 'Share Tech Mono', monospace;
   --headerTextShadow: 3px 5px 15px rgb(197, 197, 197);
   --projectTextBG:#000000b4 ;
-  --wrapper: 80%;
-  --headers: 2.8rem;
+  --wrapper: 95%;
+  --headers: 52px;
   --containerPadding: 5rem 0;
   --navBG: linear-gradient(147deg, rgba(255,255,255,0.7986577181208054) 28%, rgba(20,15,0,0.3803131991051454) 85%)
 }
@@ -76,6 +76,36 @@
   }
 }
 
+@keyframes sectTitle {
+  0% {
+    width: 20%;
+    height: 1px;
+  }
+
+  30% {
+    width: 80%;
+    height: 4px;
+  }
+
+  50% {
+    width: 40%;
+    height: 1px;
+  }
+
+  60% {
+    width: 75%;
+  }
+
+  80% {
+    width: 20%;
+  }
+
+  to {
+    height: 4px;
+    width: 100%;
+  }
+}
+
 /* 
 
         CSS Start
@@ -90,11 +120,6 @@
   border: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-.App {
-  margin: 0 auto;
-
 }
 
 body {
@@ -130,6 +155,18 @@ small {
   color: var(--highlightColor);
 }
 
+.section__title::after {
+  position: absolute;
+  content: ' ';
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 0;
+  background-color: var(--highlightColor);
+
+  animation: sectTitle 10s infinite ease alternate;
+}
 
 
 .important-text {
@@ -169,6 +206,60 @@ small {
 
 .blicker {
   animation: blinker 2s linear infinite;
+}
+
+
+/* 
+
+  About (Show More)
+
+*/
+
+.light-bulb--out,
+.light-bulb--lit {
+  position: absolute;
+  top: 50%;
+  transform: translate( 4px,-50%);
+  transition: all 500ms ease;
+}
+
+.light-bulb--lit {
+  font-size: 24px;
+  transform: rotate(0);
+  opacity: 0;
+}
+
+.light-bulb--out {
+  visibility: visible;
+}
+
+.show-more .light-bulb--out {
+  transform: rotate(180deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show-more .light-bulb--lit {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.show-more h3 {
+  color: var(--highlightColor) !important;
+}
+
+.show-more__para {
+  letter-spacing: 2px;
+
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms ;
+}
+
+.show-more .show-more__para {
+  height: 100%;
+
+  transition: height 1s 300ms;
 }
 
 /* 

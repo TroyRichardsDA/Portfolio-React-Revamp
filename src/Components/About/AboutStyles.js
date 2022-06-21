@@ -3,12 +3,13 @@ import { tablet, desktop } from "../../responsive";
 import { motion } from "framer-motion";
 
 export const Container = styled.section`
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 40px 0;
 
   background-color: var(--main-BG);
   border-top: 4px solid var(--highlightColor);
   border-bottom: 4px solid var(--highlightColor);
+
+  min-height: 100vh;
 `;
 
 export const Wrapper = styled(motion.div)`
@@ -16,25 +17,37 @@ export const Wrapper = styled(motion.div)`
   margin: 0 auto;
 
   text-align: center;
+
+  ${tablet({
+    textAlign: "unset",
+  })}
 `;
 
 export const Header = styled.h2`
-  letter-spacing: 2px;
+  margin: 20px 0 40px;
   font-size: var(--headers);
-`;
-
-export const SubHeader = styled.h1`
-  color: var(--highlightColor);
-  font-size: 3rem;
-  margin: 3rem 0;
+  letter-spacing: 4px;
+  position: relative;
 
   ${tablet({
-    fontSize: "3rem",
+    textAlign: "center",
   })}
+`;
 
-  ${desktop({
-    fontSize: "3rem",
-    lineHeight: "20px",
+export const ToggleShowMore = styled.h3`
+  display: none;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--dimHighlightColor);
+  }
+
+  ${tablet({
+    textAlign: "center",
+    display: "block",
+    marginBottom: "20px",
+    fontSize: "20px",
   })}
 `;
 
@@ -46,15 +59,16 @@ export const Small = styled.span`
 
 export const TextContainer = styled.div`
   display: grid;
-  gap: 1.5rem;
+  gap: 20px;
   line-height: 2rem;
 
   ${tablet({
     gap: "2.4rem",
+    gridTemplateColumns: "1fr 1fr",
   })}
 
   ${desktop({
-    width: " 70%",
+    width: "90%",
     margin: "0 auto",
     fontSize: "1.2rem",
     lineHeight: "2rem",
@@ -62,7 +76,8 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.p`
-  transition: 0.3s;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
 
   .about-title {
     display: inline-block;
@@ -82,4 +97,16 @@ export const Text = styled.p`
   &:hover {
     opacity: 1 !important;
   }
+`;
+
+export const ShowMore = styled.div`
+  h3 {
+  }
+`;
+
+export const MobileShowMore = styled(ToggleShowMore)`
+  display: block;
+  ${tablet({
+    display: "none",
+  })}
 `;
