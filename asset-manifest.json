@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-Revamp/static/css/main.e9c70b5b.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.60a954f8.js",
+    "main.css": "/Portfolio-React-Revamp/static/css/main.b50d1d70.css",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.8829acb7.js",
     "static/media/starry.png": "/Portfolio-React-Revamp/static/media/starry.7213acd9a17d34b9e2dd.png",
     "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.32c3c820dc59915a72cf.png",
     "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.d2d58809d6ded68da8df.png",
@@ -18,11 +18,11 @@
     "static/media/playstation.svg": "/Portfolio-React-Revamp/static/media/playstation.376df1c4fbeada1dfd17077372828f01.svg",
     "static/media/code.svg": "/Portfolio-React-Revamp/static/media/code.7e10ea741c22cc0997536efa98dba8ba.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
-    "main.e9c70b5b.css.map": "/Portfolio-React-Revamp/static/css/main.e9c70b5b.css.map",
-    "main.60a954f8.js.map": "/Portfolio-React-Revamp/static/js/main.60a954f8.js.map"
+    "main.b50d1d70.css.map": "/Portfolio-React-Revamp/static/css/main.b50d1d70.css.map",
+    "main.8829acb7.js.map": "/Portfolio-React-Revamp/static/js/main.8829acb7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9c70b5b.css",
-    "static/js/main.60a954f8.js"
+    "static/css/main.b50d1d70.css",
+    "static/js/main.8829acb7.js"
   ]
 }
