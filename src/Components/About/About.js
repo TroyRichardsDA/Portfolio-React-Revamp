@@ -38,12 +38,12 @@ function About() {
         </Header>
 
         <ToggleShowMore onClick={() => toggleShowMore()}>
-          Wanna Know More? <HiLightBulb className="light-bulb--lit" />
+          Wanna Know More? Click Me! <HiLightBulb className="light-bulb--lit" />
           <FaRegLightbulb className="light-bulb--out" />
         </ToggleShowMore>
 
         <TextContainer>
-          <div>
+          <div className="about__text--base">
             <Text>
               Hello! My name is Troy Richards, and I am, what some would call, a{" "}
               <b className="important-text">Frontend Developer!!!!!!</b>
@@ -69,7 +69,8 @@ function About() {
 
           <ShowMore>
             <MobileShowMore onClick={() => toggleShowMore()}>
-              Wanna Know More? <HiLightBulb className="light-bulb--lit" />
+              Wanna Know More? Click Me!{" "}
+              <HiLightBulb className="light-bulb--lit" />
               <FaRegLightbulb className="light-bulb--out" />
             </MobileShowMore>
             <p className="show-more__para">

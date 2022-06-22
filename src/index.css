@@ -257,6 +257,8 @@ small {
   transition: height 1s 300ms;
 }
 
+
+
 /* 
 
     MODAL
@@ -271,7 +273,7 @@ small {
 }
 
 .modal-open #modal {
-  visibility: visible !important;
+  visibility: visible;
   z-index: 2;
 }
 
@@ -287,6 +289,7 @@ small {
 
 .modal-open .modal__content--top, 
 .modal-open .modal__content--bottom {
+  transition: all 1s ease;
   transform: translateX(0);
 }
 
@@ -349,6 +352,18 @@ small {
 
   .dark .nav__link {
     color: white
+  }
+
+
+  .about__text--base {
+    transition: all 800ms ease;
+    transform: translateX(60%);
+    text-align: center;
+  }
+
+  .show-more .about__text--base {
+    transform: translateX(0);
+    text-align: left;
   }
 }
 
