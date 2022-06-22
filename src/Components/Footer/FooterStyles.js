@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { tablet, desktop } from "../../responsive";
+import { desktop } from "../../responsive";
 
 export const Container = styled.footer`
-  background-color: var(--thrid-BG);
+  background-color: #090909;
 `;
 
 export const Wrapper = styled.div`

@@ -25,12 +25,17 @@ function Nav(props) {
     return (
       <NavItem key={id}>
         {!isContact ? (
-          <Link href={`#${item}`} onClick={() => closeMenu()}>
+          <Link
+            className="nav__link"
+            href={`#${item}`}
+            onClick={() => closeMenu()}
+          >
             <i className="fas fa-user"></i> {capitalize}
           </Link>
         ) : (
           <Link
             href="#"
+            className="nav__link"
             onClick={() => {
               closeMenu();
               setDisplayModal(true);

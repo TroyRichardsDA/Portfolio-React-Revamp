@@ -98,7 +98,6 @@ export const NavList = styled.ul`
   ${tablet({
     gap: "12px",
     flexDirection: "row",
-    backgroundColor: "unset",
   })}
 `;
 
@@ -136,7 +135,6 @@ export const NavItem = styled.li`
   word-spacing: 2px;
 
   ${tablet({
-    color: "black",
     padding: "1rem",
     fontSize: "unset",
   })}
@@ -147,6 +145,7 @@ export const Link = styled.a`
   padding: 32px 12px;
   border-bottom: 1px solid var(--highlightColor);
   border-radius: 10%;
+  color: white;
 
   &:hover {
     color: var(--highlightColor);
