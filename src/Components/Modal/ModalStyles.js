@@ -50,6 +50,7 @@ export const TopHalf = styled.div`
   transition: all 1s ease;
   transform: translateX(-110%);
   background-color: white;
+  color: black;
 `;
 
 export const Header = styled.div`
