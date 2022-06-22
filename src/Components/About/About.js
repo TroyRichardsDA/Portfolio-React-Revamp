@@ -82,7 +82,7 @@ function About() {
               make use of my degree in audio production and make music. However,
               when covid hit, I had to sell a lot of my equipment to get by.
               Eventually, somewhere down the line I will buy back my equipment
-              so I can get back to making music.
+              so I can get back to making music
             </p>
           </ShowMore>
         </TextContainer>
