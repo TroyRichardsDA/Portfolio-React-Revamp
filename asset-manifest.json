@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio-React-Revamp/static/css/main.beb75fce.css",
-    "main.js": "/Portfolio-React-Revamp/static/js/main.c5a05474.js",
+    "main.css": "/Portfolio-React-Revamp/static/css/main.e9c70b5b.css",
+    "main.js": "/Portfolio-React-Revamp/static/js/main.7c201bc6.js",
+    "static/media/starry.png": "/Portfolio-React-Revamp/static/media/starry.7213acd9a17d34b9e2dd.png",
     "static/media/ecommerce-product-page.png": "/Portfolio-React-Revamp/static/media/ecommerce-product-page.32c3c820dc59915a72cf.png",
     "static/media/interactive-comment.png": "/Portfolio-React-Revamp/static/media/interactive-comment.d2d58809d6ded68da8df.png",
     "static/media/rest-countries-api.png": "/Portfolio-React-Revamp/static/media/rest-countries-api.cd8939360d25300f4a0d.png",
@@ -11,17 +12,17 @@
     "static/media/logo.svg": "/Portfolio-React-Revamp/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
     "static/media/react.svg": "/Portfolio-React-Revamp/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
     "static/media/music-reader.svg": "/Portfolio-React-Revamp/static/media/music-reader.a690fec223888053068a5ede9c0972ca.svg",
-    "static/media/down-step-note.svg": "/Portfolio-React-Revamp/static/media/down-step-note.ca20f98526f7983592860d4dd2f66daa.svg",
+    "static/media/down-step-note.svg": "/Portfolio-React-Revamp/static/media/down-step-note.c4e9ae216db07e1a545752c91f4cfbb4.svg",
     "static/media/controller.svg": "/Portfolio-React-Revamp/static/media/controller.97d41eab94f206ee2aa04214d65f02ee.svg",
-    "static/media/bold-note.svg": "/Portfolio-React-Revamp/static/media/bold-note.f479cbb7a21da17a11e56120bd948301.svg",
-    "static/media/code.svg": "/Portfolio-React-Revamp/static/media/code.948c22a0dc8d6778c7a27d45e7f1b1ab.svg",
+    "static/media/bold-note.svg": "/Portfolio-React-Revamp/static/media/bold-note.120cf28689c601e2a81b1ed90b825964.svg",
     "static/media/playstation.svg": "/Portfolio-React-Revamp/static/media/playstation.376df1c4fbeada1dfd17077372828f01.svg",
+    "static/media/code.svg": "/Portfolio-React-Revamp/static/media/code.7e10ea741c22cc0997536efa98dba8ba.svg",
     "index.html": "/Portfolio-React-Revamp/index.html",
-    "main.beb75fce.css.map": "/Portfolio-React-Revamp/static/css/main.beb75fce.css.map",
-    "main.c5a05474.js.map": "/Portfolio-React-Revamp/static/js/main.c5a05474.js.map"
+    "main.e9c70b5b.css.map": "/Portfolio-React-Revamp/static/css/main.e9c70b5b.css.map",
+    "main.7c201bc6.js.map": "/Portfolio-React-Revamp/static/js/main.7c201bc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.beb75fce.css",
-    "static/js/main.c5a05474.js"
+    "static/css/main.e9c70b5b.css",
+    "static/js/main.7c201bc6.js"
   ]
 }
