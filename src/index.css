@@ -123,8 +123,6 @@ body {
   color: #000000;
   background-color: var(--main-BG);
   transition: all 300ms ease;
-
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

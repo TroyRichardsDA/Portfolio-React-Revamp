@@ -57,7 +57,7 @@ function Nav(props) {
 
   function closeMenu() {
     document.getElementById("dd-content").style.cssText = `
-    width: -100px;
+    width:  0;
     `;
   }
 

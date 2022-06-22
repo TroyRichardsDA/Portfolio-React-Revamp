@@ -38,5 +38,5 @@ export const LinkIcon = styled.i`
 export const Copyright = styled.div``;
 
 export const Text = styled.p`
-  color: var(--AltText);
+  color: white !important;
 `;

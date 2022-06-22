@@ -79,6 +79,7 @@ export const DropdownContent = styled.div`
   width: 0;
   right: 0;
   top: 0;
+  overflow: hidden;
 
   background-color: rgb(5, 5, 5, 0.9);
   transition: all 1s ease-in-out;
