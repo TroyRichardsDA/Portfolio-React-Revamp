@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c8835ac2.css",
-    "main.js": "/static/js/main.43af41fc.js",
+    "main.js": "/static/js/main.29ca7633.js",
     "static/media/starry.png": "/static/media/starry.7213acd9a17d34b9e2dd.png",
-    "static/media/ecommerce-product-page.png": "/static/media/ecommerce-product-page.32c3c820dc59915a72cf.png",
+    "static/media/entertainment-web-app.png": "/static/media/entertainment-web-app.168d991b852f64993cdb.png",
+    "static/media/ecommerce-product-page.png": "/static/media/ecommerce-product-page.419b0dc0db56102aec58.png",
     "static/media/interactive-comment.png": "/static/media/interactive-comment.d2d58809d6ded68da8df.png",
-    "static/media/rest-countries-api.png": "/static/media/rest-countries-api.cd8939360d25300f4a0d.png",
-    "static/media/library.png": "/static/media/library.6c22f6bdf2feebd1fd3e.png",
+    "static/media/rest-countries-api.png": "/static/media/rest-countries-api.3bd3da950b7e574a80c9.png",
+    "static/media/library.png": "/static/media/library.bd2d3535a25978bcd191.png",
     "static/media/github-repo-display.png": "/static/media/github-repo-display.a03fe067cc473b56794d.png",
-    "static/media/google-clone.png": "/static/media/google-clone.f7206f2ef41beb042a04.png",
     "static/media/logo.svg": "/static/media/logo.485b84ae681f3354dcdd299516a3cfc6.svg",
     "static/media/react.svg": "/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
     "static/media/music-reader.svg": "/static/media/music-reader.a690fec223888053068a5ede9c0972ca.svg",
@@ -19,10 +19,10 @@
     "static/media/code.svg": "/static/media/code.7e10ea741c22cc0997536efa98dba8ba.svg",
     "index.html": "/index.html",
     "main.c8835ac2.css.map": "/static/css/main.c8835ac2.css.map",
-    "main.43af41fc.js.map": "/static/js/main.43af41fc.js.map"
+    "main.29ca7633.js.map": "/static/js/main.29ca7633.js.map"
   },
   "entrypoints": [
     "static/css/main.c8835ac2.css",
-    "static/js/main.43af41fc.js"
+    "static/js/main.29ca7633.js"
   ]
 }
