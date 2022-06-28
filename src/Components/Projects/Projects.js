@@ -22,6 +22,42 @@ const Projects = () => {
 
         <ProjectsContainer>
           <Project
+            title="Designo"
+            img={require("../../images/designo.png")}
+            liveSite="https://github.com/AyeTone/Designo"
+            sourceCode="https://github.com/AyeTone/github-repo"
+            desc={
+              <>
+                You wanted 7 pages of fun, I brought you 7 pages of a website. I
+                think we can meet in the middle of somewhere. Probably the web
+                design page that has reused components like a lot of the other
+                pages? Or maybe the contact page where I deny your messages? I'm
+                sure we can work something out.
+              </>
+            }
+            devWith="React, Sass w/ Gulp, React-Router"
+            x="0"
+            y="300"
+          />
+          <Project
+            title="Entertainment-Web-App"
+            img={require("../../images/entertainment-web-app.png")}
+            liveSite="https://ayetone.github.io/entertainment-web-app/"
+            sourceCode="https://github.com/AyeTone/entertainment-web-app"
+            desc={
+              <>
+                What's Netflix? I bring you Entertainment-Wep-App AKA, EWA!...
+                We're still working on the name. In the meantime, why don't you
+                check out this web app that allows you to go through movies,
+                tv-series, or both and bookmark them for later. I promise you'll
+                love it even though you can't watch anything.
+              </>
+            }
+            devWith="React, Sass, React Router, React Context"
+            y="0"
+            x="300"
+          />
+          <Project
             title="REST Countries API"
             img={require("../../images/rest-countries-api.png")}
             liveSite="https://ayetone.github.io/rest-countries-api/"
@@ -101,42 +137,6 @@ const Projects = () => {
             devWith="React, Sass w/ Gulp, BEM"
             x="0"
             y="300"
-          />
-          <Project
-            title="Github Showcase"
-            img={require("../../images/github-repo-display.png")}
-            liveSite="https://ayetone.github.io/github-repo/"
-            sourceCode="https://github.com/AyeTone/github-repo"
-            desc={
-              <>
-                The shade room at work just got a bit darker... Use this UI to
-                look up the stats of your co-workers GitHub account. That's if
-                they are willing to share their username! I'm sure the detective
-                in you will find it.
-              </>
-            }
-            devWith="React, Sass w/ Gulp, REST API"
-            x="0"
-            y="300"
-          />
-          <Project
-            title="Google Clone"
-            img={require("../../images/google-clone.png")}
-            liveSite="https://ayetone.github.io/google-clone/"
-            sourceCode="https://github.com/AyeTone/google-clone"
-            desc={
-              <>
-                A CLONE?!?!? I know what you're thinking, he probably followed a
-                tutorial on youtube... you are 100% correct. I won't lie, I
-                coded along with a youtube to make this. HOWEVER! I did learn a
-                good bit about the tech used to make it. I am not a copy paste
-                warrior!<small>{"(StackOver RN 👀)"}</small>... all the time...
-                shhh..
-              </>
-            }
-            devWith="React, CSS BEM, Firebase, React Router, Material UI"
-            y="0"
-            x="300"
           />
         </ProjectsContainer>
       </Wrapper>
