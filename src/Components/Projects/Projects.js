@@ -24,8 +24,8 @@ const Projects = () => {
           <Project
             title="Designo"
             img={require("../../images/designo.png")}
-            liveSite="https://github.com/AyeTone/Designo"
-            sourceCode="https://github.com/AyeTone/github-repo"
+            liveSite="https://ayetone.github.io/Designo/"
+            sourceCode="https://github.com/AyeTone/Designo"
             desc={
               <>
                 You wanted 7 pages of fun, I brought you 7 pages of a website. I

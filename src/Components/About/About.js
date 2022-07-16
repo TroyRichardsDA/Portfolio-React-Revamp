@@ -49,8 +49,8 @@ function About() {
               <b className="important-text">Frontend Developer!!!!!!</b>
             </Text>
             <Text>
-              If you couldn't tell from the AMAZING animations so far, I strong
-              passion for developing websites with great user{" "}
+              If you couldn't tell from the AMAZING animations so far, I have
+              strong passion for developing websites with great user{" "}
               <b className="important-text">experiences.</b> As a mainly
               self-taught developer, I spent most of my free time learning and
               honing my skills to progress to the next level.
