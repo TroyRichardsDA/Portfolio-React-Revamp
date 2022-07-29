@@ -47,7 +47,7 @@ export const Navigation = styled.div`
 
     &:hover {
       filter: blur(1px);
-      transform: rotate(360deg);
+      transform: scale(1.2);
     }
   }
 `;

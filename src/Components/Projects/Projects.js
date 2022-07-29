@@ -35,7 +35,7 @@ const Projects = () => {
                 sure we can work something out.
               </>
             }
-            devWith="React, Sass w/ Gulp, React-Router"
+            devWith="React, Framer Motion, Sass w/ Gulp, React-Router"
             x="0"
             y="300"
           />

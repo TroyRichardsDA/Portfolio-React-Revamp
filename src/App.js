@@ -24,8 +24,8 @@ const light = {
 
 function App() {
   const [displayModal, setDisplayModal] = useState(false);
-  const [theme, setTheme] = useState(light);
-  const [isDark, setIsDark] = useState(false);
+  const [theme, setTheme] = useState(dark);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
     if (displayModal) {

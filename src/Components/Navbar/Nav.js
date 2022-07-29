@@ -17,6 +17,32 @@ import { motion } from "framer-motion";
 function Nav(props) {
   const { setDisplayModal, light, dark, setTheme, isDark, setIsDark } = props;
   const navItems = ["about", "skills", "projects", "contact"];
+
+  function showMenu() {
+    document.getElementById("dd-content").style.cssText = `
+
+    width: 100%;
+    `;
+  }
+
+  function closeMenu() {
+    document.getElementById("dd-content").style.cssText = `
+    width:  0;
+    `;
+  }
+
+  function toggleTheme() {
+    if (!isDark) {
+      setTheme(dark);
+      setIsDark(true);
+      document.body.classList += " dark";
+    } else {
+      setTheme(light);
+      setIsDark(false);
+      document.body.classList.remove("dark");
+    }
+  }
+
   const displayNavItems = navItems.map((item, id) => {
     const firstLetter = item.split("").slice(0, 1);
     const capitalize = firstLetter.join("").toUpperCase() + item.slice(1);
@@ -47,31 +73,6 @@ function Nav(props) {
       </NavItem>
     );
   });
-
-  function showMenu() {
-    document.getElementById("dd-content").style.cssText = `
-
-    width: 100%;
-    `;
-  }
-
-  function closeMenu() {
-    document.getElementById("dd-content").style.cssText = `
-    width:  0;
-    `;
-  }
-
-  function toggleTheme() {
-    if (!isDark) {
-      setTheme(dark);
-      setIsDark(true);
-      document.body.classList += " dark";
-    } else {
-      setTheme(light);
-      setIsDark(false);
-      document.body.classList.remove("dark");
-    }
-  }
 
   return (
     <Container id="nava">
