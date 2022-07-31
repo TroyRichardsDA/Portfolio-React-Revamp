@@ -2,39 +2,6 @@ import styled from "styled-components";
 import { tablet } from "../../responsive";
 import { motion } from "framer-motion";
 
-export const Container = styled.section`
-  padding: var(--containerPadding);
-
-  min-height: 80vh;
-`;
-
-export const Wrapper = styled(motion.div)`
-  width: var(--wrapper);
-  margin: 0 auto;
-`;
-
-export const Header = styled.h2`
-  position: relative;
-  text-align: center;
-
-  letter-spacing: 2px;
-  font-size: var(--headers);
-
-  text-shadow: var(--headerTextShadow);
-
-  margin-bottom: 40px;
-`;
-
-export const IconsListWrapper = styled.div`
-  margin: 40px 0;
-`;
-
-export const IconsList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-`;
-
 export const MainSkills = styled.div`
   display: flex;
   flex-direction: column;

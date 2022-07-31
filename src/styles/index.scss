@@ -16,6 +16,9 @@
 @use "./components/Nav";
 @use "./components/Modal";
 
+// UI
+@use "./components/UI/Skill";
+
 /* Utils */
 @use "./utils/breakpoints";
 @use "./utils/themes";

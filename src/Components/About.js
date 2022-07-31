@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
+import skills from "../data/SkillsData";
+import Skill from "./UI/Skill";
 
-function About() {
+function About({ setDisplayModal }) {
+  const displaySkills = skills.map((skill, ind) => (
+    <Skill key={ind} skill={skill} />
+  ));
+
+  function toggleModal() {
+    setDisplayModal(true);
+  }
+
   return (
     <section className="about" id="about">
       <motion.div
@@ -14,8 +24,8 @@ function About() {
           <b className="important-text">A</b>bout
         </h2>
 
-        <div className="about__text">
-          <div className="about__text--base">
+        <div className="about__content">
+          <div className="about__text">
             <p className="about__text--para">
               Hello! My name is Troy Richards, and I am, what some would call, a{" "}
               <b className="important-text">Frontend Developer!!!!!!</b>
@@ -30,14 +40,17 @@ function About() {
             <p className="about__text--para">
               <b className="important-text">Currently</b>, I am looking for
               opportunities to work remotely as a{" "}
-              <b className="important-text"> Frontend Developer</b>. Want to
-              know what I can bring to your team? Just a bit more scrolling and
-              you can{" "}
-              <a href="#skills" className="important-text-link">
-                find out!
-              </a>
+              <b className="important-text"> Frontend Developer</b>. Think I
+              would be a great fit for your team? Contact me{" "}
+              <button
+                onClick={() => toggleModal()}
+                className="about__toggle-modal text-link"
+              >
+                here!
+              </button>
             </p>
           </div>
+          <div className="about__skills">{displaySkills}</div>
         </div>
       </motion.div>
     </section>

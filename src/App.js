@@ -1,4 +1,4 @@
-import { Footer, Modal, Skills, Projects } from "./Components";
+import { Footer, Modal, Projects } from "./Components";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import Hero from "./Components/Hero";
@@ -47,8 +47,7 @@ function App() {
         <BackGroundIcons />
         <Modal setDisplayModal={setDisplayModal} />
         <Hero />
-        <About />
-        <Skills />
+        <About setDisplayModal={setDisplayModal} />
         <Projects />
         <Footer setDisplayModal={setDisplayModal} />
       </ThemeProvider>

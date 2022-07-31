@@ -1,0 +1,42 @@
+@use "../../abstrarct/variables" as *;
+@use "../../utils/breakpoints" as *;
+
+.skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid transparent;
+  transition: 0.4s;
+  text-align: center;
+
+  > * {
+    transition: all 400ms ease;
+  }
+}
+
+.skill__icon {
+  text-align: center;
+  font-size: 3rem;
+  color: $secondary;
+  padding: 4px;
+}
+
+.skill__name {
+  position: absolute;
+  top: -20px;
+  font-size: 20px;
+  color: $secondary;
+}
+
+/*========
+
+Tablet  
+
+========*/
+
+@include breakpoint(tablet) {
+}

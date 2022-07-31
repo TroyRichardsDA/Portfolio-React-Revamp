@@ -23,11 +23,15 @@
   color: $primary;
 }
 
-.important-text--link {
+.text-link {
   position: relative;
-  color: $primary;
+  color: $secondary;
   transition: all 0.5s;
   cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
 
   &::after {
     @include underline;

@@ -45,23 +45,10 @@ const skills = [
     mark: 1,
     isMain: true,
   },
+
   {
-    icon: <SiTailwindcss />,
-    name: "Tailwind CSS",
-    mark: 2,
-  },
-  {
-    icon: <SiStyledcomponents />,
-    name: "Styled Components",
-    mark: 2,
-  },
-  {
-    icon: (
-      <>
-        <SiSass /> <DiGulp />
-      </>
-    ),
-    name: "Sass w/ Gulp",
+    icon: <SiSass />,
+    name: "Sass",
     mark: 2,
     isMain: true,
   },
@@ -71,42 +58,8 @@ const skills = [
     mark: 2,
   },
   {
-    icon: (
-      <>
-        <i className="fab fa-chrome"></i>
-        <i className="fas fa-tools"></i>
-      </>
-    ),
-    name: "Chrome DevTools",
-    mark: 2,
-  },
-  {
-    icon: <FiFigma />,
-    name: "Figma",
-    mark: 2,
-  },
-  {
-    icon: <SiFramer />,
-    name: "Framer",
-    mark: 2,
-  },
-  {
-    icon: <SiMaterialui />,
-    name: "Material UI",
-    mark: 2,
-  },
-  {
-    icon: <SiBootstrap />,
-    name: "Bootstrap",
-    mark: 2,
-  },
-  {
     icon: <AiFillApi />,
     name: "REST API's",
-    mark: 2,
-  },
-  {
-    name: "React Context",
     mark: 2,
   },
   {
@@ -115,31 +68,8 @@ const skills = [
     mark: 2,
   },
   {
-    name: "React Hooks",
-    mark: 2,
-  },
-  {
-    icon: <SiCypress />,
-    name: "Cypress",
-    mark: 2,
-  },
-  {
-    icon: <SiAdobephotoshop />,
-    name: "Photoshop",
-    mark: 2,
-  },
-  {
     icon: <SiRedux />,
     name: "Redux",
-    mark: 2,
-  },
-  {
-    name: "BEM naming",
-    mark: 2,
-  },
-  {
-    icon: <SiJest />,
-    name: "Jest",
     mark: 2,
   },
 ];
