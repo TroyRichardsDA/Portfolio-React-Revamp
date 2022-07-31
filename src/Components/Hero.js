@@ -14,7 +14,7 @@ export default function Header() {
       if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
     }
     typewriter();
-  }, [name, speed, textPos]);
+  }, []);
 
   return (
     <header className="hero">
