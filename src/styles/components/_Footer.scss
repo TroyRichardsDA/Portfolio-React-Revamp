@@ -1,0 +1,24 @@
+@use "../abstrarct/variables" as *;
+
+.footer {
+  background-color: black;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.footer__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__copyright {
+  color: white;
+}
