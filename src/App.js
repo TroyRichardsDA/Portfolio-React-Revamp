@@ -1,9 +1,11 @@
-import { Footer, Header, Modal, About, Skills, Projects } from "./Components";
+import { Footer, Modal, About, Skills, Projects } from "./Components";
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 import logo from "./logo.svg";
 import { useState } from "react";
 import { useEffect } from "react";
 import { ThemeProvider } from "styled-components";
+import BackGroundIcons from "./Components/BackGroundIcons";
 
 const dark = {
   color: "rgb(230, 230, 230)",
@@ -41,8 +43,9 @@ function App() {
           setDisplayModal={setDisplayModal}
           logo={logo}
         />
+        <BackGroundIcons />
         <Modal setDisplayModal={setDisplayModal} />
-        <Header />
+        <Hero />
         <About />
         <Skills />
         <Projects />

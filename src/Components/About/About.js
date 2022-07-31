@@ -34,7 +34,7 @@ function About() {
         viewport={{ once: true }}
       >
         <Header>
-          <b className="important-text section__title">A</b>bout me
+          <b className="important-text section__title">A</b>bout
         </Header>
 
         <ToggleShowMore onClick={() => toggleShowMore()}>
