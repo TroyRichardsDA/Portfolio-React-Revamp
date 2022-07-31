@@ -1,3 +1,5 @@
+@use "../abstrarct/variables" as *;
+
 .dark {
   position: relative;
   background-color: #0f0f0f;
@@ -5,6 +7,18 @@
 
   .about {
     background-color: black;
+  }
+
+  .hero__mouse {
+    border-color: white;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    &--wheel {
+      background-color: white;
+    }
   }
 }
 
