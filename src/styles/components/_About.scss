@@ -1,48 +1,62 @@
 @use "../abstrarct/variables" as *;
+@use "../utils/breakpoints" as *;
 
-.light-bulb--out,
-.light-bulb--lit {
-  position: absolute;
-  top: 50%;
-  transform: translate(4px, -50%);
-  transition: all 500ms ease;
+.about {
+  padding: 40px 0;
+
+  background-color: white;
+  border-top: 4px solid $primary;
+  border-bottom: 4px solid $primary;
+
+  min-height: 100vh;
 }
 
-.light-bulb--lit {
-  font-size: 24px;
-  transform: rotate(0);
-  opacity: 0;
+.about__container {
+  width: $container;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
-.light-bulb--out {
-  visibility: visible;
+.about__text {
+  display: grid;
+  gap: 20px;
+  line-height: 2rem;
+
+  &--para {
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
 }
 
-.show-more .light-bulb--out {
-  transform: rotate(180deg);
-  visibility: hidden;
-  opacity: 0;
+/*===== 
+
+Tablet
+
+=====*/
+
+@include breakpoint(tablet) {
+  .about__container {
+    text-align: center;
+  }
+
+  .about__text {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
 }
 
-.show-more .light-bulb--lit {
-  opacity: 1;
-  transform: rotate(180deg);
-}
+/*=======
 
-.show-more h3 {
-  color: $primary !important;
-}
+Desktop
 
-.show-more__para {
-  letter-spacing: 2px;
+=======*/
 
-  height: 0;
-  overflow: hidden;
-  transition: height 300ms;
-}
-
-.show-more .show-more__para {
-  height: 100%;
-
-  transition: height 1s 300ms;
+@include breakpoint(desktop) {
+  .about__text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
 }

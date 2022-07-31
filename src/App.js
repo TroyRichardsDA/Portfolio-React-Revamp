@@ -1,5 +1,6 @@
-import { Footer, Modal, About, Skills, Projects } from "./Components";
+import { Footer, Modal, Skills, Projects } from "./Components";
 import Navbar from "./Components/Navbar";
+import About from "./Components/About";
 import Hero from "./Components/Hero";
 import logo from "./logo.svg";
 import { useState } from "react";

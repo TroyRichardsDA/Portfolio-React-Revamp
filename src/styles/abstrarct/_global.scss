@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "../utils/breakpoints" as *;
 
 @mixin underline {
   content: "";
@@ -9,6 +10,13 @@
   bottom: 1px;
   background-color: $primary;
   transition: all 0.2s;
+}
+
+.section__title {
+  margin: 20px 0 40px;
+  font-size: 32px;
+  letter-spacing: 4px;
+  position: relative;
 }
 
 .important-text {
@@ -34,4 +42,16 @@
 .skills-used {
   color: $primary;
   text-decoration: line-through;
+}
+
+/*==========
+
+Tablet
+
+=========*/
+
+@include breakpoint(tablet) {
+  .section__title {
+    font-size: 52px;
+  }
 }
