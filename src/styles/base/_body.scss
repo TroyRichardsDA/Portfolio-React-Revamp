@@ -9,11 +9,10 @@ body {
     width: 8px;
     border: 1px solid rgba(2, 146, 127, 0.6);
     border-radius: 5px;
-    background-color: var(--main-BG);
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--highlightColor);
+    background-color: $primary;
     border-radius: 5px;
   }
 }

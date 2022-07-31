@@ -1,0 +1,163 @@
+@use "../abstrarct/variables" as *;
+@use "../abstrarct/animations" as *;
+@use "../utils/breakpoints" as *;
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease 2s;
+  z-index: 10;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 20px;
+  margin: 0 auto;
+
+  opacity: 0;
+  animation: load 2s ease forwards 1s;
+}
+
+.navbar__logo {
+  svg {
+    transition: all 300ms ease;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar__icon--dropdown {
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 12px;
+  transition: all 100ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 4px 12px grey;
+    color: $primary;
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.navbar__dropdown {
+  position: absolute;
+  height: 100vh;
+  width: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+
+  background-color: rgb(5, 5, 5, 0.9);
+  transition: all 1s ease-in-out;
+}
+
+.navbar__links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.navbar__closebtn {
+  text-align: right;
+  padding-bottom: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 24px;
+  font-size: 20px;
+  color: white;
+
+  &:hover {
+    color: $primary;
+    text-shadow: 0px 8px 20px white;
+  }
+}
+
+.navbar__link {
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  white-space: nowrap;
+  word-spacing: 2px;
+}
+
+.navbar__link--text {
+  transition: all 0.5s;
+  padding: 32px 12px;
+  border-bottom: 1px solid $primary;
+  border-radius: 10%;
+
+  &:hover {
+    color: $primary;
+    padding: 32px 72px;
+  }
+}
+
+.navbar__links--desktop {
+  display: none;
+}
+
+.navbar__moon {
+  font-size: 28px;
+  transition: all 1s ease;
+  cursor: pointer;
+
+  &:hover {
+    filter: blur(1px);
+    transform: scale(1.2);
+  }
+}
+
+/*==========
+
+Tablet
+
+===========*/
+
+@include breakpoint(tablet) {
+  .navbar__icon--dropdown {
+    display: none;
+  }
+
+  .navbar__dropdown {
+    display: none;
+  }
+
+  .navbar__links--desktop {
+    display: flex;
+  }
+
+  .navbar__link {
+    padding: 1rem;
+    font-size: unset;
+  }
+
+  .navbar__link--text {
+    padding: 12px 12px;
+    color: black;
+
+    &:hover {
+      border-width: 12px;
+      padding: 12px 12px;
+      box-shadow: 0px 5px 5px grey;
+    }
+  }
+}

@@ -1,12 +1,5 @@
-import {
-  Nav,
-  Footer,
-  Header,
-  Modal,
-  About,
-  Skills,
-  Projects,
-} from "./Components";
+import { Footer, Header, Modal, About, Skills, Projects } from "./Components";
+import Navbar from "./Components/Navbar";
 import logo from "./logo.svg";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -38,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <Nav
+        <Navbar
           light={light}
           dark={dark}
           setIsDark={setIsDark}

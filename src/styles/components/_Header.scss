@@ -1,0 +1,6 @@
+@use "../abstrarct/variables" as *;
+@use "../abstrarct/animations" as *;
+
+.blinker {
+  animation: blinker 2s linear infinite;
+}
