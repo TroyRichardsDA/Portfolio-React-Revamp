@@ -17,3 +17,39 @@ body {
     border-radius: 5px;
   }
 }
+
+// Modal Open
+
+.modal-open {
+  #about,
+  #projects,
+  #footer,
+  #skills {
+    display: none;
+  }
+
+  #modal {
+    visibility: visible;
+    z-index: 2;
+  }
+
+  #nava {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+  }
+
+  .modal__top-half,
+  .modal__bottom-half {
+    transition: all 1s ease;
+    transform: translateX(0);
+  }
+
+  #header__content {
+    display: none;
+  }
+
+  .background-icons__icon {
+    animation: unset !important;
+  }
+}

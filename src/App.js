@@ -1,4 +1,4 @@
-import { Modal } from "./Components";
+import Modal from "./Components/Modal";
 import Projects from "./Components/Projects/Projects";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";

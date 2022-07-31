@@ -1,43 +1,28 @@
 import React from "react";
-import {
-  Contact,
-  Container,
-  Desc,
-  Footer,
-  Header,
-  TopHalf,
-  Wrapper,
-} from "./ModalStyles";
 import { GrClose, GrLinkedinOption } from "react-icons/gr";
 import { BiMailSend } from "react-icons/bi";
 
 const Modal = ({ setDisplayModal }) => {
   return (
-    <Container id="modal">
-      <Wrapper className="modal__wrapper">
-        <TopHalf className="modal__content--top">
-          <Header>
-            <div>
-              <GrClose
-                className="modal__close"
-                onClick={() => setDisplayModal(false)}
-              />
-            </div>
-            <h2>
-              You were so impressed that you're trying to{" "}
-              <span className="important-text">contact me</span>? ME?!?
+    <div className="modal" id="modal">
+      <div className="modal__container">
+        <div className="modal__top-half">
+          <div className="modal__header">
+            <GrClose
+              className="modal__closebtn"
+              onClick={() => setDisplayModal(false)}
+            />
+            <h2 className="modal__title">
+              <b className="important-text">C</b>ontact
             </h2>
-          </Header>
-          <Desc>
+          </div>
+
+          <div className="modal__desc">
             <p>
-              <small>Very Good... Veerrry Goooood.... </small>.. ah, right
-              contact. <br />
-              AHEM.
-              <br />
               The best way to me contact is through a DM on{" "}
               <a
                 href="https://www.linkedin.com/in/troyrichardsdevloper/"
-                className="important-text-link"
+                className="text-link"
               >
                 {" "}
                 LinkedIn
@@ -45,15 +30,16 @@ const Modal = ({ setDisplayModal }) => {
               followed up by email. I am currently seeking a role as a{" "}
               <b className="important-text">Frontend Developer</b>.
             </p>
-          </Desc>
-        </TopHalf>
+          </div>
+        </div>
 
-        <Footer className="modal__content--bottom">
+        <div className="modal__bottom-half">
           <p>
-            There's only <b>1</b> me left on the market! <br />
+            There's only <b className="important-text">1</b> me left on the
+            market! <br />
             <b className="important-text">Get me fast!</b>
           </p>
-          <Contact>
+          <div className="modal__contact">
             <a
               className="linkedin modal__contact--icon"
               href="https://www.linkedin.com/in/troyrichardsdevloper/"
@@ -67,11 +53,11 @@ const Modal = ({ setDisplayModal }) => {
             >
               <BiMailSend />
             </a>
-          </Contact>
-          <small>psst.. hover over the guy</small>
-        </Footer>
-      </Wrapper>
-    </Container>
+          </div>
+          <small className="modal__psst">psst.. hover over the guy</small>
+        </div>
+      </div>
+    </div>
   );
 };
 
