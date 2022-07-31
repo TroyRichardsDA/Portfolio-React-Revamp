@@ -1,0 +1,86 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backdrop {
+  0% {
+    opacity: 0.3;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shaking {
+  20% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  40% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  80% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes sectTitle {
+  0% {
+    width: 20%;
+    height: 1px;
+  }
+
+  30% {
+    width: 80%;
+    height: 4px;
+  }
+
+  50% {
+    width: 40%;
+    height: 1px;
+  }
+
+  60% {
+    width: 75%;
+  }
+
+  80% {
+    width: 20%;
+  }
+
+  to {
+    height: 4px;
+    width: 90%;
+  }
+}

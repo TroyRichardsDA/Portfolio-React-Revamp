@@ -1,0 +1,48 @@
+@use "../abstrarct/variables" as *;
+
+.light-bulb--out,
+.light-bulb--lit {
+  position: absolute;
+  top: 50%;
+  transform: translate(4px, -50%);
+  transition: all 500ms ease;
+}
+
+.light-bulb--lit {
+  font-size: 24px;
+  transform: rotate(0);
+  opacity: 0;
+}
+
+.light-bulb--out {
+  visibility: visible;
+}
+
+.show-more .light-bulb--out {
+  transform: rotate(180deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show-more .light-bulb--lit {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.show-more h3 {
+  color: $primary !important;
+}
+
+.show-more__para {
+  letter-spacing: 2px;
+
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms;
+}
+
+.show-more .show-more__para {
+  height: 100%;
+
+  transition: height 1s 300ms;
+}

@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin underline {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  right: 1px;
+  bottom: 1px;
+  background-color: $primary;
+  transition: all 0.2s;
+}
+
+.important-text {
+  color: $primary;
+}
+
+.important-text--link {
+  position: relative;
+  color: $primary;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  &::after {
+    @include underline;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.skills-used {
+  color: $primary;
+  text-decoration: line-through;
+}

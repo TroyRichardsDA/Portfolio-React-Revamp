@@ -1,0 +1,19 @@
+@use "../abstrarct/variables" as *;
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  transition: all 300ms ease;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    border: 1px solid rgba(2, 146, 127, 0.6);
+    border-radius: 5px;
+    background-color: var(--main-BG);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--highlightColor);
+    border-radius: 5px;
+  }
+}
