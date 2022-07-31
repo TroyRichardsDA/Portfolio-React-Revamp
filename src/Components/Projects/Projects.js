@@ -1,29 +1,32 @@
 import React from "react";
 import Project from "./Project/Project";
-import {
-  Container,
-  Header,
-  ProjectsContainer,
-  Wrapper,
-} from "./ProjectsStyles";
+import { motion } from "framer-motion";
+import Designo from "../../images/designo.png";
+import EWA from "../../images/entertainment-web-app.png";
+import WhereInTheWorld from "../../images/where-in-the-world.png";
+import Sneaker from "../../images/sneaker.png";
+import Library from "../../images/library.png";
+import ChatRoom from "../../images/chat-room.png";
 
 const Projects = () => {
   return (
-    <Container id="projects">
-      <Wrapper
+    <div className="projects" id="projects">
+      <motion.div
+        className="projects__container"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
-        <Header className="section__title">
-          My Shiny <span className="skills-used">P</span>rojects
-        </Header>
+        <h2 className="section__title">
+          {" "}
+          <b className="important-text">P</b>rojects
+        </h2>
 
-        <ProjectsContainer>
+        <div className="projects__list">
           <Project
             title="Designo"
-            img={require("../../images/designo.png")}
+            img={Designo}
             liveSite="https://ayetone.github.io/Designo/"
             sourceCode="https://github.com/AyeTone/Designo"
             desc={
@@ -41,7 +44,7 @@ const Projects = () => {
           />
           <Project
             title="Entertainment-Web-App"
-            img={require("../../images/entertainment-web-app.png")}
+            img={EWA}
             liveSite="https://ayetone.github.io/entertainment-web-app/"
             sourceCode="https://github.com/AyeTone/entertainment-web-app"
             desc={
@@ -58,8 +61,8 @@ const Projects = () => {
             x="300"
           />
           <Project
-            title="REST Countries API"
-            img={require("../../images/rest-countries-api.png")}
+            title="Where in the world?"
+            img={WhereInTheWorld}
             liveSite="https://ayetone.github.io/rest-countries-api/"
             sourceCode="https://github.com/AyeTone/rest-countries-api"
             desc={
@@ -84,8 +87,8 @@ const Projects = () => {
             x="0"
           />
           <Project
-            title="Ecommerce Product Page"
-            img={require("../../images/ecommerce-product-page.png")}
+            title="Sneaker"
+            img={Sneaker}
             liveSite="https://ayetone.github.io/ecommerce-product-page/"
             sourceCode="https://github.com/AyeTone/ecommerce-product-page"
             desc={
@@ -102,8 +105,8 @@ const Projects = () => {
             y="0"
           />
           <Project
-            title="Library-Ecom Store"
-            img={require("../../images/library.png")}
+            title="Library"
+            img={Library}
             liveSite="https://ayetone.github.io/Library-Ecom/"
             sourceCode="https://github.com/AyeTone/Library-Ecom"
             desc={
@@ -120,8 +123,8 @@ const Projects = () => {
             x="-300"
           />
           <Project
-            title="Interactive Comment Section"
-            img={require("../../images/interactive-comment.png")}
+            title="Chat Room"
+            img={ChatRoom}
             liveSite="https://ayetone.github.io/interactive-comment-section/"
             sourceCode="https://github.com/AyeTone/interactive-comment-section"
             desc={
@@ -138,9 +141,9 @@ const Projects = () => {
             x="0"
             y="300"
           />
-        </ProjectsContainer>
-      </Wrapper>
-    </Container>
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

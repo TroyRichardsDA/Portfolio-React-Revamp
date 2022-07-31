@@ -13,6 +13,7 @@
 }
 
 .section__title {
+  text-align: center;
   margin: 20px 0 40px;
   font-size: 32px;
   letter-spacing: 4px;
@@ -41,11 +42,6 @@
     width: 100%;
     left: 0;
   }
-}
-
-.skills-used {
-  color: $primary;
-  text-decoration: line-through;
 }
 
 /*==========

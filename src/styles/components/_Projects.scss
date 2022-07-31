@@ -1,0 +1,39 @@
+@use "../abstrarct/variables" as *;
+@use "../utils/breakpoints" as *;
+
+.projects__container {
+  width: $container;
+  margin: 0 auto;
+}
+
+.projects__list {
+  display: grid;
+  margin-top: 32px;
+  gap: 44px;
+}
+
+/*========
+
+Tablet
+
+========*/
+
+@include breakpoint(tablet) {
+  .projects__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/*=========
+
+Desktop
+
+========*/
+
+@include breakpoint(desktop) {
+  .projects__list {
+    margin: 20px auto;
+    gap: 32px;
+  }
+}
