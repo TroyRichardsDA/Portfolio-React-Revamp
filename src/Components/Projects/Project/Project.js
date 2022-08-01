@@ -1,4 +1,3 @@
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 export default function Project(props) {
@@ -21,12 +20,22 @@ export default function Project(props) {
             <div className="project__desc">
               <p>{desc}</p>
               <div className="project__links">
-                <p className="project__link" href={liveSite} target="_blank">
-                  <AiOutlineLink />
-                </p>
-                <p className="project__link" href={sourceCode} target="_blank">
-                  <AiOutlineGithub />
-                </p>
+                <a
+                  className="project__link"
+                  href={liveSite}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a
+                  className="project__link"
+                  href={sourceCode}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-github-alt"></i>
+                </a>
               </div>
             </div>
           </div>

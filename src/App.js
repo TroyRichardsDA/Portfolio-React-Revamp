@@ -1,14 +1,13 @@
-import Modal from "./Components/Modal";
-import Projects from "./Components/Projects/Projects";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
-import logo from "./logo.svg";
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { useEffect } from "react";
-import { ThemeProvider } from "styled-components";
-import BackGroundIcons from "./Components/BackGroundIcons";
+
+const Hero = lazy(() => import("./Components/Hero"));
+const About = lazy(() => import("./Components/About"));
+const Projects = lazy(() => import("./Components/Projects/Projects"));
+const Modal = lazy(() => import("./Components/Modal"));
+const BackgroundIcons = lazy(() => import("./Components/BackgroundIcons"));
 
 const dark = {
   color: "rgb(230, 230, 230)",
@@ -35,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Navbar
           light={light}
           dark={dark}
@@ -44,15 +43,14 @@ function App() {
           theme={theme}
           setTheme={setTheme}
           setDisplayModal={setDisplayModal}
-          logo={logo}
         />
-        <BackGroundIcons />
+        <BackgroundIcons />
         <Modal setDisplayModal={setDisplayModal} />
         <Hero />
         <About setDisplayModal={setDisplayModal} />
         <Projects />
         <Footer setDisplayModal={setDisplayModal} />
-      </ThemeProvider>
+      </Suspense>
     </div>
   );
 }

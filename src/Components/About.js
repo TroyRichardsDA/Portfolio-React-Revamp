@@ -1,12 +1,10 @@
 import { motion } from "framer-motion";
-import skills from "../data/SkillsData";
-import Skill from "./UI/Skill";
+import { lazy, Suspense } from "react";
+// import Skills from "./Skills";
+
+const Skills = lazy(() => import("./Skills"));
 
 function About({ setDisplayModal }) {
-  const displaySkills = skills.map((skill, ind) => (
-    <Skill key={ind} skill={skill} />
-  ));
-
   function toggleModal() {
     setDisplayModal(true);
   }
@@ -50,7 +48,10 @@ function About({ setDisplayModal }) {
               </button>
             </p>
           </div>
-          <div className="about__skills">{displaySkills}</div>
+
+          <Suspense fallback={<div>Loading...</div>}>
+            <Skills />
+          </Suspense>
         </div>
       </motion.div>
     </section>

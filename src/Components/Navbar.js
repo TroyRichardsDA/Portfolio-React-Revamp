@@ -1,5 +1,3 @@
-import { HiMoon, HiOutlineMoon } from "react-icons/hi";
-
 function Nav(props) {
   const { setDisplayModal, light, dark, setTheme, isDark, setIsDark } = props;
   const navItems = ["about", "projects", "contact"];
@@ -95,12 +93,15 @@ function Nav(props) {
           </div>
           <ul className="navbar__links--desktop">{displayNavItems}</ul>
           {isDark ? (
-            <HiMoon className="navbar__moon" onClick={() => toggleTheme()} />
+            <i
+              className="navbar__moon fa-solid fa-moon"
+              onClick={toggleTheme}
+            ></i>
           ) : (
-            <HiOutlineMoon
-              className="navbar__moon"
-              onClick={() => toggleTheme()}
-            />
+            <i
+              className="navbar__moon fa-solid fa-cloud-sun"
+              onClick={toggleTheme}
+            ></i>
           )}
         </div>
       </div>

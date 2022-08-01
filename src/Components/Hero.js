@@ -1,33 +1,16 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { useEffect } from "react";
-
-export default function Header() {
-  let name = ["Troy Richards"];
-  let textPos = -20;
-  let speed = 100;
-
-  useEffect(() => {
-    function typewriter() {
-      document.getElementById("message").innerHTML =
-        name[0].substring(0, textPos) + "<span className='blicker'>|</span>";
-
-      if (textPos++ !== name[0].length) setTimeout(typewriter, speed);
-    }
-    typewriter();
-  }, []);
-
+export default function Hero() {
   return (
     <header className="hero">
       <div className="hero__container">
         <div id="header__content">
           <h1 className="hero__name" id="message">
-            {name}
+            Troy Richards
           </h1>
           <h2 className="hero__title">Frontend Developer </h2>
           <a className="hero__link--projects" href="#projects">
             View My Work{" "}
             <span>
-              <AiOutlineArrowRight />
+              <i className="fa-solid fa-right-long"></i>
             </span>
           </a>
           <a className="hero__mouse" href="#about">

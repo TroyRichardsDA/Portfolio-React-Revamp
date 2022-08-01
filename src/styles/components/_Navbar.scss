@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 1s ease 2s;
+  transition: all 1s ease;
   z-index: 10;
 }
 
@@ -18,9 +18,6 @@
 
   padding: 12px 20px;
   margin: 0 auto;
-
-  opacity: 0;
-  animation: load 2s ease forwards 1s;
 }
 
 .navbar__logo {
@@ -116,12 +113,13 @@
 }
 
 .navbar__moon {
-  font-size: 28px;
-  transition: all 1s ease;
+  font-size: 32px;
+  transition: all 500ms ease;
   cursor: pointer;
 
   &:hover {
     filter: blur(1px);
+    opacity: 0.8;
     transform: scale(1.2);
   }
 }

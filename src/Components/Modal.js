@@ -1,17 +1,13 @@
-import React from "react";
-import { GrClose, GrLinkedinOption } from "react-icons/gr";
-import { BiMailSend } from "react-icons/bi";
-
 const Modal = ({ setDisplayModal }) => {
   return (
     <div className="modal" id="modal">
       <div className="modal__container">
         <div className="modal__top-half">
           <div className="modal__header">
-            <GrClose
-              className="modal__closebtn"
+            <i
+              className="modal__closebtn fa-solid fa-xmark"
               onClick={() => setDisplayModal(false)}
-            />
+            ></i>
             <h2 className="modal__title">
               <b className="important-text">C</b>ontact
             </h2>
@@ -44,14 +40,14 @@ const Modal = ({ setDisplayModal }) => {
               className="linkedin modal__contact--icon"
               href="https://www.linkedin.com/in/troyrichardsdevloper/"
             >
-              <GrLinkedinOption />
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <p>👨🏽‍💻</p>
             <a
               className="mail modal__contact--icon"
               href="mailto:troyrichards28@gmail.com"
             >
-              <BiMailSend />
+              <i className="fa-solid fa-paper-plane"></i>
             </a>
           </div>
           <small className="modal__psst">psst.. hover over the guy</small>

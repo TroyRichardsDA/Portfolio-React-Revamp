@@ -7,7 +7,7 @@ import { ReactComponent as MusicIcon } from "../svgs/music-reader.svg";
 import { ReactComponent as PlayStation } from "../svgs/playstation.svg";
 import { ReactComponent as Controller } from "../svgs/controller.svg";
 
-const BackGroundIcons = () => {
+const BackgroundIcons = () => {
   return (
     <div className="background-icons">
       <ReactIcon className="background-icons__icon icon--1" />
@@ -23,4 +23,4 @@ const BackGroundIcons = () => {
   );
 };
 
-export default BackGroundIcons;
+export default BackgroundIcons;

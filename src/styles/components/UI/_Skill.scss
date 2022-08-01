@@ -5,12 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
   align-items: center;
-
-  border: 2px solid transparent;
-  transition: 0.4s;
   text-align: center;
 
   > * {
@@ -26,8 +21,6 @@
 }
 
 .skill__name {
-  position: absolute;
-  top: -20px;
   font-size: 20px;
   color: $secondary;
 }
