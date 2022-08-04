@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.73125ee9.css",
-    "main.js": "/static/js/main.609e4074.js",
+    "main.css": "/static/css/main.1aad1154.css",
+    "main.js": "/static/js/main.1bf02c2d.js",
     "static/js/551.eaa75f03.chunk.js": "/static/js/551.eaa75f03.chunk.js",
     "static/js/410.38ef06bb.chunk.js": "/static/js/410.38ef06bb.chunk.js",
     "static/js/741.f830f5b8.chunk.js": "/static/js/741.f830f5b8.chunk.js",
@@ -19,13 +19,14 @@
     "static/media/react.svg": "/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
     "static/media/music-reader.svg": "/static/media/music-reader.a690fec223888053068a5ede9c0972ca.svg",
     "static/media/down-step-note.svg": "/static/media/down-step-note.c4e9ae216db07e1a545752c91f4cfbb4.svg",
+    "static/media/logo.svg": "/static/media/logo.eb473f1a986d634143d955fe10e8f57b.svg",
     "static/media/controller.svg": "/static/media/controller.97d41eab94f206ee2aa04214d65f02ee.svg",
     "static/media/bold-note.svg": "/static/media/bold-note.120cf28689c601e2a81b1ed90b825964.svg",
     "static/media/playstation.svg": "/static/media/playstation.376df1c4fbeada1dfd17077372828f01.svg",
     "static/media/code.svg": "/static/media/code.7e10ea741c22cc0997536efa98dba8ba.svg",
     "index.html": "/index.html",
-    "main.73125ee9.css.map": "/static/css/main.73125ee9.css.map",
-    "main.609e4074.js.map": "/static/js/main.609e4074.js.map",
+    "main.1aad1154.css.map": "/static/css/main.1aad1154.css.map",
+    "main.1bf02c2d.js.map": "/static/js/main.1bf02c2d.js.map",
     "551.eaa75f03.chunk.js.map": "/static/js/551.eaa75f03.chunk.js.map",
     "410.38ef06bb.chunk.js.map": "/static/js/410.38ef06bb.chunk.js.map",
     "741.f830f5b8.chunk.js.map": "/static/js/741.f830f5b8.chunk.js.map",
@@ -36,7 +37,7 @@
     "474.8089fbcd.chunk.js.map": "/static/js/474.8089fbcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73125ee9.css",
-    "static/js/main.609e4074.js"
+    "static/css/main.1aad1154.css",
+    "static/js/main.1bf02c2d.js"
   ]
 }
