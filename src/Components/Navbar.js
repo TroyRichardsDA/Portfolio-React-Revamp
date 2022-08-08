@@ -2,7 +2,7 @@ import { useModalContext } from "../context/modalContext";
 import { useThemeContext } from "../context/themeContext";
 import { ReactComponent as Logo } from "../svgs/logo.svg";
 
-function Nav(props) {
+function Nav() {
   const { toggleModal } = useModalContext();
   const { isDark, toggleTheme } = useThemeContext();
 

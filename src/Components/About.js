@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-import { lazy, Suspense } from "react";
 import { useModalContext } from "../context/modalContext";
-// import Skills from "./Skills";
-
-const Skills = lazy(() => import("./Skills"));
 
 function About() {
   const { toggleModal } = useModalContext();
@@ -48,9 +44,15 @@ function About() {
             </p>
           </div>
 
-          <Suspense fallback={<div>Loading...</div>}>
-            <Skills />
-          </Suspense>
+          <div className="about__pic--container">
+            <h2>My Spirit Animal</h2>
+            <figure className="about__pic">
+              <img
+                src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                alt="cat with shades"
+              />
+            </figure>
+          </div>
         </div>
       </motion.div>
     </section>

@@ -1,0 +1,44 @@
+@use "../abstrarct/variables" as *;
+@use "../utils/breakpoints" as *;
+
+.skills {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+}
+
+.skills__container {
+  box-shadow: 0px 4px 20px rgba(117, 117, 117, 0.736);
+  padding: 20px;
+  padding-bottom: 60px;
+  border-radius: 12px;
+}
+
+.skills__subtitle {
+  margin: -52px auto 52px;
+  width: 90%;
+}
+
+.skills__langs {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*========== 
+
+Desktop
+
+========*/
+
+@include breakpoint(desktop) {
+  .skills__container {
+    max-width: 1050px;
+  }
+
+  .skills__subtitle {
+    width: 60%;
+  }
+}

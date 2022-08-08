@@ -1,48 +1,56 @@
-import React from "react";
 import Skill from "./UI/Skill";
+import Html from "../assets/html.webp";
+import CSS from "../assets/css.webp";
+import React from "../assets/react.webp";
+import Js from "../assets/js.webp";
+import Ts from "../assets/typescript.webp";
+import Sass from "../assets/sass.webp";
+import Git from "../assets/git.webp";
 
 const Skills = () => {
   const skills = [
     {
-      icon: <i className="fab fa-html5"></i>,
-      name: "HTML",
-      mark: 1,
+      name: "HTML5",
+      img: Html,
     },
     {
-      icon: <i className="fab fa-css3"></i>,
-      name: "CSS",
-      mark: 1,
+      name: "CSS3",
+      img: CSS,
     },
     {
-      icon: <i className="fab fa-react"></i>,
       name: "React",
-      mark: 1,
-      isMain: true,
+      img: React,
     },
     {
-      icon: <i className="fa-brands fa-square-js"></i>,
       name: "JavaScript",
-      mark: 1,
-      isMain: true,
+      img: Js,
     },
     {
-      icon: <i className="fa-brands fa-sass"></i>,
+      name: "TypeScript",
+      img: Ts,
+    },
+    {
       name: "Sass",
-      mark: 2,
-      isMain: true,
-    },
-    {
-      icon: <i className="fab fa-git-alt"></i>,
-      name: "Git",
-      mark: 2,
+      img: Sass,
     },
   ];
 
   return (
-    <div className="about__skills">
-      {skills.map((skill, ind) => (
-        <Skill skill={skill} key={ind} />
-      ))}
+    <div className="skills">
+      <div className="skills__container container">
+        <h2 className="section__title skills__title">
+          <b className="important-text">S</b>kills
+        </h2>
+        <p className="skills__subtitle">
+          I made a list of things that I know but you don't know that I know but
+          are going to know after looking at it. You know what I mean?
+        </p>
+        <div className="skills__langs">
+          {skills.map((skill, ind) => (
+            <Skill skill={skill} key={ind} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

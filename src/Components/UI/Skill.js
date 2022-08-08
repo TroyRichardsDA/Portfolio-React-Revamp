@@ -4,7 +4,9 @@ const Skill = ({ skill }) => {
   return (
     <div className="skill">
       <p className="skill__name">{skill.name}</p>
-      <p className="skill__icon">{skill.icon}</p>
+      <figure className="skill__img--container">
+        <img className="skill__img" src={skill.img} alt={skill.name} />
+      </figure>
     </div>
   );
 };

@@ -10,7 +10,7 @@
 }
 
 .about__container {
-  margin: 100px auto;
+  margin: 50px auto;
 
   text-align: center;
 }
@@ -26,11 +26,18 @@
   }
 }
 
-.about__skills {
-  margin-top: 20px;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+.about__pic {
+  margin: 10px auto;
+  max-width: 500px;
+
+  &--container {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    filter: brightness(0.9);
+  }
 }
 
 /*===== 
@@ -42,6 +49,10 @@ Tablet
 @include breakpoint(tablet) {
   .about__container {
     text-align: center;
+  }
+
+  .about__pic--container {
+    display: block;
   }
 
   .about__text {

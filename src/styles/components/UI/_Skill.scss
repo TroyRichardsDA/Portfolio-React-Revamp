@@ -13,6 +13,15 @@
   }
 }
 
+.skill__img {
+  width: 100%;
+
+  &--container {
+    margin-top: 10px;
+    max-width: 50px;
+  }
+}
+
 .skill__icon {
   text-align: center;
   font-size: 3rem;
