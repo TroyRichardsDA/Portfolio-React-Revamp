@@ -1,9 +1,10 @@
 import { useModalContext } from "../context/modalContext";
+import { useThemeContext } from "../context/themeContext";
 import { ReactComponent as Logo } from "../svgs/logo.svg";
 
 function Nav(props) {
-  const { light, dark, setTheme, isDark, setIsDark } = props;
   const { toggleModal } = useModalContext();
+  const { isDark, toggleTheme } = useThemeContext();
 
   const navItems = ["about", "projects", "contact"];
 
@@ -17,18 +18,6 @@ function Nav(props) {
     document.getElementById("dd-content").style.cssText = `
     width:  0;
     `;
-  }
-
-  function toggleTheme() {
-    if (!isDark) {
-      setTheme(dark);
-      setIsDark(true);
-      document.body.classList += " dark";
-    } else {
-      setTheme(light);
-      setIsDark(false);
-      document.body.classList.remove("dark");
-    }
   }
 
   const displayNavItems = navItems.map((item, id) => {
