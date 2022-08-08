@@ -61,7 +61,7 @@ function Nav(props) {
 
   return (
     <nav className="navbar" id="nava">
-      <div className="navbar__container">
+      <div className="navbar__container container">
         <a className="navbar__logo" href="/">
           <Logo />
         </a>

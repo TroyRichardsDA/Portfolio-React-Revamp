@@ -12,7 +12,7 @@ function About({ setDisplayModal }) {
   return (
     <section className="about" id="about">
       <motion.div
-        className="about__container"
+        className="about__container container"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -25,27 +25,27 @@ function About({ setDisplayModal }) {
         <div className="about__content">
           <div className="about__text">
             <p className="about__text--para">
-              Hello! My name is Troy Richards, and I am, what some would call, a{" "}
-              <b className="important-text">Frontend Developer!!!!!!</b>
+              Hello! My name is Troy Richards and I'm just another{" "}
+              <b className="important-text">Frontend Engineer</b> with a mouse
+              and a laptop with unrelated opinions about Deborah's shoes....
+              There's nothing wrong with her make-up.
             </p>
             <p className="about__text--para">
-              If you couldn't tell from the AMAZING animations so far, I have
-              strong passion for developing websites with great user{" "}
-              <b className="important-text">experiences.</b> As a mainly
-              self-taught developer, I spent most of my free time learning and
-              honing my skills to progress to the next level.
+              Aside from spending my time on the interwebs trying to bolster my
+              net worth in the frontend development market, I like to read
+              manhwas, mangas, some manhuas, webtoons, go for walks around the
+              neighborhood, pester my sister and nephews, and play some videos
+              games.
             </p>
             <p className="about__text--para">
-              <b className="important-text">Currently</b>, I am looking for
-              opportunities to work remotely as a{" "}
-              <b className="important-text"> Frontend Developer</b>. Think I
-              would be a great fit for your team? Contact me{" "}
-              <button
-                onClick={() => toggleModal()}
-                className="about__toggle-modal text-link"
-              >
+              Currently, I am seeking a remote{" "}
+              <b className="important-text">Frontend Engineer</b> role, but I'm
+              definitely open to a role as a Shoe Shiner if the pay is good, the
+              benefits are solid, and the work-life balance is great. Want a
+              break from the ads? Contact me{" "}
+              <b onClick={() => toggleModal()} className="text-link">
                 here!
-              </button>
+              </b>
             </p>
           </div>
 

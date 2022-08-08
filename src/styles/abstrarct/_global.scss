@@ -12,10 +12,15 @@
   transition: all 0.2s;
 }
 
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
 .section__title {
   text-align: center;
   margin: 20px 0 40px;
-  font-size: 32px;
+  font-size: 40px;
   letter-spacing: 4px;
   position: relative;
 }
@@ -57,5 +62,22 @@ Tablet
 @include breakpoint(tablet) {
   .section__title {
     font-size: 52px;
+    margin-bottom: 88px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+/*==========
+
+Desktop
+
+========*/
+
+@include breakpoint(desktop) {
+  .container {
+    width: 87%;
   }
 }

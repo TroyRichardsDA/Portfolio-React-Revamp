@@ -7,13 +7,10 @@
   background-color: white;
   border-top: 4px solid $primary;
   border-bottom: 4px solid $primary;
-
-  min-height: 100vh;
 }
 
 .about__container {
-  width: $container;
-  margin: 0 auto;
+  margin: 100px auto;
 
   text-align: center;
 }
@@ -34,11 +31,6 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.about__toggle-modal {
-  font-size: inherit;
-  background-color: transparent;
 }
 
 /*===== 

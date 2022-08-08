@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <div className="projects" id="projects">
       <motion.div
-        className="projects__container"
+        className="projects__container container"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}

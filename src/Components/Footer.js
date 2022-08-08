@@ -1,7 +1,7 @@
 export default function Footer({ setDisplayModal }) {
   return (
     <footer className="footer" id="footer">
-      <div className="footer__container">
+      <div className="footer__container container">
         <div className="footer__links">
           <a
             href="https://www.linkedin.com/in/troyrichardsdevloper/"
