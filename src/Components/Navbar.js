@@ -1,7 +1,10 @@
+import { useModalContext } from "../context/modalContext";
 import { ReactComponent as Logo } from "../svgs/logo.svg";
 
 function Nav(props) {
-  const { setDisplayModal, light, dark, setTheme, isDark, setIsDark } = props;
+  const { light, dark, setTheme, isDark, setIsDark } = props;
+  const { toggleModal } = useModalContext();
+
   const navItems = ["about", "projects", "contact"];
 
   function showMenu() {
@@ -49,7 +52,7 @@ function Nav(props) {
             href="#modal"
             onClick={() => {
               closeMenu();
-              setDisplayModal(true);
+              toggleModal();
             }}
           >
             <i className="fas fa-user"></i> {capitalize}

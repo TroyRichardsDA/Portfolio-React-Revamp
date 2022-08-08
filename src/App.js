@@ -1,7 +1,6 @@
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { lazy, Suspense, useState } from "react";
-import { useEffect } from "react";
 
 const Hero = lazy(() => import("./Components/Hero"));
 const About = lazy(() => import("./Components/About"));
@@ -20,17 +19,8 @@ const light = {
 };
 
 function App() {
-  const [displayModal, setDisplayModal] = useState(false);
   const [theme, setTheme] = useState(dark);
   const [isDark, setIsDark] = useState(true);
-
-  useEffect(() => {
-    if (displayModal) {
-      document.body.classList += " modal-open";
-    } else {
-      document.body.classList.remove("modal-open");
-    }
-  }, [displayModal]);
 
   return (
     <div className="App">
@@ -42,14 +32,13 @@ function App() {
           isDark={isDark}
           theme={theme}
           setTheme={setTheme}
-          setDisplayModal={setDisplayModal}
         />
         <BackgroundIcons />
-        <Modal setDisplayModal={setDisplayModal} />
+        <Modal />
         <Hero />
-        <About setDisplayModal={setDisplayModal} />
+        <About />
         <Projects />
-        <Footer setDisplayModal={setDisplayModal} />
+        <Footer />
       </Suspense>
     </div>
   );

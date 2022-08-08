@@ -1,4 +1,8 @@
-export default function Footer({ setDisplayModal }) {
+import { useModalContext } from "../context/modalContext";
+
+export default function Footer() {
+  const { toggleModal } = useModalContext();
+
   return (
     <footer className="footer" id="footer">
       <div className="footer__container container">
@@ -11,7 +15,7 @@ export default function Footer({ setDisplayModal }) {
           >
             LinkedIn
           </a>
-          <p className="text-link" onClick={() => setDisplayModal(true)}>
+          <p className="text-link" onClick={toggleModal}>
             Contact
           </p>
           <a

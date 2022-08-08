@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import { lazy, Suspense } from "react";
+import { useModalContext } from "../context/modalContext";
 // import Skills from "./Skills";
 
 const Skills = lazy(() => import("./Skills"));
 
-function About({ setDisplayModal }) {
-  function toggleModal() {
-    setDisplayModal(true);
-  }
+function About() {
+  const { toggleModal } = useModalContext();
 
   return (
     <section className="about" id="about">
@@ -43,7 +42,7 @@ function About({ setDisplayModal }) {
               definitely open to a role as a Shoe Shiner if the pay is good, the
               benefits are solid, and the work-life balance is great. Want a
               break from the ads? Contact me{" "}
-              <b onClick={() => toggleModal()} className="text-link">
+              <b onClick={toggleModal} className="text-link">
                 here!
               </b>
             </p>

@@ -1,4 +1,8 @@
-const Modal = ({ setDisplayModal }) => {
+import { useModalContext } from "../context/modalContext";
+
+const Modal = () => {
+  const { toggleModal } = useModalContext();
+
   return (
     <div className="modal" id="modal">
       <div className="modal__container">
@@ -6,7 +10,7 @@ const Modal = ({ setDisplayModal }) => {
           <div className="modal__header">
             <i
               className="modal__closebtn fa-solid fa-xmark"
-              onClick={() => setDisplayModal(false)}
+              onClick={() => toggleModal()}
             ></i>
             <h2 className="modal__title">
               <b className="important-text">C</b>ontact
