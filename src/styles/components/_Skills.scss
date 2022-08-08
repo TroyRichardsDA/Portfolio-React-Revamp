@@ -16,7 +16,7 @@
 }
 
 .skills__subtitle {
-  margin: -52px auto 52px;
+  margin: -20px auto 52px;
   width: 90%;
 }
 
@@ -25,6 +25,18 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+/*========
+
+Tablet
+
+========*/
+
+@include breakpoint(tablet) {
+  .skills__subtitle {
+    margin-top: -52px;
+  }
 }
 
 /*========== 
