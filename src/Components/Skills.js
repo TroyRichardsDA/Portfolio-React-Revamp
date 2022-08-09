@@ -6,6 +6,7 @@ import Js from "../assets/js.webp";
 import Ts from "../assets/typescript.webp";
 import Sass from "../assets/sass.webp";
 import Git from "../assets/git.webp";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skills = [
@@ -36,7 +37,13 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="skills"
+    >
       <div className="skills__container container">
         <h2 className="section__title skills__title">
           <b className="important-text">S</b>kills
@@ -51,7 +58,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
