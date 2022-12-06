@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import Designo from "../../images/designo.webp";
+import Kanban from "../../images/Kanban.webp";
 import EWA from "../../images/entertainment-web-app.webp";
 import WhereInTheWorld from "../../images/where-in-the-world.webp";
 import Library from "../../images/library.webp";
@@ -25,20 +25,20 @@ const Projects = () => {
         <div className="projects__list">
           <Suspense fallback={<div>Loading...</div>}>
             <Project
-              title="Designo"
-              img={Designo}
+              title="Kanban Task Manager"
+              img={Kanban}
               liveSite="https://ayetone.github.io/Designo/"
-              sourceCode="https://github.com/AyeTone/Designo"
+              sourceCode="https://ayetone.github.io/kanban/"
               desc={
                 <>
-                  You wanted 7 pages of fun, I brought you 7 pages of a website.
-                  I think we can meet in the middle of somewhere. Probably the
-                  web design page that has reused components like a lot of the
-                  other pages? Or maybe the contact page where I deny your
-                  messages? I'm sure we can work something out.
+                  Are you bad at task management? Look worry no more, I have the
+                  perfect thing for you. Introducing, in the top left corner of
+                  this grid, Kanban Task Manager! With the ability to to create,
+                  read, update, or delete boards, columns, tasks, and subtasks,
+                  this is the only task manager you'll ever need!
                 </>
               }
-              devWith="React, Sass"
+              devWith="React, TypeScript, Redux, Sass"
               x="0"
               y="300"
             />

@@ -2,10 +2,9 @@ import Skill from "./UI/Skill";
 import Html from "../assets/html.webp";
 import CSS from "../assets/css.webp";
 import React from "../assets/react.webp";
-import Js from "../assets/js.webp";
 import Ts from "../assets/typescript.webp";
+import Redux from "../assets/redux.webp";
 import Sass from "../assets/sass.webp";
-import Git from "../assets/git.webp";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -23,8 +22,8 @@ const Skills = () => {
       img: React,
     },
     {
-      name: "JavaScript",
-      img: Js,
+      name: "Redux",
+      img: Redux,
     },
     {
       name: "TypeScript",
