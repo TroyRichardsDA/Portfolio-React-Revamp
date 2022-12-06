@@ -27,8 +27,8 @@ const Projects = () => {
             <Project
               title="Kanban Task Manager"
               img={Kanban}
-              liveSite="https://ayetone.github.io/Designo/"
-              sourceCode="https://ayetone.github.io/kanban/"
+              liveSite="https://ayetone.github.io/kanban/"
+              sourceCode="https://github.com/AyeTone/kanban"
               desc={
                 <>
                   Are you bad at task management? Look worry no more, I have the
