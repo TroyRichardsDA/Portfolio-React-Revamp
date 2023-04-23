@@ -27,8 +27,8 @@ const Projects = () => {
             <Project
               title="Kanban Task Manager"
               img={Kanban}
-              liveSite="https://ayetone.github.io/kanban/"
-              sourceCode="https://github.com/AyeTone/kanban"
+              liveSite="https://troyrichardsda.github.io/kanban/"
+              sourceCode="https://github.com/TroyRichardsDA/kanban"
               desc={
                 <>
                   Are you bad at task management? Look worry no more, I have the
@@ -45,8 +45,8 @@ const Projects = () => {
             <Project
               title="EWA | Entertainment-Web-App"
               img={EWA}
-              liveSite="https://ayetone.github.io/entertainment-web-app/"
-              sourceCode="https://github.com/AyeTone/entertainment-web-app"
+              liveSite="https://troyrichardsda.github.io/entertainment-web-app/"
+              sourceCode="https://github.com/TroyRichardsDA/entertainment-web-app"
               desc={
                 <>
                   What's Netflix? I bring you Entertainment-Wep-App AKA, EWA!...
@@ -63,8 +63,8 @@ const Projects = () => {
             <Project
               title="Where in the world?"
               img={WhereInTheWorld}
-              liveSite="https://ayetone.github.io/rest-countries-api/"
-              sourceCode="https://github.com/AyeTone/rest-countries-api"
+              liveSite="https://troyrichardsda.github.io/rest-countries-api/"
+              sourceCode="https://github.com/TroyRichardsDA/rest-countries-api"
               desc={
                 <>
                   Ever wanted to know something about a country that you didn't
@@ -89,8 +89,8 @@ const Projects = () => {
             <Project
               title="Library"
               img={Library}
-              liveSite="https://ayetone.github.io/Library-Ecom/"
-              sourceCode="https://github.com/AyeTone/Library-Ecom"
+              liveSite="https://troyrichardsda.github.io/Library-Ecom/"
+              sourceCode="https://github.com/TroyRichardsDA/Library-Ecom"
               desc={
                 <>
                   I present to you another way to no buy something. Come not

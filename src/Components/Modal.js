@@ -2,6 +2,7 @@ import { useModalContext } from "../context/modalContext";
 
 const Modal = () => {
   const { toggleModal } = useModalContext();
+  const linkedin = "https://www.linkedin.com/in/troyarichards/";
 
   return (
     <div className="modal" id="modal">
@@ -20,10 +21,7 @@ const Modal = () => {
           <div className="modal__desc">
             <p>
               The best way to me contact is through a DM on{" "}
-              <a
-                href="https://www.linkedin.com/in/troyrichardsdevloper/"
-                className="text-link"
-              >
+              <a href={linkedin} className="text-link">
                 {" "}
                 LinkedIn
               </a>{" "}
@@ -40,10 +38,7 @@ const Modal = () => {
             <b className="important-text">Get me fast!</b>
           </p>
           <div className="modal__contact">
-            <a
-              className="linkedin modal__contact--icon"
-              href="https://www.linkedin.com/in/troyrichardsdevloper/"
-            >
+            <a className="linkedin modal__contact--icon" href={linkedin}>
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <p>👨🏽‍💻</p>

@@ -7,7 +7,7 @@ const Hero = lazy(() => import("./Components/Hero"));
 const About = lazy(() => import("./Components/About"));
 const Projects = lazy(() => import("./Components/Projects/Projects"));
 const Modal = lazy(() => import("./Components/Modal"));
-const BackgroundIcons = lazy(() => import("./Components/BackgroundIcons"));
+const BackgroundIcons = lazy(() => import("./Components/BackGroundIcons"));
 
 function App() {
   return (

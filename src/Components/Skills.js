@@ -43,7 +43,7 @@ const Skills = () => {
       viewport={{ once: true }}
       className="skills"
     >
-      <div className="skills__container container">
+      <div id="skills" className="skills__container container">
         <h2 className="section__title skills__title">
           <b className="important-text">S</b>kills
         </h2>

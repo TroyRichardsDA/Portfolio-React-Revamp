@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer__container container">
         <div className="footer__links">
           <a
-            href="https://www.linkedin.com/in/troyrichardsdevloper/"
+            href="https://www.linkedin.com/in/troyarichards/"
             target="_blank"
             rel="noreferrer"
             className="text-link"
@@ -19,7 +19,7 @@ export default function Footer() {
             Contact
           </p>
           <a
-            href="https://github.com/AyeTone"
+            href="https://github.com/TroyRichardsDA"
             className="text-link"
             target="_blank"
             rel="noreferrer"
